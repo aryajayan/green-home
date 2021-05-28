@@ -1,0 +1,17 @@
+<ngb-carousel *ngIf="imageList">
+  <ng-template ngbSlide
+               *ngFor="let image of imageList; let i = index"
+               id="{{ i }}">
+    <div class="picsum-img-wrapper">
+      <img [src]="image.source"
+           alt="{{ image.title }}"
+           class="banner_img" />
+    </div>
+
+    <div class="carousel-caption">
+      <h3>First slide label</h3>
+
+      <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+    </div>
+  </ng-template>
+</ngb-carousel>

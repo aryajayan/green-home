@@ -1,0 +1,9 @@
+<div class="row userform_container">
+  <div class="col-xs-12 col-sm-12 col-md-5 col-lg-5">
+    <app-login *ngIf="!newUser"></app-login>
+    <app-signup *ngIf="newUser"></app-signup>
+  </div>
+  <div class="col-xs-7 col-sm-7 col-md-7 col-lg-7S">
+    <app-user-banner></app-user-banner>
+  </div>
+</div>

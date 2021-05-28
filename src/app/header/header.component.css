@@ -1,0 +1,21 @@
+.main_icon {
+  width: 30px;
+
+  height: 30px;
+}
+
+.nav_user_icon {
+  background: #616161;
+
+  width: 46px;
+
+  display: inline-block;
+
+  padding: 3px 10px;
+
+  border-radius: 13px;
+}
+
+.hide_dropdown {
+  display: none;
+}
