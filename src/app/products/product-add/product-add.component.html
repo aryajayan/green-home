@@ -65,9 +65,16 @@
                          *ngIf="showImage"
                          alt=""
                          class="product_image">
+                    <div (click)="fileUpload.click()"
+                         *ngIf="!showImage"
+                         class="image_placeholder">
+                      <i class="fas fa-image"></i>
+                      <span>Browse an image</span>
+                    </div>
                   </div>
                   <!-- <div class="d-flex justify-content-center"> -->
                   <input type="file"
+                         #fileUpload
                          (change)="selectfile($event)"
                          class="form-control-file"
                          id="file_upload">

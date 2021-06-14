@@ -19,3 +19,17 @@
 .hide_dropdown {
   display: none;
 }
+.user_nav {
+  display: inline-block;
+}
+.user_menu {
+  display: none;
+}
+@media screen and (max-width: 990px) {
+  .user_nav {
+    display: none;
+  }
+  .user_menu {
+    display: block;
+  }
+}
