@@ -28,9 +28,28 @@
           Home
         </a>
       </li>
-
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle"
+           href="#"
+           id="navbarDropdown"
+           role="button"
+           data-toggle="dropdown"
+           aria-haspopup="true"
+           aria-expanded="false"
+           routerLinkActive="active">
+          Products
+        </a>
+        <div class="dropdown-menu basic_dropdown"
+             aria-labelledby="navbarDropdown">
+          <a class="dropdown-item"
+             routerLink="/products/product-list">All Products</a>
+          <a class="dropdown-item"
+             routerLink="/products/product-add">Add Product</a>
+        </div>
+      </li>
       <li class="nav-item">
         <a class="nav-link"
+           *ngIf="!isAuthenticated"
            routerLink="/products"
            routerLinkActive="active">
           Products
@@ -45,37 +64,7 @@
         </a>
       </li>
 
-      <!-- <li class="nav-item dropdown">
 
-        <a class="nav-link dropdown-toggle"
-
-           href="#"
-
-           id="navbarDropdownMenuLink"
-
-           data-toggle="dropdown"
-
-           aria-haspopup="true"
-
-           aria-expanded="false">
-
-          Profile
-
-        </a>
-
-        <div class="dropdown-menu"
-
-             aria-labelledby="navbarDropdownMenuLink">
-
-          <a class="dropdown-item">Account</a>
-
-          <a class="dropdown-item">Settings</a>
-
-          <a class="dropdown-item">Logout</a>
-
-        </div>
-
-      </li> -->
     </ul>
 
     <ul class="nav navbar-nav ml-auto">
@@ -88,13 +77,18 @@
           <i class="fas fa-user"></i>
         </a>
 
-        <div class="dropdown-menu dropdown-menu-right"
+        <div class="dropdown-menu dropdown-menu-right basic_dropdown"
              aria-labelledby="navbarDropdownMenuLink">
           <a class="dropdown-item"
+             *ngIf="!isAuthenticated"
              (click)="navigateToUser(false)">Login</a>
 
           <a class="dropdown-item"
+             *ngIf="!isAuthenticated"
              (click)="navigateToUser(true)">Sign Up</a>
+          <a class="dropdown-item"
+             *ngIf="isAuthenticated"
+             (click)="onLogout()">Logout</a>
 
           <a class="dropdown-item">Help</a>
         </div>

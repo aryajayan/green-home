@@ -26,10 +26,11 @@ body {
 
 .primary_button {
   background-color: #637b47;
-
   color: #fff;
 }
-
+.primary_icon {
+  color: #637b47;
+}
 .primary_button:disabled {
   background-color: #a0a0a0;
 
@@ -75,6 +76,27 @@ input:-internal-autofill-selected {
   height: 390px;
 }
 
+.basic_dropdown.dropdown-menu {
+  background-color: #18191b;
+  color: #fff;
+}
+.basic_dropdown .dropdown-item {
+  color: #fff;
+}
+.basic_dropdown .dropdown-item:hover,
+.basic_dropdown .dropdown-item:active {
+  color: #000;
+  background-color: #e9ecef;
+}
+.grey_background {
+  background: #18191b;
+  color: #fff;
+  padding: 10px 15px 20px 15px;
+  min-height: 82vh;
+}
+.border_grey {
+  border: 1px solid grey;
+}
 @media only screen and (max-width: 760px) {
   .banner_img {
     height: 30vh;

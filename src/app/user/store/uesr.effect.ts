@@ -8,58 +8,105 @@ import { Actions, createEffect, ofType } from '@ngrx/effects';
 
 import { of } from 'rxjs';
 
-import { catchError, map, mergeMap, tap } from 'rxjs/operators';
+import { catchError, exhaustMap, map, tap } from 'rxjs/operators';
 
 import * as UserActions from '../store/user.action';
+import * as fromUser from './user.reducer';
+import { Store } from '@ngrx/store';
+
+interface Response {
+  idToken: string;
+  email: string;
+  refreshToken: string;
+  expiresIn: string;
+  localId: string;
+}
 
 @Injectable()
 export class UserEffects {
   signup$ = createEffect(() =>
     this.actions$.pipe(
       ofType(UserActions.Signup),
-
-      mergeMap((action) =>
+      exhaustMap((action) =>
         this.http
           .post(
-            'https://green-home-9ce8c-default-rtdb.firebaseio.com/user.json',
-
+            'https://identitytoolkit.googleapis.com/v1/accounts:signUp?key=AIzaSyCgX46Gu12bTfL5jpfQlH6bVg8wptF-XO4',
             {
-              name: action.name,
               email: action.email,
-              dob: action.dob,
               password: action.password,
+              returnSecureToken: true,
             }
           )
-
           .pipe(
-            tap((data) => this.router.navigate(['/home'])),
-
-            map((data) =>
-              UserActions.SignupSuccess({
+            map((data: Response) =>
+              UserActions.AuthSuccess({
                 email: action.email,
                 name: action.name,
-
-                dob: action.dob,
-                token: data['name'],
+                token: data.idToken,
                 tokenExpirationTime: new Date(
-                  new Date().setMilliseconds(
-                    new Date().getMilliseconds() + 3600000
-                  )
+                  new Date().getTime() + +data.expiresIn * 1000
                 ),
               })
             ),
-
-            catchError((error) => of(error))
+            catchError((error) => of(UserActions.AuthFail({ error: error })))
           )
       )
     )
   );
 
+  authSuccess$ = createEffect(
+    () =>
+      this.actions$.pipe(
+        ofType(UserActions.AuthSuccess),
+        tap((action) => this.router.navigate(['/home']))
+      ),
+    { dispatch: false }
+  );
+
+  authFail$ = createEffect(
+    () =>
+      this.actions$.pipe(
+        ofType(UserActions.AuthFail),
+        tap((action) => console.log(action.error))
+      ),
+    { dispatch: false }
+  );
+
+  login$ = createEffect(() =>
+    this.actions$.pipe(
+      ofType(UserActions.Login),
+      exhaustMap((action) =>
+        this.http
+          .post(
+            'https://identitytoolkit.googleapis.com/v1/accounts:signInWithPassword?key=AIzaSyCgX46Gu12bTfL5jpfQlH6bVg8wptF-XO4',
+            {
+              email: action.email,
+              password: action.password,
+              returnSecureToken: true,
+            }
+          )
+          .pipe(
+            map((data: Response) =>
+              UserActions.AuthSuccess({
+                email: action.email,
+                name: action.email,
+                token: data.idToken,
+                tokenExpirationTime: new Date(
+                  new Date().getTime() + +data.expiresIn * 1000
+                ),
+              })
+            ),
+            catchError((error) => of(UserActions.AuthFail({ error: error })))
+          )
+      )
+    )
+  );
   constructor(
     private actions$: Actions,
 
     private http: HttpClient,
 
-    private router: Router
+    private router: Router,
+    private store: Store<fromUser.State>
   ) {}
 }

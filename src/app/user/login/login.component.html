@@ -4,7 +4,9 @@
 
     <h3>Login</h3>
 
-    <form [formGroup]="loginForm">
+    <form [formGroup]="loginForm"
+          role="form"
+          (ngSubmit)="onLogin()">
 
       <div class="form-group">
 
@@ -46,7 +48,7 @@
 
       </div>
 
-      <button type="button"
+      <button type="submit"
               class="btn primary_button"
               [disabled]="!loginForm.valid">LOGIN</button>
 
