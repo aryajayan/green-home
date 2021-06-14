@@ -20899,6 +20899,806 @@ function combineAll(project) {
 
 /***/ }),
 
+/***/ "7zfz":
+/*!*******************************************************************!*\
+  !*** ./node_modules/primeng/__ivy_ngcc__/fesm2015/primeng-api.js ***!
+  \*******************************************************************/
+/*! exports provided: ConfirmEventType, ConfirmationService, ContextMenuService, FilterMatchMode, FilterOperator, FilterService, Footer, Header, MessageService, PrimeIcons, PrimeNGConfig, PrimeTemplate, SharedModule, TranslationKeys, TreeDragDropService */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ConfirmEventType", function() { return ConfirmEventType; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ConfirmationService", function() { return ConfirmationService; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ContextMenuService", function() { return ContextMenuService; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "FilterMatchMode", function() { return FilterMatchMode; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "FilterOperator", function() { return FilterOperator; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "FilterService", function() { return FilterService; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Footer", function() { return Footer; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Header", function() { return Header; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "MessageService", function() { return MessageService; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "PrimeIcons", function() { return PrimeIcons; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "PrimeNGConfig", function() { return PrimeNGConfig; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "PrimeTemplate", function() { return PrimeTemplate; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "SharedModule", function() { return SharedModule; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "TranslationKeys", function() { return TranslationKeys; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "TreeDragDropService", function() { return TreeDragDropService; });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "fXoL");
+/* harmony import */ var rxjs__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! rxjs */ "qCKp");
+/* harmony import */ var primeng_utils__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! primeng/utils */ "t2ka");
+/* harmony import */ var _angular_common__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/common */ "ofXK");
+
+
+
+
+
+
+
+const _c0 = ["*"];
+class FilterMatchMode {
+}
+FilterMatchMode.STARTS_WITH = 'startsWith';
+FilterMatchMode.CONTAINS = 'contains';
+FilterMatchMode.NOT_CONTAINS = 'notContains';
+FilterMatchMode.ENDS_WITH = 'endsWith';
+FilterMatchMode.EQUALS = 'equals';
+FilterMatchMode.NOT_EQUALS = 'notEquals';
+FilterMatchMode.IN = 'in';
+FilterMatchMode.LESS_THAN = 'lt';
+FilterMatchMode.LESS_THAN_OR_EQUAL_TO = 'lte';
+FilterMatchMode.GREATER_THAN = 'gt';
+FilterMatchMode.GREATER_THAN_OR_EQUAL_TO = 'gte';
+FilterMatchMode.BETWEEN = 'between';
+FilterMatchMode.IS = 'is';
+FilterMatchMode.IS_NOT = 'isNot';
+FilterMatchMode.BEFORE = 'before';
+FilterMatchMode.AFTER = 'after';
+FilterMatchMode.DATE_IS = 'dateIs';
+FilterMatchMode.DATE_IS_NOT = 'dateIsNot';
+FilterMatchMode.DATE_BEFORE = 'dateBefore';
+FilterMatchMode.DATE_AFTER = 'dateAfter';
+
+class PrimeNGConfig {
+    constructor() {
+        this.ripple = false;
+        this.filterMatchModeOptions = {
+            text: [
+                FilterMatchMode.STARTS_WITH,
+                FilterMatchMode.CONTAINS,
+                FilterMatchMode.NOT_CONTAINS,
+                FilterMatchMode.ENDS_WITH,
+                FilterMatchMode.EQUALS,
+                FilterMatchMode.NOT_EQUALS
+            ],
+            numeric: [
+                FilterMatchMode.EQUALS,
+                FilterMatchMode.NOT_EQUALS,
+                FilterMatchMode.LESS_THAN,
+                FilterMatchMode.LESS_THAN_OR_EQUAL_TO,
+                FilterMatchMode.GREATER_THAN,
+                FilterMatchMode.GREATER_THAN_OR_EQUAL_TO
+            ],
+            date: [
+                FilterMatchMode.DATE_IS,
+                FilterMatchMode.DATE_IS_NOT,
+                FilterMatchMode.DATE_BEFORE,
+                FilterMatchMode.DATE_AFTER
+            ]
+        };
+        this.translation = {
+            startsWith: 'Starts with',
+            contains: 'Contains',
+            notContains: 'Not contains',
+            endsWith: 'Ends with',
+            equals: 'Equals',
+            notEquals: 'Not equals',
+            noFilter: 'No Filter',
+            lt: 'Less than',
+            lte: 'Less than or equal to',
+            gt: 'Greater than',
+            gte: 'Greater than or equal to',
+            is: 'Is',
+            isNot: 'Is not',
+            before: 'Before',
+            after: 'After',
+            dateIs: 'Date is',
+            dateIsNot: 'Date is not',
+            dateBefore: 'Date is before',
+            dateAfter: 'Date is after',
+            clear: 'Clear',
+            apply: 'Apply',
+            matchAll: 'Match All',
+            matchAny: 'Match Any',
+            addRule: 'Add Rule',
+            removeRule: 'Remove Rule',
+            accept: 'Yes',
+            reject: 'No',
+            choose: 'Choose',
+            upload: 'Upload',
+            cancel: 'Cancel',
+            dayNames: ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+            dayNamesShort: ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"],
+            dayNamesMin: ["Su", "Mo", "Tu", "We", "Th", "Fr", "Sa"],
+            monthNames: ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"],
+            monthNamesShort: ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"],
+            today: 'Today',
+            weekHeader: 'Wk',
+            weak: 'Weak',
+            medium: 'Medium',
+            strong: 'Strong',
+            passwordPrompt: 'Enter a password',
+            emptyMessage: 'No results found',
+            emptyFilterMessage: 'No results found'
+        };
+        this.translationSource = new rxjs__WEBPACK_IMPORTED_MODULE_1__["Subject"]();
+        this.translationObserver = this.translationSource.asObservable();
+    }
+    getTranslation(key) {
+        return this.translation[key];
+    }
+    setTranslation(value) {
+        this.translation = Object.assign(Object.assign({}, this.translation), value);
+        this.translationSource.next(this.translation);
+    }
+}
+PrimeNGConfig.ɵfac = function PrimeNGConfig_Factory(t) { return new (t || PrimeNGConfig)(); };
+PrimeNGConfig.ɵprov = Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineInjectable"])({ factory: function PrimeNGConfig_Factory() { return new PrimeNGConfig(); }, token: PrimeNGConfig, providedIn: "root" });
+(function () { (typeof ngDevMode === "undefined" || ngDevMode) && _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](PrimeNGConfig, [{
+        type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Injectable"],
+        args: [{ providedIn: 'root' }]
+    }], function () { return []; }, null); })();
+
+class TranslationKeys {
+}
+TranslationKeys.STARTS_WITH = 'startsWith';
+TranslationKeys.CONTAINS = 'contains';
+TranslationKeys.NOT_CONTAINS = 'notContains';
+TranslationKeys.ENDS_WITH = 'endsWith';
+TranslationKeys.EQUALS = 'equals';
+TranslationKeys.NOT_EQUALS = 'notEquals';
+TranslationKeys.NO_FILTER = 'noFilter';
+TranslationKeys.LT = 'lt';
+TranslationKeys.LTE = 'lte';
+TranslationKeys.GT = 'gt';
+TranslationKeys.GTE = 'gte';
+TranslationKeys.IS = 'is';
+TranslationKeys.IS_NOT = 'isNot';
+TranslationKeys.BEFORE = 'before';
+TranslationKeys.AFTER = 'after';
+TranslationKeys.CLEAR = 'clear';
+TranslationKeys.APPLY = 'apply';
+TranslationKeys.MATCH_ALL = 'matchAll';
+TranslationKeys.MATCH_ANY = 'matchAny';
+TranslationKeys.ADD_RULE = 'addRule';
+TranslationKeys.REMOVE_RULE = 'removeRule';
+TranslationKeys.ACCEPT = 'accept';
+TranslationKeys.REJECT = 'reject';
+TranslationKeys.CHOOSE = 'choose';
+TranslationKeys.UPLOAD = 'upload';
+TranslationKeys.CANCEL = 'cancel';
+TranslationKeys.DAY_NAMES = 'dayNames';
+TranslationKeys.DAY_NAMES_SHORT = 'dayNamesShort';
+TranslationKeys.DAY_NAMES_MIN = 'dayNamesMin';
+TranslationKeys.MONTH_NAMES = 'monthNames';
+TranslationKeys.MONTH_NAMES_SHORT = 'monthNamesShort';
+TranslationKeys.TODAY = 'today';
+TranslationKeys.WEEK_HEADER = 'weekHeader';
+TranslationKeys.WEAK = 'weak';
+TranslationKeys.MEDIUM = 'medium';
+TranslationKeys.STRONG = 'strong';
+TranslationKeys.PASSWORD_PROMPT = 'passwordPrompt';
+TranslationKeys.EMPTY_MESSAGE = 'emptyMessage';
+TranslationKeys.EMPTY_FILTER_MESSAGE = 'emptyFilterMessage';
+
+var ConfirmEventType;
+(function (ConfirmEventType) {
+    ConfirmEventType[ConfirmEventType["ACCEPT"] = 0] = "ACCEPT";
+    ConfirmEventType[ConfirmEventType["REJECT"] = 1] = "REJECT";
+    ConfirmEventType[ConfirmEventType["CANCEL"] = 2] = "CANCEL";
+})(ConfirmEventType || (ConfirmEventType = {}));
+
+class ConfirmationService {
+    constructor() {
+        this.requireConfirmationSource = new rxjs__WEBPACK_IMPORTED_MODULE_1__["Subject"]();
+        this.acceptConfirmationSource = new rxjs__WEBPACK_IMPORTED_MODULE_1__["Subject"]();
+        this.requireConfirmation$ = this.requireConfirmationSource.asObservable();
+        this.accept = this.acceptConfirmationSource.asObservable();
+    }
+    confirm(confirmation) {
+        this.requireConfirmationSource.next(confirmation);
+        return this;
+    }
+    close() {
+        this.requireConfirmationSource.next(null);
+        return this;
+    }
+    onAccept() {
+        this.acceptConfirmationSource.next();
+    }
+}
+ConfirmationService.ɵfac = function ConfirmationService_Factory(t) { return new (t || ConfirmationService)(); };
+ConfirmationService.ɵprov = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineInjectable"]({ token: ConfirmationService, factory: ConfirmationService.ɵfac });
+(function () { (typeof ngDevMode === "undefined" || ngDevMode) && _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](ConfirmationService, [{
+        type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Injectable"]
+    }], function () { return []; }, null); })();
+
+class FilterService {
+    constructor() {
+        this.filters = {
+            startsWith: (value, filter, filterLocale) => {
+                if (filter === undefined || filter === null || filter.trim() === '') {
+                    return true;
+                }
+                if (value === undefined || value === null) {
+                    return false;
+                }
+                let filterValue = primeng_utils__WEBPACK_IMPORTED_MODULE_2__["ObjectUtils"].removeAccents(filter.toString()).toLocaleLowerCase(filterLocale);
+                let stringValue = primeng_utils__WEBPACK_IMPORTED_MODULE_2__["ObjectUtils"].removeAccents(value.toString()).toLocaleLowerCase(filterLocale);
+                return stringValue.slice(0, filterValue.length) === filterValue;
+            },
+            contains: (value, filter, filterLocale) => {
+                if (filter === undefined || filter === null || (typeof filter === 'string' && filter.trim() === '')) {
+                    return true;
+                }
+                if (value === undefined || value === null) {
+                    return false;
+                }
+                let filterValue = primeng_utils__WEBPACK_IMPORTED_MODULE_2__["ObjectUtils"].removeAccents(filter.toString()).toLocaleLowerCase(filterLocale);
+                let stringValue = primeng_utils__WEBPACK_IMPORTED_MODULE_2__["ObjectUtils"].removeAccents(value.toString()).toLocaleLowerCase(filterLocale);
+                return stringValue.indexOf(filterValue) !== -1;
+            },
+            notContains: (value, filter, filterLocale) => {
+                if (filter === undefined || filter === null || (typeof filter === 'string' && filter.trim() === '')) {
+                    return true;
+                }
+                if (value === undefined || value === null) {
+                    return false;
+                }
+                let filterValue = primeng_utils__WEBPACK_IMPORTED_MODULE_2__["ObjectUtils"].removeAccents(filter.toString()).toLocaleLowerCase(filterLocale);
+                let stringValue = primeng_utils__WEBPACK_IMPORTED_MODULE_2__["ObjectUtils"].removeAccents(value.toString()).toLocaleLowerCase(filterLocale);
+                return stringValue.indexOf(filterValue) === -1;
+            },
+            endsWith: (value, filter, filterLocale) => {
+                if (filter === undefined || filter === null || filter.trim() === '') {
+                    return true;
+                }
+                if (value === undefined || value === null) {
+                    return false;
+                }
+                let filterValue = primeng_utils__WEBPACK_IMPORTED_MODULE_2__["ObjectUtils"].removeAccents(filter.toString()).toLocaleLowerCase(filterLocale);
+                let stringValue = primeng_utils__WEBPACK_IMPORTED_MODULE_2__["ObjectUtils"].removeAccents(value.toString()).toLocaleLowerCase(filterLocale);
+                return stringValue.indexOf(filterValue, stringValue.length - filterValue.length) !== -1;
+            },
+            equals: (value, filter, filterLocale) => {
+                if (filter === undefined || filter === null || (typeof filter === 'string' && filter.trim() === '')) {
+                    return true;
+                }
+                if (value === undefined || value === null) {
+                    return false;
+                }
+                if (value.getTime && filter.getTime)
+                    return value.getTime() === filter.getTime();
+                else
+                    return primeng_utils__WEBPACK_IMPORTED_MODULE_2__["ObjectUtils"].removeAccents(value.toString()).toLocaleLowerCase(filterLocale) == primeng_utils__WEBPACK_IMPORTED_MODULE_2__["ObjectUtils"].removeAccents(filter.toString()).toLocaleLowerCase(filterLocale);
+            },
+            notEquals: (value, filter, filterLocale) => {
+                if (filter === undefined || filter === null || (typeof filter === 'string' && filter.trim() === '')) {
+                    return false;
+                }
+                if (value === undefined || value === null) {
+                    return true;
+                }
+                if (value.getTime && filter.getTime)
+                    return value.getTime() !== filter.getTime();
+                else
+                    return primeng_utils__WEBPACK_IMPORTED_MODULE_2__["ObjectUtils"].removeAccents(value.toString()).toLocaleLowerCase(filterLocale) != primeng_utils__WEBPACK_IMPORTED_MODULE_2__["ObjectUtils"].removeAccents(filter.toString()).toLocaleLowerCase(filterLocale);
+            },
+            in: (value, filter) => {
+                if (filter === undefined || filter === null || filter.length === 0) {
+                    return true;
+                }
+                for (let i = 0; i < filter.length; i++) {
+                    if (primeng_utils__WEBPACK_IMPORTED_MODULE_2__["ObjectUtils"].equals(value, filter[i])) {
+                        return true;
+                    }
+                }
+                return false;
+            },
+            between: (value, filter) => {
+                if (filter == null || filter[0] == null || filter[1] == null) {
+                    return true;
+                }
+                if (value === undefined || value === null) {
+                    return false;
+                }
+                if (value.getTime)
+                    return filter[0].getTime() <= value.getTime() && value.getTime() <= filter[1].getTime();
+                else
+                    return filter[0] <= value && value <= filter[1];
+            },
+            lt: (value, filter, filterLocale) => {
+                if (filter === undefined || filter === null) {
+                    return true;
+                }
+                if (value === undefined || value === null) {
+                    return false;
+                }
+                if (value.getTime && filter.getTime)
+                    return value.getTime() < filter.getTime();
+                else
+                    return value < filter;
+            },
+            lte: (value, filter, filterLocale) => {
+                if (filter === undefined || filter === null) {
+                    return true;
+                }
+                if (value === undefined || value === null) {
+                    return false;
+                }
+                if (value.getTime && filter.getTime)
+                    return value.getTime() <= filter.getTime();
+                else
+                    return value <= filter;
+            },
+            gt: (value, filter, filterLocale) => {
+                if (filter === undefined || filter === null) {
+                    return true;
+                }
+                if (value === undefined || value === null) {
+                    return false;
+                }
+                if (value.getTime && filter.getTime)
+                    return value.getTime() > filter.getTime();
+                else
+                    return value > filter;
+            },
+            gte: (value, filter, filterLocale) => {
+                if (filter === undefined || filter === null) {
+                    return true;
+                }
+                if (value === undefined || value === null) {
+                    return false;
+                }
+                if (value.getTime && filter.getTime)
+                    return value.getTime() >= filter.getTime();
+                else
+                    return value >= filter;
+            },
+            is: (value, filter, filterLocale) => {
+                return this.filters.equals(value, filter, filterLocale);
+            },
+            isNot: (value, filter, filterLocale) => {
+                return this.filters.notEquals(value, filter, filterLocale);
+            },
+            before: (value, filter, filterLocale) => {
+                return this.filters.lt(value, filter, filterLocale);
+            },
+            after: (value, filter, filterLocale) => {
+                return this.filters.gt(value, filter, filterLocale);
+            },
+            dateIs: (value, filter) => {
+                if (filter === undefined || filter === null) {
+                    return true;
+                }
+                if (value === undefined || value === null) {
+                    return false;
+                }
+                return value.toDateString() === filter.toDateString();
+            },
+            dateIsNot: (value, filter) => {
+                if (filter === undefined || filter === null) {
+                    return true;
+                }
+                if (value === undefined || value === null) {
+                    return false;
+                }
+                return value.toDateString() !== filter.toDateString();
+            },
+            dateBefore: (value, filter) => {
+                if (filter === undefined || filter === null) {
+                    return true;
+                }
+                if (value === undefined || value === null) {
+                    return false;
+                }
+                return value.getTime() < filter.getTime();
+            },
+            dateAfter: (value, filter) => {
+                if (filter === undefined || filter === null) {
+                    return true;
+                }
+                if (value === undefined || value === null) {
+                    return false;
+                }
+                return value.getTime() > filter.getTime();
+            }
+        };
+    }
+    filter(value, fields, filterValue, filterMatchMode, filterLocale) {
+        let filteredItems = [];
+        if (value) {
+            for (let item of value) {
+                for (let field of fields) {
+                    let fieldValue = primeng_utils__WEBPACK_IMPORTED_MODULE_2__["ObjectUtils"].resolveFieldData(item, field);
+                    if (this.filters[filterMatchMode](fieldValue, filterValue, filterLocale)) {
+                        filteredItems.push(item);
+                        break;
+                    }
+                }
+            }
+        }
+        return filteredItems;
+    }
+    register(rule, fn) {
+        this.filters[rule] = fn;
+    }
+}
+FilterService.ɵfac = function FilterService_Factory(t) { return new (t || FilterService)(); };
+FilterService.ɵprov = Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineInjectable"])({ factory: function FilterService_Factory() { return new FilterService(); }, token: FilterService, providedIn: "root" });
+(function () { (typeof ngDevMode === "undefined" || ngDevMode) && _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](FilterService, [{
+        type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Injectable"],
+        args: [{ providedIn: 'root' }]
+    }], function () { return []; }, null); })();
+
+class ContextMenuService {
+    constructor() {
+        this.activeItemKeyChange = new rxjs__WEBPACK_IMPORTED_MODULE_1__["Subject"]();
+        this.activeItemKeyChange$ = this.activeItemKeyChange.asObservable();
+    }
+    changeKey(key) {
+        this.activeItemKey = key;
+        this.activeItemKeyChange.next(this.activeItemKey);
+    }
+    reset() {
+        this.activeItemKey = null;
+        this.activeItemKeyChange.next(this.activeItemKey);
+    }
+}
+ContextMenuService.ɵfac = function ContextMenuService_Factory(t) { return new (t || ContextMenuService)(); };
+ContextMenuService.ɵprov = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineInjectable"]({ token: ContextMenuService, factory: ContextMenuService.ɵfac });
+(function () { (typeof ngDevMode === "undefined" || ngDevMode) && _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](ContextMenuService, [{
+        type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Injectable"]
+    }], function () { return []; }, null); })();
+
+class MessageService {
+    constructor() {
+        this.messageSource = new rxjs__WEBPACK_IMPORTED_MODULE_1__["Subject"]();
+        this.clearSource = new rxjs__WEBPACK_IMPORTED_MODULE_1__["Subject"]();
+        this.messageObserver = this.messageSource.asObservable();
+        this.clearObserver = this.clearSource.asObservable();
+    }
+    add(message) {
+        if (message) {
+            this.messageSource.next(message);
+        }
+    }
+    addAll(messages) {
+        if (messages && messages.length) {
+            this.messageSource.next(messages);
+        }
+    }
+    clear(key) {
+        this.clearSource.next(key || null);
+    }
+}
+MessageService.ɵfac = function MessageService_Factory(t) { return new (t || MessageService)(); };
+MessageService.ɵprov = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineInjectable"]({ token: MessageService, factory: MessageService.ɵfac });
+(function () { (typeof ngDevMode === "undefined" || ngDevMode) && _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](MessageService, [{
+        type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Injectable"]
+    }], function () { return []; }, null); })();
+
+class PrimeIcons {
+}
+PrimeIcons.ALIGN_CENTER = 'pi pi-align-center';
+PrimeIcons.ALIGN_JUSTIFY = 'pi pi-align-justify';
+PrimeIcons.ALIGN_LEFT = 'pi pi-align-left';
+PrimeIcons.ALIGN_RIGHT = 'pi pi-align-right';
+PrimeIcons.AMAZON = 'pi pi-amazon';
+PrimeIcons.ANDROID = 'pi pi-android';
+PrimeIcons.ANGLE_DOUBLE_DOWN = 'pi pi-angle-double-down';
+PrimeIcons.ANGLE_DOUBLE_LEFT = 'pi pi-angle-double-left';
+PrimeIcons.ANGLE_DOUBLE_RIGHT = 'pi pi-angle-double-right';
+PrimeIcons.ANGLE_DOUBLE_UP = 'pi pi-angle-double-up';
+PrimeIcons.ANGLE_DOWN = 'pi pi-angle-down';
+PrimeIcons.ANGLE_LEFT = 'pi pi-angle-left';
+PrimeIcons.ANGLE_RIGHT = 'pi pi-angle-right';
+PrimeIcons.ANGLE_UP = 'pi pi-angle-up';
+PrimeIcons.APPLE = 'pi pi-apple';
+PrimeIcons.ARROW_CIRCLE_DOWN = 'pi pi-arrow-circle-down';
+PrimeIcons.ARROW_CIRCLE_LEFT = 'pi pi-arrow-circle-left';
+PrimeIcons.ARROW_CIRCLE_RIGHT = 'pi pi-arrow-circle-right';
+PrimeIcons.ARROW_CIRCLE_UP = 'pi pi-arrow-circle-up';
+PrimeIcons.ARROW_DOWN = 'pi pi-arrow-down';
+PrimeIcons.ARROW_LEFT = 'pi pi-arrow-left';
+PrimeIcons.ARROW_RIGHT = 'pi pi-arrow-right';
+PrimeIcons.ARROW_UP = 'pi pi-arrow-up';
+PrimeIcons.BACKWARD = 'pi pi-backward';
+PrimeIcons.BAN = 'pi pi-ban';
+PrimeIcons.BARS = 'pi pi-bars';
+PrimeIcons.BELL = 'pi pi-bell';
+PrimeIcons.BOOK = 'pi pi-book';
+PrimeIcons.BOOKMARK = 'pi pi-bookmark';
+PrimeIcons.BRIEFCASE = 'pi pi-briefcase';
+PrimeIcons.CALENDAR_MINUS = 'pi pi-calendar-minus';
+PrimeIcons.CALENDAR_PLUS = 'pi pi-calendar-plus';
+PrimeIcons.CALENDAR_TIMES = 'pi pi-calendar-times';
+PrimeIcons.CALENDAR = 'pi pi-calendar';
+PrimeIcons.CAMERA = 'pi pi-camera';
+PrimeIcons.CARET_DOWN = 'pi pi-caret-down';
+PrimeIcons.CARET_LEFT = 'pi pi-caret-left';
+PrimeIcons.CARET_RIGHT = 'pi pi-caret-right';
+PrimeIcons.CARET_UP = 'pi pi-caret-up';
+PrimeIcons.CHART_BAR = 'pi pi-chart-bar';
+PrimeIcons.CHART_LINE = 'pi pi-chart-line';
+PrimeIcons.CHECK_CIRCLE = 'pi pi-check-circle';
+PrimeIcons.CHECK_SQUARE = 'pi pi-check-square';
+PrimeIcons.CHECK = 'pi pi-check';
+PrimeIcons.CHEVRON_CIRCLE_DOWN = 'pi pi-chevron-circle-down';
+PrimeIcons.CHEVRON_CIRCLE_LEFT = 'pi pi-chevron-circle-left';
+PrimeIcons.CHEVRON_CIRCLE_RIGHT = 'pi pi-chevron-circle-right';
+PrimeIcons.CHEVRON_CIRCLE_UP = 'pi pi-chevron-circle-up';
+PrimeIcons.CHEVRON_DOWN = 'pi pi-chevron-down';
+PrimeIcons.CHEVRON_LEFT = 'pi pi-chevron-left';
+PrimeIcons.CHEVRON_RIGHT = 'pi pi-chevron-right';
+PrimeIcons.CHEVRON_UP = 'pi pi-chevron-up';
+PrimeIcons.CLOCK = 'pi pi-clock';
+PrimeIcons.CLONE = 'pi pi-clone';
+PrimeIcons.CLOUD_DOWNLOAD = 'pi pi-cloud-download';
+PrimeIcons.CLOUD_UPLOAD = 'pi pi-cloud-upload';
+PrimeIcons.CLOUD = 'pi pi-cloud';
+PrimeIcons.COG = 'pi pi-cog';
+PrimeIcons.COMMENT = 'pi pi-comment';
+PrimeIcons.COMMENTS = 'pi pi-comments';
+PrimeIcons.COMPASS = 'pi pi-compass';
+PrimeIcons.COPY = 'pi pi-copy';
+PrimeIcons.CREDIT_CARD = 'pi pi-credit-card';
+PrimeIcons.DESKTOP = 'pi pi-desktop';
+PrimeIcons.DISCORD = 'pi pi-discord';
+PrimeIcons.DIRECTIONS_ALT = 'pi pi-directions-alt';
+PrimeIcons.DIRECTIONS = 'pi pi-directions';
+PrimeIcons.DOLLAR = 'pi pi-dollar';
+PrimeIcons.DOWNLOAD = 'pi pi-download';
+PrimeIcons.EJECT = 'pi pi-eject';
+PrimeIcons.ELLIPSIS_H = 'pi pi-ellipsis-h';
+PrimeIcons.ELLIPSIS_V = 'pi pi-ellipsis-v';
+PrimeIcons.ENVELOPE = 'pi pi-envelope';
+PrimeIcons.EXCLAMATION_CIRCLE = 'pi pi-exclamation-circle';
+PrimeIcons.EXCLAMATION_TRIANGLE = 'pi pi-exclamation-triangle ';
+PrimeIcons.EXTERNAL_LINK = 'pi pi-external-link';
+PrimeIcons.EYE_SLASH = 'pi pi-eye-slash';
+PrimeIcons.EYE = 'pi pi-eye';
+PrimeIcons.FACEBOOK = 'pi pi-facebook';
+PrimeIcons.FAST_BACKWARD = 'pi pi-fast-backward';
+PrimeIcons.FAST_FORWARD = 'pi pi-fast-forward';
+PrimeIcons.FILE_EXCEL = 'pi pi-file-excel';
+PrimeIcons.FILE_O = 'pi pi-file-o';
+PrimeIcons.FILE_PDF = 'pi pi-file-pdf';
+PrimeIcons.FILE = 'pi pi-file';
+PrimeIcons.FILTER = 'pi pi-filter';
+PrimeIcons.FILTER_SLASH = 'pi pi-filter-slash';
+PrimeIcons.FLAG = 'pi pi-flag';
+PrimeIcons.FOLDER_OPEN = 'pi pi-folder-open';
+PrimeIcons.FOLDER = 'pi pi-folder';
+PrimeIcons.FORWARD = 'pi pi-forward';
+PrimeIcons.GITHUB = 'pi pi-github';
+PrimeIcons.GLOBE = 'pi pi-globe';
+PrimeIcons.GOOGLE = 'pi pi-google';
+PrimeIcons.HEART = 'pi pi-heart';
+PrimeIcons.HOME = 'pi pi-home';
+PrimeIcons.ID_CARD = 'pi pi-id-card';
+PrimeIcons.IMAGE = 'pi pi-image';
+PrimeIcons.IMAGES = 'pi pi-images';
+PrimeIcons.INBOX = 'pi pi-inbox';
+PrimeIcons.INFO_CIRCLE = 'pi pi-info-circle';
+PrimeIcons.INFO = 'pi pi-info';
+PrimeIcons.KEY = 'pi pi-key';
+PrimeIcons.LINK = 'pi pi-link';
+PrimeIcons.LIST = 'pi pi-list';
+PrimeIcons.LOCK_OPEN = 'pi pi-lock-open';
+PrimeIcons.LOCK = 'pi pi-lock';
+PrimeIcons.MAP = 'pi pi-map';
+PrimeIcons.MAP_MARKER = 'pi pi-map-marker';
+PrimeIcons.MICROSOFT = 'pi pi-microsoft';
+PrimeIcons.MINUS_CIRCLE = 'pi pi-minus-circle';
+PrimeIcons.MINUS = 'pi pi-minus';
+PrimeIcons.MOBILE = 'pi pi-mobile';
+PrimeIcons.MONEY_BILL = 'pi pi-money-bill';
+PrimeIcons.MOON = 'pi pi-moon';
+PrimeIcons.PALETTE = 'pi pi-palette';
+PrimeIcons.PAPERCLIP = 'pi pi-paperclip';
+PrimeIcons.PAUSE = 'pi pi-pause';
+PrimeIcons.PAYPAL = 'pi pi-paypal';
+PrimeIcons.PENCIL = 'pi pi-pencil';
+PrimeIcons.PERCENTAGE = 'pi pi-percentage';
+PrimeIcons.PHONE = 'pi pi-phone';
+PrimeIcons.PLAY = 'pi pi-play';
+PrimeIcons.PLUS_CIRCLE = 'pi pi-plus-circle';
+PrimeIcons.PLUS = 'pi pi-plus';
+PrimeIcons.POWER_OFF = 'pi pi-power-off';
+PrimeIcons.PRINT = 'pi pi-print';
+PrimeIcons.QUESTION_CIRCLE = 'pi pi-question-circle';
+PrimeIcons.QUESTION = 'pi pi-question';
+PrimeIcons.RADIO_OFF = 'pi pi-radio-off';
+PrimeIcons.RADIO_ON = 'pi pi-radio-on';
+PrimeIcons.REFRESH = 'pi pi-refresh';
+PrimeIcons.REPLAY = 'pi pi-replay';
+PrimeIcons.REPLY = 'pi pi-reply';
+PrimeIcons.SAVE = 'pi pi-save';
+PrimeIcons.SEARCH_MINUS = 'pi pi-search-minus';
+PrimeIcons.SEARCH_PLUS = 'pi pi-search-plus';
+PrimeIcons.SEARCH = 'pi pi-search';
+PrimeIcons.SEND = 'pi pi-send';
+PrimeIcons.SHARE_ALT = 'pi pi-share-alt';
+PrimeIcons.SHIELD = 'pi pi-shield';
+PrimeIcons.SHOPPING_CART = 'pi pi-shopping-cart';
+PrimeIcons.SIGN_IN = 'pi pi-sign-in';
+PrimeIcons.SIGN_OUT = 'pi pi-sign-out';
+PrimeIcons.SITEMAP = 'pi pi-sitemap';
+PrimeIcons.SLACK = 'pi pi-slack';
+PrimeIcons.SLIDERS_H = 'pi pi-sliders-h';
+PrimeIcons.SLIDERS_V = 'pi pi-sliders-v';
+PrimeIcons.SORT_ALPHA_ALT_DOWN = 'pi pi-sort-alpha-alt-down';
+PrimeIcons.SORT_ALPHA_ALT_UP = 'pi pi-sort-alpha-alt-up';
+PrimeIcons.SORT_ALPHA_DOWN = 'pi pi-sort-alpha-down';
+PrimeIcons.SORT_ALPHA_UP = 'pi pi-sort-alpha-up';
+PrimeIcons.SORT_ALT = 'pi pi-sort-alt';
+PrimeIcons.SORT_AMOUNT_DOWN_ALT = 'pi pi-sort-amount-down-alt';
+PrimeIcons.SORT_AMOUNT_DOWN = 'pi pi-sort-amount-down';
+PrimeIcons.SORT_AMOUNT_UP_ALT = 'pi pi-sort-amount-up-alt';
+PrimeIcons.SORT_AMOUNT_UP = 'pi pi-sort-amount-up';
+PrimeIcons.SORT_DOWN = 'pi pi-sort-down';
+PrimeIcons.SORT_NUMERIC_ALT_DOWN = 'pi pi-sort-numeric-alt-down';
+PrimeIcons.SORT_NUMERIC_ALT_UP = 'pi pi-sort-numeric-alt-up';
+PrimeIcons.SORT_NUMERIC_DOWN = 'pi pi-sort-numeric-down';
+PrimeIcons.SORT_NUMERIC_UP = 'pi pi-sort-numeric-up';
+PrimeIcons.SORT_UP = 'pi pi-sort-up';
+PrimeIcons.SORT = 'pi pi-sort';
+PrimeIcons.SPINNER = 'pi pi-spinner';
+PrimeIcons.STAR_O = 'pi pi-star-o';
+PrimeIcons.STAR = 'pi pi-star';
+PrimeIcons.STEP_BACKWARD_ALT = 'pi pi-step-backward-alt';
+PrimeIcons.STEP_BACKWARD = 'pi pi-step-backward';
+PrimeIcons.STEP_FORWARD_ALT = 'pi pi-step-forward-alt';
+PrimeIcons.STEP_FORWARD = 'pi pi-step-forward';
+PrimeIcons.SUN = 'pi pi-sun';
+PrimeIcons.TABLE = 'pi pi-table';
+PrimeIcons.TABLET = 'pi pi-tablet';
+PrimeIcons.TAG = 'pi pi-tag';
+PrimeIcons.TAGS = 'pi pi-tags';
+PrimeIcons.TH_LARGE = 'pi pi-th-large';
+PrimeIcons.THUMBS_DOWN = 'pi pi-thumbs-down';
+PrimeIcons.THUMBS_UP = 'pi pi-thumbs-up';
+PrimeIcons.TICKET = 'pi pi-ticket';
+PrimeIcons.TIMES_CIRCLE = 'pi pi-times-circle';
+PrimeIcons.TIMES = 'pi pi-times';
+PrimeIcons.TRASH = 'pi pi-trash';
+PrimeIcons.TWITTER = 'pi pi-twitter';
+PrimeIcons.UNDO = 'pi pi-undo';
+PrimeIcons.UNLOCK = 'pi pi-unlock';
+PrimeIcons.UPLOAD = 'pi pi-upload';
+PrimeIcons.USER_EDIT = 'pi pi-user-edit';
+PrimeIcons.USER_MINUS = 'pi pi-user-minus';
+PrimeIcons.USER_PLUS = 'pi pi-user-plus';
+PrimeIcons.USER = 'pi pi-user';
+PrimeIcons.USERS = 'pi pi-users';
+PrimeIcons.VIDEO = 'pi pi-video';
+PrimeIcons.VIMEO = 'pi pi-vimeo';
+PrimeIcons.VOLUME_DOWN = 'pi pi-volume-down';
+PrimeIcons.VOLUME_OFF = 'pi pi-volume-off';
+PrimeIcons.VOLUME_UP = 'pi pi-volume-up';
+PrimeIcons.YOUTUBE = 'pi pi-youtube';
+PrimeIcons.WALLET = 'pi pi-wallet';
+PrimeIcons.WIFI = 'pi pi-wifi';
+PrimeIcons.WINDOW_MAXIMIZE = 'pi pi-window-maximize';
+PrimeIcons.WINDOW_MINIMIZE = 'pi pi-window-minimize';
+
+class FilterOperator {
+}
+FilterOperator.AND = 'and';
+FilterOperator.OR = 'or';
+
+class Header {
+}
+Header.ɵfac = function Header_Factory(t) { return new (t || Header)(); };
+Header.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: Header, selectors: [["p-header"]], ngContentSelectors: _c0, decls: 1, vars: 0, template: function Header_Template(rf, ctx) { if (rf & 1) {
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵprojectionDef"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵprojection"](0);
+    } }, encapsulation: 2 });
+(function () { (typeof ngDevMode === "undefined" || ngDevMode) && _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](Header, [{
+        type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"],
+        args: [{
+                selector: 'p-header',
+                template: '<ng-content></ng-content>'
+            }]
+    }], null, null); })();
+class Footer {
+}
+Footer.ɵfac = function Footer_Factory(t) { return new (t || Footer)(); };
+Footer.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: Footer, selectors: [["p-footer"]], ngContentSelectors: _c0, decls: 1, vars: 0, template: function Footer_Template(rf, ctx) { if (rf & 1) {
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵprojectionDef"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵprojection"](0);
+    } }, encapsulation: 2 });
+(function () { (typeof ngDevMode === "undefined" || ngDevMode) && _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](Footer, [{
+        type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"],
+        args: [{
+                selector: 'p-footer',
+                template: '<ng-content></ng-content>'
+            }]
+    }], null, null); })();
+class PrimeTemplate {
+    constructor(template) {
+        this.template = template;
+    }
+    getType() {
+        return this.name;
+    }
+}
+PrimeTemplate.ɵfac = function PrimeTemplate_Factory(t) { return new (t || PrimeTemplate)(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_angular_core__WEBPACK_IMPORTED_MODULE_0__["TemplateRef"])); };
+PrimeTemplate.ɵdir = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineDirective"]({ type: PrimeTemplate, selectors: [["", "pTemplate", ""]], inputs: { type: "type", name: ["pTemplate", "name"] } });
+PrimeTemplate.ctorParameters = () => [
+    { type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["TemplateRef"] }
+];
+PrimeTemplate.propDecorators = {
+    type: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Input"] }],
+    name: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Input"], args: ['pTemplate',] }]
+};
+(function () { (typeof ngDevMode === "undefined" || ngDevMode) && _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](PrimeTemplate, [{
+        type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Directive"],
+        args: [{
+                selector: '[pTemplate]',
+                host: {}
+            }]
+    }], function () { return [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["TemplateRef"] }]; }, { type: [{
+            type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Input"]
+        }], name: [{
+            type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Input"],
+            args: ['pTemplate']
+        }] }); })();
+class SharedModule {
+}
+SharedModule.ɵfac = function SharedModule_Factory(t) { return new (t || SharedModule)(); };
+SharedModule.ɵmod = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineNgModule"]({ type: SharedModule });
+SharedModule.ɵinj = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineInjector"]({ imports: [[_angular_common__WEBPACK_IMPORTED_MODULE_3__["CommonModule"]]] });
+(function () { (typeof ngJitMode === "undefined" || ngJitMode) && _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵsetNgModuleScope"](SharedModule, { declarations: function () { return [Header, Footer, PrimeTemplate]; }, imports: function () { return [_angular_common__WEBPACK_IMPORTED_MODULE_3__["CommonModule"]]; }, exports: function () { return [Header, Footer, PrimeTemplate]; } }); })();
+(function () { (typeof ngDevMode === "undefined" || ngDevMode) && _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](SharedModule, [{
+        type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["NgModule"],
+        args: [{
+                imports: [_angular_common__WEBPACK_IMPORTED_MODULE_3__["CommonModule"]],
+                exports: [Header, Footer, PrimeTemplate],
+                declarations: [Header, Footer, PrimeTemplate]
+            }]
+    }], null, null); })();
+
+class TreeDragDropService {
+    constructor() {
+        this.dragStartSource = new rxjs__WEBPACK_IMPORTED_MODULE_1__["Subject"]();
+        this.dragStopSource = new rxjs__WEBPACK_IMPORTED_MODULE_1__["Subject"]();
+        this.dragStart$ = this.dragStartSource.asObservable();
+        this.dragStop$ = this.dragStopSource.asObservable();
+    }
+    startDrag(event) {
+        this.dragStartSource.next(event);
+    }
+    stopDrag(event) {
+        this.dragStopSource.next(event);
+    }
+}
+TreeDragDropService.ɵfac = function TreeDragDropService_Factory(t) { return new (t || TreeDragDropService)(); };
+TreeDragDropService.ɵprov = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineInjectable"]({ token: TreeDragDropService, factory: TreeDragDropService.ɵfac });
+(function () { (typeof ngDevMode === "undefined" || ngDevMode) && _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](TreeDragDropService, [{
+        type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Injectable"]
+    }], function () { return []; }, null); })();
+
+/**
+ * Generated bundle index. Do not edit.
+ */
+
+
+
+//# sourceMappingURL=primeng-api.js.map
+
+/***/ }),
+
 /***/ "8Qeq":
 /*!********************************************************************!*\
   !*** ./node_modules/rxjs/_esm2015/internal/util/canReportError.js ***!
@@ -22615,6 +23415,476 @@ class RepeatWhenSubscriber extends _innerSubscribe__WEBPACK_IMPORTED_MODULE_1__[
 
 /***/ }),
 
+/***/ "Gxio":
+/*!*********************************************************************!*\
+  !*** ./node_modules/primeng/__ivy_ngcc__/fesm2015/primeng-toast.js ***!
+  \*********************************************************************/
+/*! exports provided: Toast, ToastItem, ToastModule */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Toast", function() { return Toast; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ToastItem", function() { return ToastItem; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ToastModule", function() { return ToastModule; });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "fXoL");
+/* harmony import */ var _angular_common__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/common */ "ofXK");
+/* harmony import */ var primeng_dom__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! primeng/dom */ "YyRF");
+/* harmony import */ var primeng_api__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! primeng/api */ "7zfz");
+/* harmony import */ var primeng_ripple__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! primeng/ripple */ "Q4Mo");
+/* harmony import */ var _angular_animations__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @angular/animations */ "R0Ic");
+
+
+
+
+
+
+
+
+
+
+
+
+const _c0 = ["container"];
+const _c1 = function (a0, a1, a2, a3) { return { "pi-info-circle": a0, "pi-exclamation-triangle": a1, "pi-times-circle": a2, "pi-check": a3 }; };
+function ToastItem_ng_container_3_Template(rf, ctx) { if (rf & 1) {
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementContainerStart"](0);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](1, "span", 6);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](2, "div", 7);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](3, "div", 8);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](4);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](5, "div", 9);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](6);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementContainerEnd"]();
+} if (rf & 2) {
+    const ctx_r1 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵnextContext"]();
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵclassMap"]("p-toast-message-icon pi" + (ctx_r1.message.icon ? " " + ctx_r1.message.icon : ""));
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngClass", _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpureFunction4"](5, _c1, ctx_r1.message.severity == "info", ctx_r1.message.severity == "warn", ctx_r1.message.severity == "error", ctx_r1.message.severity == "success"));
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](3);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate"](ctx_r1.message.summary);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](2);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate"](ctx_r1.message.detail);
+} }
+function ToastItem_button_4_Template(rf, ctx) { if (rf & 1) {
+    const _r5 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵgetCurrentView"]();
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "button", 10);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("click", function ToastItem_button_4_Template_button_click_0_listener($event) { _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵrestoreView"](_r5); const ctx_r4 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵnextContext"](); return ctx_r4.onCloseIconClick($event); })("keydown.enter", function ToastItem_button_4_Template_button_keydown_enter_0_listener($event) { _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵrestoreView"](_r5); const ctx_r6 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵnextContext"](); return ctx_r6.onCloseIconClick($event); });
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](1, "span", 11);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+} }
+function ToastItem_ng_container_5_Template(rf, ctx) { if (rf & 1) {
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementContainer"](0);
+} }
+const _c2 = function (a0, a1, a2, a3) { return { showTransformParams: a0, hideTransformParams: a1, showTransitionParams: a2, hideTransitionParams: a3 }; };
+const _c3 = function (a1) { return { value: "visible", params: a1 }; };
+const _c4 = function (a0) { return { $implicit: a0 }; };
+function Toast_p_toastItem_2_Template(rf, ctx) { if (rf & 1) {
+    const _r5 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵgetCurrentView"]();
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "p-toastItem", 3);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("onClose", function Toast_p_toastItem_2_Template_p_toastItem_onClose_0_listener($event) { _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵrestoreView"](_r5); const ctx_r4 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵnextContext"](); return ctx_r4.onMessageClose($event); })("@toastAnimation.start", function Toast_p_toastItem_2_Template_p_toastItem_animation_toastAnimation_start_0_listener($event) { _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵrestoreView"](_r5); const ctx_r6 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵnextContext"](); return ctx_r6.onAnimationStart($event); });
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+} if (rf & 2) {
+    const msg_r2 = ctx.$implicit;
+    const i_r3 = ctx.index;
+    const ctx_r1 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵnextContext"]();
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("message", msg_r2)("index", i_r3)("template", ctx_r1.template)("@toastAnimation", undefined)("showTransformOptions", ctx_r1.showTransformOptions)("hideTransformOptions", ctx_r1.hideTransformOptions)("showTransitionOptions", ctx_r1.showTransitionOptions)("hideTransitionOptions", ctx_r1.hideTransitionOptions);
+} }
+class ToastItem {
+    constructor(zone) {
+        this.zone = zone;
+        this.onClose = new _angular_core__WEBPACK_IMPORTED_MODULE_0__["EventEmitter"]();
+    }
+    ngAfterViewInit() {
+        this.initTimeout();
+    }
+    initTimeout() {
+        if (!this.message.sticky) {
+            this.zone.runOutsideAngular(() => {
+                this.timeout = setTimeout(() => {
+                    this.onClose.emit({
+                        index: this.index,
+                        message: this.message
+                    });
+                }, this.message.life || 3000);
+            });
+        }
+    }
+    clearTimeout() {
+        if (this.timeout) {
+            clearTimeout(this.timeout);
+            this.timeout = null;
+        }
+    }
+    onMouseEnter() {
+        this.clearTimeout();
+    }
+    onMouseLeave() {
+        this.initTimeout();
+    }
+    onCloseIconClick(event) {
+        this.clearTimeout();
+        this.onClose.emit({
+            index: this.index,
+            message: this.message
+        });
+        event.preventDefault();
+    }
+    ngOnDestroy() {
+        this.clearTimeout();
+    }
+}
+ToastItem.ɵfac = function ToastItem_Factory(t) { return new (t || ToastItem)(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_angular_core__WEBPACK_IMPORTED_MODULE_0__["NgZone"])); };
+ToastItem.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: ToastItem, selectors: [["p-toastItem"]], viewQuery: function ToastItem_Query(rf, ctx) { if (rf & 1) {
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵviewQuery"](_c0, 1);
+    } if (rf & 2) {
+        let _t;
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵqueryRefresh"](_t = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵloadQuery"]()) && (ctx.containerViewChild = _t.first);
+    } }, inputs: { message: "message", index: "index", template: "template", showTransformOptions: "showTransformOptions", hideTransformOptions: "hideTransformOptions", showTransitionOptions: "showTransitionOptions", hideTransitionOptions: "hideTransitionOptions" }, outputs: { onClose: "onClose" }, decls: 6, vars: 16, consts: [[1, "p-toast-message", 3, "ngClass", "mouseenter", "mouseleave"], ["container", ""], ["role", "alert", "aria-live", "assertive", "aria-atomic", "true", 1, "p-toast-message-content"], [4, "ngIf"], ["type", "button", "class", "p-toast-icon-close p-link", "pRipple", "", 3, "click", "keydown.enter", 4, "ngIf"], [4, "ngTemplateOutlet", "ngTemplateOutletContext"], [3, "ngClass"], [1, "p-toast-message-text"], [1, "p-toast-summary"], [1, "p-toast-detail"], ["type", "button", "pRipple", "", 1, "p-toast-icon-close", "p-link", 3, "click", "keydown.enter"], [1, "p-toast-icon-close-icon", "pi", "pi-times"]], template: function ToastItem_Template(rf, ctx) { if (rf & 1) {
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "div", 0, 1);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("mouseenter", function ToastItem_Template_div_mouseenter_0_listener() { return ctx.onMouseEnter(); })("mouseleave", function ToastItem_Template_div_mouseleave_0_listener() { return ctx.onMouseLeave(); });
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](2, "div", 2);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](3, ToastItem_ng_container_3_Template, 7, 10, "ng-container", 3);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](4, ToastItem_button_4_Template, 2, 0, "button", 4);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](5, ToastItem_ng_container_5_Template, 1, 0, "ng-container", 5);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+    } if (rf & 2) {
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngClass", "p-toast-message-" + ctx.message.severity)("@messageState", _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpureFunction1"](12, _c3, _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpureFunction4"](7, _c2, ctx.showTransformOptions, ctx.hideTransformOptions, ctx.showTransitionOptions, ctx.hideTransitionOptions)));
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵattribute"]("id", ctx.message.id);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](3);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngIf", !ctx.template);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngIf", ctx.message.closable !== false);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngTemplateOutlet", ctx.template)("ngTemplateOutletContext", _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpureFunction1"](14, _c4, ctx.message));
+    } }, directives: [_angular_common__WEBPACK_IMPORTED_MODULE_1__["NgClass"], _angular_common__WEBPACK_IMPORTED_MODULE_1__["NgIf"], _angular_common__WEBPACK_IMPORTED_MODULE_1__["NgTemplateOutlet"], primeng_ripple__WEBPACK_IMPORTED_MODULE_4__["Ripple"]], encapsulation: 2, data: { animation: [
+            Object(_angular_animations__WEBPACK_IMPORTED_MODULE_5__["trigger"])('messageState', [
+                Object(_angular_animations__WEBPACK_IMPORTED_MODULE_5__["state"])('visible', Object(_angular_animations__WEBPACK_IMPORTED_MODULE_5__["style"])({
+                    transform: 'translateY(0)',
+                    opacity: 1
+                })),
+                Object(_angular_animations__WEBPACK_IMPORTED_MODULE_5__["transition"])('void => *', [
+                    Object(_angular_animations__WEBPACK_IMPORTED_MODULE_5__["style"])({ transform: '{{showTransformParams}}', opacity: 0 }),
+                    Object(_angular_animations__WEBPACK_IMPORTED_MODULE_5__["animate"])('{{showTransitionParams}}')
+                ]),
+                Object(_angular_animations__WEBPACK_IMPORTED_MODULE_5__["transition"])('* => void', [
+                    Object(_angular_animations__WEBPACK_IMPORTED_MODULE_5__["animate"])(('{{hideTransitionParams}}'), Object(_angular_animations__WEBPACK_IMPORTED_MODULE_5__["style"])({
+                        height: 0,
+                        opacity: 0,
+                        transform: '{{hideTransformParams}}'
+                    }))
+                ])
+            ])
+        ] }, changeDetection: 0 });
+ToastItem.ctorParameters = () => [
+    { type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["NgZone"] }
+];
+ToastItem.propDecorators = {
+    message: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Input"] }],
+    index: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Input"] }],
+    template: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Input"] }],
+    showTransformOptions: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Input"] }],
+    hideTransformOptions: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Input"] }],
+    showTransitionOptions: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Input"] }],
+    hideTransitionOptions: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Input"] }],
+    onClose: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Output"] }],
+    containerViewChild: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["ViewChild"], args: ['container',] }]
+};
+(function () { (typeof ngDevMode === "undefined" || ngDevMode) && _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](ToastItem, [{
+        type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"],
+        args: [{
+                selector: 'p-toastItem',
+                template: `
+        <div #container [attr.id]="message.id" class="p-toast-message" [ngClass]="'p-toast-message-' + message.severity" [@messageState]="{value: 'visible', params: {showTransformParams: showTransformOptions, hideTransformParams: hideTransformOptions, showTransitionParams: showTransitionOptions, hideTransitionParams: hideTransitionOptions}}"
+                (mouseenter)="onMouseEnter()" (mouseleave)="onMouseLeave()">
+            <div class="p-toast-message-content" role="alert" aria-live="assertive" aria-atomic="true">
+                <ng-container *ngIf="!template">
+                    <span [class]="'p-toast-message-icon pi' + (message.icon ? ' ' + message.icon : '')" [ngClass]="{'pi-info-circle': message.severity == 'info', 'pi-exclamation-triangle': message.severity == 'warn',
+                        'pi-times-circle': message.severity == 'error', 'pi-check' :message.severity == 'success'}"></span>
+                    <div class="p-toast-message-text">
+                        <div class="p-toast-summary">{{message.summary}}</div>
+                        <div class="p-toast-detail">{{message.detail}}</div>
+                    </div>
+                </ng-container>
+                <button type="button" class="p-toast-icon-close p-link" (click)="onCloseIconClick($event)" (keydown.enter)="onCloseIconClick($event)" *ngIf="message.closable !== false" pRipple>
+                    <span class="p-toast-icon-close-icon pi pi-times"></span>
+                </button>
+                <ng-container *ngTemplateOutlet="template; context: {$implicit: message}"></ng-container>
+            </div>
+        </div>
+    `,
+                animations: [
+                    Object(_angular_animations__WEBPACK_IMPORTED_MODULE_5__["trigger"])('messageState', [
+                        Object(_angular_animations__WEBPACK_IMPORTED_MODULE_5__["state"])('visible', Object(_angular_animations__WEBPACK_IMPORTED_MODULE_5__["style"])({
+                            transform: 'translateY(0)',
+                            opacity: 1
+                        })),
+                        Object(_angular_animations__WEBPACK_IMPORTED_MODULE_5__["transition"])('void => *', [
+                            Object(_angular_animations__WEBPACK_IMPORTED_MODULE_5__["style"])({ transform: '{{showTransformParams}}', opacity: 0 }),
+                            Object(_angular_animations__WEBPACK_IMPORTED_MODULE_5__["animate"])('{{showTransitionParams}}')
+                        ]),
+                        Object(_angular_animations__WEBPACK_IMPORTED_MODULE_5__["transition"])('* => void', [
+                            Object(_angular_animations__WEBPACK_IMPORTED_MODULE_5__["animate"])(('{{hideTransitionParams}}'), Object(_angular_animations__WEBPACK_IMPORTED_MODULE_5__["style"])({
+                                height: 0,
+                                opacity: 0,
+                                transform: '{{hideTransformParams}}'
+                            }))
+                        ])
+                    ])
+                ],
+                encapsulation: _angular_core__WEBPACK_IMPORTED_MODULE_0__["ViewEncapsulation"].None,
+                changeDetection: _angular_core__WEBPACK_IMPORTED_MODULE_0__["ChangeDetectionStrategy"].OnPush
+            }]
+    }], function () { return [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["NgZone"] }]; }, { onClose: [{
+            type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Output"]
+        }], message: [{
+            type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Input"]
+        }], index: [{
+            type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Input"]
+        }], template: [{
+            type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Input"]
+        }], showTransformOptions: [{
+            type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Input"]
+        }], hideTransformOptions: [{
+            type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Input"]
+        }], showTransitionOptions: [{
+            type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Input"]
+        }], hideTransitionOptions: [{
+            type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Input"]
+        }], containerViewChild: [{
+            type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["ViewChild"],
+            args: ['container']
+        }] }); })();
+class Toast {
+    constructor(messageService, cd) {
+        this.messageService = messageService;
+        this.cd = cd;
+        this.autoZIndex = true;
+        this.baseZIndex = 0;
+        this.position = 'top-right';
+        this.preventOpenDuplicates = false;
+        this.preventDuplicates = false;
+        this.showTransformOptions = 'translateY(100%)';
+        this.hideTransformOptions = 'translateY(-100%)';
+        this.showTransitionOptions = '300ms ease-out';
+        this.hideTransitionOptions = '250ms ease-in';
+        this.onClose = new _angular_core__WEBPACK_IMPORTED_MODULE_0__["EventEmitter"]();
+    }
+    ngOnInit() {
+        this.messageSubscription = this.messageService.messageObserver.subscribe(messages => {
+            if (messages) {
+                if (messages instanceof Array) {
+                    const filteredMessages = messages.filter(m => this.canAdd(m));
+                    this.add(filteredMessages);
+                }
+                else if (this.canAdd(messages)) {
+                    this.add([messages]);
+                }
+            }
+        });
+        this.clearSubscription = this.messageService.clearObserver.subscribe(key => {
+            if (key) {
+                if (this.key === key) {
+                    this.messages = null;
+                }
+            }
+            else {
+                this.messages = null;
+            }
+            this.cd.markForCheck();
+        });
+    }
+    add(messages) {
+        this.messages = this.messages ? [...this.messages, ...messages] : [...messages];
+        if (this.preventDuplicates) {
+            this.messagesArchieve = this.messagesArchieve ? [...this.messagesArchieve, ...messages] : [...messages];
+        }
+        this.cd.markForCheck();
+    }
+    canAdd(message) {
+        let allow = this.key === message.key;
+        if (allow && this.preventOpenDuplicates) {
+            allow = !this.containsMessage(this.messages, message);
+        }
+        if (allow && this.preventDuplicates) {
+            allow = !this.containsMessage(this.messagesArchieve, message);
+        }
+        return allow;
+    }
+    containsMessage(collection, message) {
+        if (!collection) {
+            return false;
+        }
+        return collection.find(m => {
+            return ((m.summary === message.summary) && (m.detail == message.detail) && (m.severity === message.severity));
+        }) != null;
+    }
+    ngAfterContentInit() {
+        this.templates.forEach((item) => {
+            switch (item.getType()) {
+                case 'message':
+                    this.template = item.template;
+                    break;
+                default:
+                    this.template = item.template;
+                    break;
+            }
+        });
+    }
+    onMessageClose(event) {
+        this.messages.splice(event.index, 1);
+        this.onClose.emit({
+            message: event.message
+        });
+        this.cd.detectChanges();
+    }
+    onAnimationStart(event) {
+        if (event.fromState === 'void' && this.autoZIndex) {
+            this.containerViewChild.nativeElement.style.zIndex = String(this.baseZIndex + (++primeng_dom__WEBPACK_IMPORTED_MODULE_2__["DomHandler"].zindex));
+        }
+    }
+    ngOnDestroy() {
+        if (this.messageSubscription) {
+            this.messageSubscription.unsubscribe();
+        }
+        if (this.clearSubscription) {
+            this.clearSubscription.unsubscribe();
+        }
+    }
+}
+Toast.ɵfac = function Toast_Factory(t) { return new (t || Toast)(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](primeng_api__WEBPACK_IMPORTED_MODULE_3__["MessageService"]), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_angular_core__WEBPACK_IMPORTED_MODULE_0__["ChangeDetectorRef"])); };
+Toast.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: Toast, selectors: [["p-toast"]], contentQueries: function Toast_ContentQueries(rf, ctx, dirIndex) { if (rf & 1) {
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵcontentQuery"](dirIndex, primeng_api__WEBPACK_IMPORTED_MODULE_3__["PrimeTemplate"], 0);
+    } if (rf & 2) {
+        let _t;
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵqueryRefresh"](_t = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵloadQuery"]()) && (ctx.templates = _t);
+    } }, viewQuery: function Toast_Query(rf, ctx) { if (rf & 1) {
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵviewQuery"](_c0, 1);
+    } if (rf & 2) {
+        let _t;
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵqueryRefresh"](_t = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵloadQuery"]()) && (ctx.containerViewChild = _t.first);
+    } }, inputs: { autoZIndex: "autoZIndex", baseZIndex: "baseZIndex", position: "position", preventOpenDuplicates: "preventOpenDuplicates", preventDuplicates: "preventDuplicates", showTransformOptions: "showTransformOptions", hideTransformOptions: "hideTransformOptions", showTransitionOptions: "showTransitionOptions", hideTransitionOptions: "hideTransitionOptions", key: "key", style: "style", styleClass: "styleClass" }, outputs: { onClose: "onClose" }, decls: 3, vars: 5, consts: [[3, "ngClass", "ngStyle"], ["container", ""], [3, "message", "index", "template", "showTransformOptions", "hideTransformOptions", "showTransitionOptions", "hideTransitionOptions", "onClose", 4, "ngFor", "ngForOf"], [3, "message", "index", "template", "showTransformOptions", "hideTransformOptions", "showTransitionOptions", "hideTransitionOptions", "onClose"]], template: function Toast_Template(rf, ctx) { if (rf & 1) {
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "div", 0, 1);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](2, Toast_p_toastItem_2_Template, 1, 8, "p-toastItem", 2);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+    } if (rf & 2) {
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵclassMap"](ctx.styleClass);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngClass", "p-toast p-component p-toast-" + ctx.position)("ngStyle", ctx.style);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](2);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngForOf", ctx.messages);
+    } }, directives: [_angular_common__WEBPACK_IMPORTED_MODULE_1__["NgClass"], _angular_common__WEBPACK_IMPORTED_MODULE_1__["NgStyle"], _angular_common__WEBPACK_IMPORTED_MODULE_1__["NgForOf"], ToastItem], styles: [".p-toast{position:fixed;width:25rem}.p-toast-message{overflow:hidden}.p-toast-message-content{align-items:flex-start;display:flex}.p-toast-message-text{flex:1 1 auto}.p-toast-top-right{right:20px;top:20px}.p-toast-top-left{left:20px;top:20px}.p-toast-bottom-left{bottom:20px;left:20px}.p-toast-bottom-right{bottom:20px;right:20px}.p-toast-top-center{left:50%;margin-left:-10em;top:20px}.p-toast-bottom-center{bottom:20px;left:50%;margin-left:-10em}.p-toast-center{left:50%;min-width:20vw;top:50%;transform:translate(-50%,-50%)}.p-toast-icon-close{align-items:center;display:flex;justify-content:center;overflow:hidden;position:relative}.p-toast-icon-close.p-link{cursor:pointer}"], encapsulation: 2, data: { animation: [
+            Object(_angular_animations__WEBPACK_IMPORTED_MODULE_5__["trigger"])('toastAnimation', [
+                Object(_angular_animations__WEBPACK_IMPORTED_MODULE_5__["transition"])(':enter, :leave', [
+                    Object(_angular_animations__WEBPACK_IMPORTED_MODULE_5__["query"])('@*', Object(_angular_animations__WEBPACK_IMPORTED_MODULE_5__["animateChild"])())
+                ])
+            ])
+        ] }, changeDetection: 0 });
+Toast.ctorParameters = () => [
+    { type: primeng_api__WEBPACK_IMPORTED_MODULE_3__["MessageService"] },
+    { type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["ChangeDetectorRef"] }
+];
+Toast.propDecorators = {
+    key: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Input"] }],
+    autoZIndex: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Input"] }],
+    baseZIndex: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Input"] }],
+    style: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Input"] }],
+    styleClass: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Input"] }],
+    position: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Input"] }],
+    preventOpenDuplicates: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Input"] }],
+    preventDuplicates: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Input"] }],
+    showTransformOptions: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Input"] }],
+    hideTransformOptions: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Input"] }],
+    showTransitionOptions: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Input"] }],
+    hideTransitionOptions: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Input"] }],
+    onClose: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Output"] }],
+    containerViewChild: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["ViewChild"], args: ['container',] }],
+    templates: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["ContentChildren"], args: [primeng_api__WEBPACK_IMPORTED_MODULE_3__["PrimeTemplate"],] }]
+};
+(function () { (typeof ngDevMode === "undefined" || ngDevMode) && _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](Toast, [{
+        type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"],
+        args: [{
+                selector: 'p-toast',
+                template: `
+        <div #container [ngClass]="'p-toast p-component p-toast-' + position" [ngStyle]="style" [class]="styleClass">
+            <p-toastItem *ngFor="let msg of messages; let i=index" [message]="msg" [index]="i" (onClose)="onMessageClose($event)"
+                    [template]="template" @toastAnimation (@toastAnimation.start)="onAnimationStart($event)" 
+                    [showTransformOptions]="showTransformOptions" [hideTransformOptions]="hideTransformOptions" 
+                    [showTransitionOptions]="showTransitionOptions" [hideTransitionOptions]="hideTransitionOptions"></p-toastItem>
+        </div>
+    `,
+                animations: [
+                    Object(_angular_animations__WEBPACK_IMPORTED_MODULE_5__["trigger"])('toastAnimation', [
+                        Object(_angular_animations__WEBPACK_IMPORTED_MODULE_5__["transition"])(':enter, :leave', [
+                            Object(_angular_animations__WEBPACK_IMPORTED_MODULE_5__["query"])('@*', Object(_angular_animations__WEBPACK_IMPORTED_MODULE_5__["animateChild"])())
+                        ])
+                    ])
+                ],
+                changeDetection: _angular_core__WEBPACK_IMPORTED_MODULE_0__["ChangeDetectionStrategy"].OnPush,
+                encapsulation: _angular_core__WEBPACK_IMPORTED_MODULE_0__["ViewEncapsulation"].None,
+                styles: [".p-toast{position:fixed;width:25rem}.p-toast-message{overflow:hidden}.p-toast-message-content{align-items:flex-start;display:flex}.p-toast-message-text{flex:1 1 auto}.p-toast-top-right{right:20px;top:20px}.p-toast-top-left{left:20px;top:20px}.p-toast-bottom-left{bottom:20px;left:20px}.p-toast-bottom-right{bottom:20px;right:20px}.p-toast-top-center{left:50%;margin-left:-10em;top:20px}.p-toast-bottom-center{bottom:20px;left:50%;margin-left:-10em}.p-toast-center{left:50%;min-width:20vw;top:50%;transform:translate(-50%,-50%)}.p-toast-icon-close{align-items:center;display:flex;justify-content:center;overflow:hidden;position:relative}.p-toast-icon-close.p-link{cursor:pointer}"]
+            }]
+    }], function () { return [{ type: primeng_api__WEBPACK_IMPORTED_MODULE_3__["MessageService"] }, { type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["ChangeDetectorRef"] }]; }, { autoZIndex: [{
+            type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Input"]
+        }], baseZIndex: [{
+            type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Input"]
+        }], position: [{
+            type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Input"]
+        }], preventOpenDuplicates: [{
+            type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Input"]
+        }], preventDuplicates: [{
+            type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Input"]
+        }], showTransformOptions: [{
+            type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Input"]
+        }], hideTransformOptions: [{
+            type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Input"]
+        }], showTransitionOptions: [{
+            type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Input"]
+        }], hideTransitionOptions: [{
+            type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Input"]
+        }], onClose: [{
+            type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Output"]
+        }], key: [{
+            type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Input"]
+        }], style: [{
+            type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Input"]
+        }], styleClass: [{
+            type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Input"]
+        }], containerViewChild: [{
+            type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["ViewChild"],
+            args: ['container']
+        }], templates: [{
+            type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["ContentChildren"],
+            args: [primeng_api__WEBPACK_IMPORTED_MODULE_3__["PrimeTemplate"]]
+        }] }); })();
+class ToastModule {
+}
+ToastModule.ɵfac = function ToastModule_Factory(t) { return new (t || ToastModule)(); };
+ToastModule.ɵmod = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineNgModule"]({ type: ToastModule });
+ToastModule.ɵinj = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineInjector"]({ imports: [[_angular_common__WEBPACK_IMPORTED_MODULE_1__["CommonModule"], primeng_ripple__WEBPACK_IMPORTED_MODULE_4__["RippleModule"]], primeng_api__WEBPACK_IMPORTED_MODULE_3__["SharedModule"]] });
+(function () { (typeof ngJitMode === "undefined" || ngJitMode) && _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵsetNgModuleScope"](ToastModule, { declarations: function () { return [Toast, ToastItem]; }, imports: function () { return [_angular_common__WEBPACK_IMPORTED_MODULE_1__["CommonModule"], primeng_ripple__WEBPACK_IMPORTED_MODULE_4__["RippleModule"]]; }, exports: function () { return [Toast, primeng_api__WEBPACK_IMPORTED_MODULE_3__["SharedModule"]]; } }); })();
+(function () { (typeof ngDevMode === "undefined" || ngDevMode) && _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](ToastModule, [{
+        type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["NgModule"],
+        args: [{
+                imports: [_angular_common__WEBPACK_IMPORTED_MODULE_1__["CommonModule"], primeng_ripple__WEBPACK_IMPORTED_MODULE_4__["RippleModule"]],
+                exports: [Toast, primeng_api__WEBPACK_IMPORTED_MODULE_3__["SharedModule"]],
+                declarations: [Toast, ToastItem]
+            }]
+    }], null, null); })();
+
+/**
+ * Generated bundle index. Do not edit.
+ */
+
+
+
+//# sourceMappingURL=primeng-toast.js.map
+
+/***/ }),
+
 /***/ "GyhO":
 /*!******************************************************************!*\
   !*** ./node_modules/rxjs/_esm2015/internal/observable/concat.js ***!
@@ -23371,6 +24641,843 @@ function getSymbolIterator() {
 const iterator = getSymbolIterator();
 const $$iterator = iterator;
 //# sourceMappingURL=iterator.js.map
+
+/***/ }),
+
+/***/ "LwO5":
+/*!************************************************************************!*\
+  !*** ./node_modules/primeng/__ivy_ngcc__/fesm2015/primeng-carousel.js ***!
+  \************************************************************************/
+/*! exports provided: Carousel, CarouselModule */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Carousel", function() { return Carousel; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "CarouselModule", function() { return CarouselModule; });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "fXoL");
+/* harmony import */ var primeng_api__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! primeng/api */ "7zfz");
+/* harmony import */ var primeng_ripple__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! primeng/ripple */ "Q4Mo");
+/* harmony import */ var _angular_common__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/common */ "ofXK");
+/* harmony import */ var primeng_utils__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! primeng/utils */ "t2ka");
+
+
+
+
+
+
+
+
+
+
+const _c0 = ["itemsContainer"];
+function Carousel_div_1_ng_container_2_Template(rf, ctx) { if (rf & 1) {
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementContainer"](0);
+} }
+function Carousel_div_1_Template(rf, ctx) { if (rf & 1) {
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "div", 11);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵprojection"](1);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](2, Carousel_div_1_ng_container_2_Template, 1, 0, "ng-container", 12);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+} if (rf & 2) {
+    const ctx_r0 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵnextContext"]();
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](2);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngTemplateOutlet", ctx_r0.headerTemplate);
+} }
+const _c1 = function (a1) { return { "p-carousel-prev p-link": true, "p-disabled": a1 }; };
+const _c2 = function (a1, a2) { return { "p-carousel-prev-icon pi": true, "pi-chevron-left": a1, "pi-chevron-up": a2 }; };
+function Carousel_button_4_Template(rf, ctx) { if (rf & 1) {
+    const _r11 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵgetCurrentView"]();
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "button", 13);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("click", function Carousel_button_4_Template_button_click_0_listener($event) { _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵrestoreView"](_r11); const ctx_r10 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵnextContext"](); return ctx_r10.navBackward($event); });
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](1, "span", 2);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+} if (rf & 2) {
+    const ctx_r1 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵnextContext"]();
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngClass", _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpureFunction1"](3, _c1, ctx_r1.isBackwardNavDisabled()))("disabled", ctx_r1.isBackwardNavDisabled());
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngClass", _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpureFunction2"](5, _c2, !ctx_r1.isVertical(), ctx_r1.isVertical()));
+} }
+function Carousel_div_8_ng_container_1_Template(rf, ctx) { if (rf & 1) {
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementContainer"](0);
+} }
+const _c3 = function (a1, a2, a3) { return { "p-carousel-item p-carousel-item-cloned": true, "p-carousel-item-active": a1, "p-carousel-item-start": a2, "p-carousel-item-end": a3 }; };
+const _c4 = function (a0) { return { $implicit: a0 }; };
+function Carousel_div_8_Template(rf, ctx) { if (rf & 1) {
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "div", 2);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](1, Carousel_div_8_ng_container_1_Template, 1, 0, "ng-container", 14);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+} if (rf & 2) {
+    const item_r12 = ctx.$implicit;
+    const index_r13 = ctx.index;
+    const ctx_r3 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵnextContext"]();
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngClass", _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpureFunction3"](3, _c3, ctx_r3.totalShiftedItems * -1 === ctx_r3.value.length, 0 === index_r13, ctx_r3.clonedItemsForStarting.length - 1 === index_r13));
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngTemplateOutlet", ctx_r3.itemTemplate)("ngTemplateOutletContext", _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpureFunction1"](7, _c4, item_r12));
+} }
+function Carousel_div_9_ng_container_1_Template(rf, ctx) { if (rf & 1) {
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementContainer"](0);
+} }
+const _c5 = function (a1, a2, a3) { return { "p-carousel-item": true, "p-carousel-item-active": a1, "p-carousel-item-start": a2, "p-carousel-item-end": a3 }; };
+function Carousel_div_9_Template(rf, ctx) { if (rf & 1) {
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "div", 2);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](1, Carousel_div_9_ng_container_1_Template, 1, 0, "ng-container", 14);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+} if (rf & 2) {
+    const item_r15 = ctx.$implicit;
+    const index_r16 = ctx.index;
+    const ctx_r4 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵnextContext"]();
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngClass", _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpureFunction3"](3, _c5, ctx_r4.firstIndex() <= index_r16 && ctx_r4.lastIndex() >= index_r16, ctx_r4.firstIndex() === index_r16, ctx_r4.lastIndex() === index_r16));
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngTemplateOutlet", ctx_r4.itemTemplate)("ngTemplateOutletContext", _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpureFunction1"](7, _c4, item_r15));
+} }
+function Carousel_div_10_ng_container_1_Template(rf, ctx) { if (rf & 1) {
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementContainer"](0);
+} }
+function Carousel_div_10_Template(rf, ctx) { if (rf & 1) {
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "div", 2);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](1, Carousel_div_10_ng_container_1_Template, 1, 0, "ng-container", 14);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+} if (rf & 2) {
+    const item_r18 = ctx.$implicit;
+    const index_r19 = ctx.index;
+    const ctx_r5 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵnextContext"]();
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngClass", _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpureFunction3"](3, _c3, ctx_r5.totalShiftedItems * -1 === ctx_r5.numVisible, 0 === index_r19, ctx_r5.clonedItemsForFinishing.length - 1 === index_r19));
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngTemplateOutlet", ctx_r5.itemTemplate)("ngTemplateOutletContext", _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpureFunction1"](7, _c4, item_r18));
+} }
+const _c6 = function (a1) { return { "p-carousel-next p-link": true, "p-disabled": a1 }; };
+const _c7 = function (a1, a2) { return { "p-carousel-prev-icon pi": true, "pi-chevron-right": a1, "pi-chevron-down": a2 }; };
+function Carousel_button_11_Template(rf, ctx) { if (rf & 1) {
+    const _r22 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵgetCurrentView"]();
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "button", 13);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("click", function Carousel_button_11_Template_button_click_0_listener($event) { _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵrestoreView"](_r22); const ctx_r21 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵnextContext"](); return ctx_r21.navForward($event); });
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](1, "span", 2);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+} if (rf & 2) {
+    const ctx_r6 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵnextContext"]();
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngClass", _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpureFunction1"](3, _c6, ctx_r6.isForwardNavDisabled()))("disabled", ctx_r6.isForwardNavDisabled());
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngClass", _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpureFunction2"](5, _c7, !ctx_r6.isVertical(), ctx_r6.isVertical()));
+} }
+const _c8 = function (a1) { return { "p-carousel-indicator": true, "p-highlight": a1 }; };
+function Carousel_ul_12_li_1_Template(rf, ctx) { if (rf & 1) {
+    const _r27 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵgetCurrentView"]();
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "li", 2);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1, "button", 15);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("click", function Carousel_ul_12_li_1_Template_button_click_1_listener($event) { _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵrestoreView"](_r27); const i_r25 = ctx.index; const ctx_r26 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵnextContext"](2); return ctx_r26.onDotClick($event, i_r25); });
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+} if (rf & 2) {
+    const i_r25 = ctx.index;
+    const ctx_r23 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵnextContext"](2);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngClass", _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpureFunction1"](5, _c8, ctx_r23._page === i_r25));
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵclassMap"](ctx_r23.indicatorStyleClass);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngClass", "p-link")("ngStyle", ctx_r23.indicatorStyle);
+} }
+function Carousel_ul_12_Template(rf, ctx) { if (rf & 1) {
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "ul", 0);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](1, Carousel_ul_12_li_1_Template, 2, 7, "li", 8);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+} if (rf & 2) {
+    const ctx_r7 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵnextContext"]();
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵclassMap"](ctx_r7.indicatorsContentClass);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngClass", "p-carousel-indicators p-reset")("ngStyle", ctx_r7.indicatorsContentStyle);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngForOf", ctx_r7.totalDotsArray());
+} }
+function Carousel_div_13_ng_container_2_Template(rf, ctx) { if (rf & 1) {
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementContainer"](0);
+} }
+function Carousel_div_13_Template(rf, ctx) { if (rf & 1) {
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "div", 16);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵprojection"](1, 1);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](2, Carousel_div_13_ng_container_2_Template, 1, 0, "ng-container", 12);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+} if (rf & 2) {
+    const ctx_r8 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵnextContext"]();
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](2);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngTemplateOutlet", ctx_r8.footerTemplate);
+} }
+const _c9 = [[["p-header"]], [["p-footer"]]];
+const _c10 = function (a1, a2) { return { "p-carousel p-component": true, "p-carousel-vertical": a1, "p-carousel-horizontal": a2 }; };
+const _c11 = function (a0) { return { "height": a0 }; };
+const _c12 = ["p-header", "p-footer"];
+class Carousel {
+    constructor(el, zone, cd) {
+        this.el = el;
+        this.zone = zone;
+        this.cd = cd;
+        this.orientation = "horizontal";
+        this.verticalViewPortHeight = "300px";
+        this.contentClass = "";
+        this.indicatorsContentClass = "";
+        this.indicatorStyleClass = "";
+        this.circular = false;
+        this.showIndicators = true;
+        this.showNavigators = true;
+        this.autoplayInterval = 0;
+        this.onPage = new _angular_core__WEBPACK_IMPORTED_MODULE_0__["EventEmitter"]();
+        this._numVisible = 1;
+        this._numScroll = 1;
+        this._oldNumScroll = 0;
+        this.prevState = {
+            numScroll: 0,
+            numVisible: 0,
+            value: []
+        };
+        this.defaultNumScroll = 1;
+        this.defaultNumVisible = 1;
+        this._page = 0;
+        this.isRemainingItemsAdded = false;
+        this.remainingItems = 0;
+        this.swipeThreshold = 20;
+        this.totalShiftedItems = this.page * this.numScroll * -1;
+    }
+    get page() {
+        return this._page;
+    }
+    set page(val) {
+        if (this.isCreated && val !== this._page) {
+            if (this.autoplayInterval) {
+                this.stopAutoplay();
+                this.allowAutoplay = false;
+            }
+            if (val > this._page && val <= (this.totalDots() - 1)) {
+                this.step(-1, val);
+            }
+            else if (val < this._page) {
+                this.step(1, val);
+            }
+        }
+        this._page = val;
+    }
+    get numVisible() {
+        return this._numVisible;
+    }
+    set numVisible(val) {
+        this._numVisible = val;
+    }
+    get numScroll() {
+        return this._numVisible;
+    }
+    set numScroll(val) {
+        this._numScroll = val;
+    }
+    get value() {
+        return this._value;
+    }
+    ;
+    set value(val) {
+        this._value = val;
+    }
+    ngOnChanges(simpleChange) {
+        if (simpleChange.value) {
+            if (this.circular && this._value) {
+                this.setCloneItems();
+            }
+        }
+        if (this.isCreated) {
+            if (simpleChange.numVisible) {
+                if (this.responsiveOptions) {
+                    this.defaultNumVisible = this.numVisible;
+                }
+                if (this.isCircular()) {
+                    this.setCloneItems();
+                }
+                this.createStyle();
+                this.calculatePosition();
+            }
+            if (simpleChange.numScroll) {
+                if (this.responsiveOptions) {
+                    this.defaultNumScroll = this.numScroll;
+                }
+            }
+        }
+    }
+    ngAfterContentInit() {
+        this.id = Object(primeng_utils__WEBPACK_IMPORTED_MODULE_4__["UniqueComponentId"])();
+        this.allowAutoplay = !!this.autoplayInterval;
+        if (this.circular) {
+            this.setCloneItems();
+        }
+        if (this.responsiveOptions) {
+            this.defaultNumScroll = this._numScroll;
+            this.defaultNumVisible = this._numVisible;
+        }
+        this.createStyle();
+        this.calculatePosition();
+        if (this.responsiveOptions) {
+            this.bindDocumentListeners();
+        }
+        this.templates.forEach((item) => {
+            switch (item.getType()) {
+                case 'item':
+                    this.itemTemplate = item.template;
+                    break;
+                case 'header':
+                    this.headerTemplate = item.template;
+                    break;
+                case 'footer':
+                    this.footerTemplate = item.template;
+                    break;
+                default:
+                    this.itemTemplate = item.template;
+                    break;
+            }
+        });
+    }
+    ngAfterContentChecked() {
+        const isCircular = this.isCircular();
+        let totalShiftedItems = this.totalShiftedItems;
+        if (this.value && this.itemsContainer && (this.prevState.numScroll !== this._numScroll || this.prevState.numVisible !== this._numVisible || this.prevState.value.length !== this.value.length)) {
+            if (this.autoplayInterval) {
+                this.stopAutoplay();
+            }
+            this.remainingItems = (this.value.length - this._numVisible) % this._numScroll;
+            let page = this._page;
+            if (this.totalDots() !== 0 && page >= this.totalDots()) {
+                page = this.totalDots() - 1;
+                this._page = page;
+                this.onPage.emit({
+                    page: this.page
+                });
+            }
+            totalShiftedItems = (page * this._numScroll) * -1;
+            if (isCircular) {
+                totalShiftedItems -= this._numVisible;
+            }
+            if (page === (this.totalDots() - 1) && this.remainingItems > 0) {
+                totalShiftedItems += (-1 * this.remainingItems) + this._numScroll;
+                this.isRemainingItemsAdded = true;
+            }
+            else {
+                this.isRemainingItemsAdded = false;
+            }
+            if (totalShiftedItems !== this.totalShiftedItems) {
+                this.totalShiftedItems = totalShiftedItems;
+            }
+            this._oldNumScroll = this._numScroll;
+            this.prevState.numScroll = this._numScroll;
+            this.prevState.numVisible = this._numVisible;
+            this.prevState.value = [...this._value];
+            if (this.totalDots() > 0 && this.itemsContainer.nativeElement) {
+                this.itemsContainer.nativeElement.style.transform = this.isVertical() ? `translate3d(0, ${totalShiftedItems * (100 / this._numVisible)}%, 0)` : `translate3d(${totalShiftedItems * (100 / this._numVisible)}%, 0, 0)`;
+            }
+            this.isCreated = true;
+            if (this.autoplayInterval && this.isAutoplay()) {
+                this.startAutoplay();
+            }
+        }
+        if (isCircular) {
+            if (this.page === 0) {
+                totalShiftedItems = -1 * this._numVisible;
+            }
+            else if (totalShiftedItems === 0) {
+                totalShiftedItems = -1 * this.value.length;
+                if (this.remainingItems > 0) {
+                    this.isRemainingItemsAdded = true;
+                }
+            }
+            if (totalShiftedItems !== this.totalShiftedItems) {
+                this.totalShiftedItems = totalShiftedItems;
+            }
+        }
+    }
+    createStyle() {
+        if (!this.carouselStyle) {
+            this.carouselStyle = document.createElement('style');
+            this.carouselStyle.type = 'text/css';
+            document.body.appendChild(this.carouselStyle);
+        }
+        let innerHTML = `
+            #${this.id} .p-carousel-item {
+				flex: 1 0 ${(100 / this.numVisible)}%
+			}
+        `;
+        if (this.responsiveOptions) {
+            this.responsiveOptions.sort((data1, data2) => {
+                const value1 = data1.breakpoint;
+                const value2 = data2.breakpoint;
+                let result = null;
+                if (value1 == null && value2 != null)
+                    result = -1;
+                else if (value1 != null && value2 == null)
+                    result = 1;
+                else if (value1 == null && value2 == null)
+                    result = 0;
+                else if (typeof value1 === 'string' && typeof value2 === 'string')
+                    result = value1.localeCompare(value2, undefined, { numeric: true });
+                else
+                    result = (value1 < value2) ? -1 : (value1 > value2) ? 1 : 0;
+                return -1 * result;
+            });
+            for (let i = 0; i < this.responsiveOptions.length; i++) {
+                let res = this.responsiveOptions[i];
+                innerHTML += `
+                    @media screen and (max-width: ${res.breakpoint}) {
+                        #${this.id} .p-carousel-item {
+                            flex: 1 0 ${(100 / res.numVisible)}%
+                        }
+                    }
+                `;
+            }
+        }
+        this.carouselStyle.innerHTML = innerHTML;
+    }
+    calculatePosition() {
+        if (this.responsiveOptions) {
+            let windowWidth = window.innerWidth;
+            let matchedResponsiveData = {
+                numVisible: this.defaultNumVisible,
+                numScroll: this.defaultNumScroll
+            };
+            for (let i = 0; i < this.responsiveOptions.length; i++) {
+                let res = this.responsiveOptions[i];
+                if (parseInt(res.breakpoint, 10) >= windowWidth) {
+                    matchedResponsiveData = res;
+                }
+            }
+            if (this._numScroll !== matchedResponsiveData.numScroll) {
+                let page = this._page;
+                page = Math.floor((page * this._numScroll) / matchedResponsiveData.numScroll);
+                let totalShiftedItems = (matchedResponsiveData.numScroll * this.page) * -1;
+                if (this.isCircular()) {
+                    totalShiftedItems -= matchedResponsiveData.numVisible;
+                }
+                this.totalShiftedItems = totalShiftedItems;
+                this._numScroll = matchedResponsiveData.numScroll;
+                this._page = page;
+                this.onPage.emit({
+                    page: this.page
+                });
+            }
+            if (this._numVisible !== matchedResponsiveData.numVisible) {
+                this._numVisible = matchedResponsiveData.numVisible;
+                this.setCloneItems();
+            }
+            this.cd.markForCheck();
+        }
+    }
+    setCloneItems() {
+        this.clonedItemsForStarting = [];
+        this.clonedItemsForFinishing = [];
+        if (this.isCircular()) {
+            this.clonedItemsForStarting.push(...this.value.slice(-1 * this._numVisible));
+            this.clonedItemsForFinishing.push(...this.value.slice(0, this._numVisible));
+        }
+    }
+    firstIndex() {
+        return this.isCircular() ? (-1 * (this.totalShiftedItems + this.numVisible)) : (this.totalShiftedItems * -1);
+    }
+    lastIndex() {
+        return this.firstIndex() + this.numVisible - 1;
+    }
+    totalDots() {
+        return this.value ? Math.ceil((this.value.length - this._numVisible) / this._numScroll) + 1 : 0;
+    }
+    totalDotsArray() {
+        const totalDots = this.totalDots();
+        return totalDots <= 0 ? [] : Array(totalDots).fill(0);
+    }
+    isVertical() {
+        return this.orientation === 'vertical';
+    }
+    isCircular() {
+        return this.circular && this.value && this.value.length >= this.numVisible;
+    }
+    isAutoplay() {
+        return this.autoplayInterval && this.allowAutoplay;
+    }
+    isForwardNavDisabled() {
+        return this.isEmpty() || (this._page >= (this.totalDots() - 1) && !this.isCircular());
+    }
+    isBackwardNavDisabled() {
+        return this.isEmpty() || (this._page <= 0 && !this.isCircular());
+    }
+    isEmpty() {
+        return !this.value || this.value.length === 0;
+    }
+    navForward(e, index) {
+        if (this.isCircular() || this._page < (this.totalDots() - 1)) {
+            this.step(-1, index);
+        }
+        if (this.autoplayInterval) {
+            this.stopAutoplay();
+            this.allowAutoplay = false;
+        }
+        if (e && e.cancelable) {
+            e.preventDefault();
+        }
+    }
+    navBackward(e, index) {
+        if (this.isCircular() || this._page !== 0) {
+            this.step(1, index);
+        }
+        if (this.autoplayInterval) {
+            this.stopAutoplay();
+            this.allowAutoplay = false;
+        }
+        if (e && e.cancelable) {
+            e.preventDefault();
+        }
+    }
+    onDotClick(e, index) {
+        let page = this._page;
+        if (this.autoplayInterval) {
+            this.stopAutoplay();
+            this.allowAutoplay = false;
+        }
+        if (index > page) {
+            this.navForward(e, index);
+        }
+        else if (index < page) {
+            this.navBackward(e, index);
+        }
+    }
+    step(dir, page) {
+        let totalShiftedItems = this.totalShiftedItems;
+        const isCircular = this.isCircular();
+        if (page != null) {
+            totalShiftedItems = (this._numScroll * page) * -1;
+            if (isCircular) {
+                totalShiftedItems -= this._numVisible;
+            }
+            this.isRemainingItemsAdded = false;
+        }
+        else {
+            totalShiftedItems += (this._numScroll * dir);
+            if (this.isRemainingItemsAdded) {
+                totalShiftedItems += this.remainingItems - (this._numScroll * dir);
+                this.isRemainingItemsAdded = false;
+            }
+            let originalShiftedItems = isCircular ? (totalShiftedItems + this._numVisible) : totalShiftedItems;
+            page = Math.abs(Math.floor((originalShiftedItems / this._numScroll)));
+        }
+        if (isCircular && this.page === (this.totalDots() - 1) && dir === -1) {
+            totalShiftedItems = -1 * (this.value.length + this._numVisible);
+            page = 0;
+        }
+        else if (isCircular && this.page === 0 && dir === 1) {
+            totalShiftedItems = 0;
+            page = (this.totalDots() - 1);
+        }
+        else if (page === (this.totalDots() - 1) && this.remainingItems > 0) {
+            totalShiftedItems += ((this.remainingItems * -1) - (this._numScroll * dir));
+            this.isRemainingItemsAdded = true;
+        }
+        if (this.itemsContainer) {
+            this.itemsContainer.nativeElement.style.transform = this.isVertical() ? `translate3d(0, ${totalShiftedItems * (100 / this._numVisible)}%, 0)` : `translate3d(${totalShiftedItems * (100 / this._numVisible)}%, 0, 0)`;
+            this.itemsContainer.nativeElement.style.transition = 'transform 500ms ease 0s';
+        }
+        this.totalShiftedItems = totalShiftedItems;
+        this._page = page;
+        this.onPage.emit({
+            page: this.page
+        });
+    }
+    startAutoplay() {
+        this.interval = setInterval(() => {
+            if (this.totalDots() > 0) {
+                if (this.page === (this.totalDots() - 1)) {
+                    this.step(-1, 0);
+                }
+                else {
+                    this.step(-1, this.page + 1);
+                }
+            }
+        }, this.autoplayInterval);
+    }
+    stopAutoplay() {
+        if (this.interval) {
+            clearInterval(this.interval);
+        }
+    }
+    onTransitionEnd() {
+        if (this.itemsContainer) {
+            this.itemsContainer.nativeElement.style.transition = '';
+            if ((this.page === 0 || this.page === (this.totalDots() - 1)) && this.isCircular()) {
+                this.itemsContainer.nativeElement.style.transform = this.isVertical() ? `translate3d(0, ${this.totalShiftedItems * (100 / this._numVisible)}%, 0)` : `translate3d(${this.totalShiftedItems * (100 / this._numVisible)}%, 0, 0)`;
+            }
+        }
+    }
+    onTouchStart(e) {
+        let touchobj = e.changedTouches[0];
+        this.startPos = {
+            x: touchobj.pageX,
+            y: touchobj.pageY
+        };
+    }
+    onTouchMove(e) {
+        if (e.cancelable) {
+            e.preventDefault();
+        }
+    }
+    onTouchEnd(e) {
+        let touchobj = e.changedTouches[0];
+        if (this.isVertical()) {
+            this.changePageOnTouch(e, (touchobj.pageY - this.startPos.y));
+        }
+        else {
+            this.changePageOnTouch(e, (touchobj.pageX - this.startPos.x));
+        }
+    }
+    changePageOnTouch(e, diff) {
+        if (Math.abs(diff) > this.swipeThreshold) {
+            if (diff < 0) {
+                this.navForward(e);
+            }
+            else {
+                this.navBackward(e);
+            }
+        }
+    }
+    bindDocumentListeners() {
+        if (!this.documentResizeListener) {
+            this.documentResizeListener = (e) => {
+                this.calculatePosition();
+            };
+            window.addEventListener('resize', this.documentResizeListener);
+        }
+    }
+    unbindDocumentListeners() {
+        if (this.documentResizeListener) {
+            window.removeEventListener('resize', this.documentResizeListener);
+            this.documentResizeListener = null;
+        }
+    }
+    ngOnDestroy() {
+        if (this.responsiveOptions) {
+            this.unbindDocumentListeners();
+        }
+        if (this.autoplayInterval) {
+            this.stopAutoplay();
+        }
+    }
+}
+Carousel.ɵfac = function Carousel_Factory(t) { return new (t || Carousel)(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_angular_core__WEBPACK_IMPORTED_MODULE_0__["ElementRef"]), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_angular_core__WEBPACK_IMPORTED_MODULE_0__["NgZone"]), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_angular_core__WEBPACK_IMPORTED_MODULE_0__["ChangeDetectorRef"])); };
+Carousel.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: Carousel, selectors: [["p-carousel"]], contentQueries: function Carousel_ContentQueries(rf, ctx, dirIndex) { if (rf & 1) {
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵcontentQuery"](dirIndex, primeng_api__WEBPACK_IMPORTED_MODULE_1__["Header"], 1);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵcontentQuery"](dirIndex, primeng_api__WEBPACK_IMPORTED_MODULE_1__["Footer"], 1);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵcontentQuery"](dirIndex, primeng_api__WEBPACK_IMPORTED_MODULE_1__["PrimeTemplate"], 0);
+    } if (rf & 2) {
+        let _t;
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵqueryRefresh"](_t = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵloadQuery"]()) && (ctx.headerFacet = _t.first);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵqueryRefresh"](_t = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵloadQuery"]()) && (ctx.footerFacet = _t.first);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵqueryRefresh"](_t = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵloadQuery"]()) && (ctx.templates = _t);
+    } }, viewQuery: function Carousel_Query(rf, ctx) { if (rf & 1) {
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵviewQuery"](_c0, 1);
+    } if (rf & 2) {
+        let _t;
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵqueryRefresh"](_t = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵloadQuery"]()) && (ctx.itemsContainer = _t.first);
+    } }, inputs: { orientation: "orientation", verticalViewPortHeight: "verticalViewPortHeight", contentClass: "contentClass", indicatorsContentClass: "indicatorsContentClass", indicatorStyleClass: "indicatorStyleClass", circular: "circular", showIndicators: "showIndicators", showNavigators: "showNavigators", autoplayInterval: "autoplayInterval", page: "page", numVisible: "numVisible", numScroll: "numScroll", value: "value", responsiveOptions: "responsiveOptions", indicatorsContentStyle: "indicatorsContentStyle", indicatorStyle: "indicatorStyle", style: "style", styleClass: "styleClass" }, outputs: { onPage: "onPage" }, features: [_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵNgOnChangesFeature"]], ngContentSelectors: _c12, decls: 14, vars: 22, consts: [[3, "ngClass", "ngStyle"], ["class", "p-carousel-header", 4, "ngIf"], [3, "ngClass"], [1, "p-carousel-container"], ["type", "button", "pRipple", "", 3, "ngClass", "disabled", "click", 4, "ngIf"], [1, "p-carousel-items-content", 3, "ngStyle"], [1, "p-carousel-items-container", 3, "transitionend", "touchend", "touchstart", "touchmove"], ["itemsContainer", ""], [3, "ngClass", 4, "ngFor", "ngForOf"], [3, "ngClass", "class", "ngStyle", 4, "ngIf"], ["class", "p-carousel-footer", 4, "ngIf"], [1, "p-carousel-header"], [4, "ngTemplateOutlet"], ["type", "button", "pRipple", "", 3, "ngClass", "disabled", "click"], [4, "ngTemplateOutlet", "ngTemplateOutletContext"], ["type", "button", 3, "ngClass", "ngStyle", "click"], [1, "p-carousel-footer"]], template: function Carousel_Template(rf, ctx) { if (rf & 1) {
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵprojectionDef"](_c9);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "div", 0);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](1, Carousel_div_1_Template, 3, 1, "div", 1);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](2, "div", 2);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](3, "div", 3);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](4, Carousel_button_4_Template, 2, 8, "button", 4);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](5, "div", 5);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](6, "div", 6, 7);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("transitionend", function Carousel_Template_div_transitionend_6_listener() { return ctx.onTransitionEnd(); })("touchend", function Carousel_Template_div_touchend_6_listener($event) { return ctx.onTouchEnd($event); })("touchstart", function Carousel_Template_div_touchstart_6_listener($event) { return ctx.onTouchStart($event); })("touchmove", function Carousel_Template_div_touchmove_6_listener($event) { return ctx.onTouchMove($event); });
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](8, Carousel_div_8_Template, 2, 9, "div", 8);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](9, Carousel_div_9_Template, 2, 9, "div", 8);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](10, Carousel_div_10_Template, 2, 9, "div", 8);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](11, Carousel_button_11_Template, 2, 8, "button", 4);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](12, Carousel_ul_12_Template, 2, 5, "ul", 9);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](13, Carousel_div_13_Template, 3, 1, "div", 10);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+    } if (rf & 2) {
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵclassMap"](ctx.styleClass);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngClass", _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpureFunction2"](17, _c10, ctx.isVertical(), !ctx.isVertical()))("ngStyle", ctx.style);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵattribute"]("id", ctx.id);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngIf", ctx.headerFacet || ctx.headerTemplate);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵclassMap"](ctx.contentClass);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngClass", "p-carousel-content");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](2);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngIf", ctx.showNavigators);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngStyle", _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpureFunction1"](20, _c11, ctx.isVertical() ? ctx.verticalViewPortHeight : "auto"));
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](3);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngForOf", ctx.clonedItemsForStarting);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngForOf", ctx.value);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngForOf", ctx.clonedItemsForFinishing);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngIf", ctx.showNavigators);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngIf", ctx.showIndicators);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngIf", ctx.footerFacet || ctx.footerTemplate);
+    } }, directives: [_angular_common__WEBPACK_IMPORTED_MODULE_3__["NgClass"], _angular_common__WEBPACK_IMPORTED_MODULE_3__["NgStyle"], _angular_common__WEBPACK_IMPORTED_MODULE_3__["NgIf"], _angular_common__WEBPACK_IMPORTED_MODULE_3__["NgForOf"], _angular_common__WEBPACK_IMPORTED_MODULE_3__["NgTemplateOutlet"], primeng_ripple__WEBPACK_IMPORTED_MODULE_2__["Ripple"]], styles: [".p-carousel,.p-carousel-content{display:flex;flex-direction:column}.p-carousel-content{overflow:auto}.p-carousel-next,.p-carousel-prev{-ms-grid-row-align:center;align-items:center;align-self:center;display:flex;flex-grow:0;flex-shrink:0;justify-content:center;overflow:hidden;position:relative}.p-carousel-container{display:flex;flex-direction:row}.p-carousel-items-content{overflow:hidden;width:100%}.p-carousel-indicators,.p-carousel-items-container{display:flex;flex-direction:row}.p-carousel-indicators{flex-wrap:wrap;justify-content:center}.p-carousel-indicator>button{align-items:center;display:flex;justify-content:center}.p-carousel-vertical .p-carousel-container{flex-direction:column}.p-carousel-vertical .p-carousel-items-container{flex-direction:column;height:100%}.p-items-hidden .p-carousel-item{visibility:hidden}.p-items-hidden .p-carousel-item.p-carousel-item-active{visibility:visible}"], encapsulation: 2, changeDetection: 0 });
+Carousel.ctorParameters = () => [
+    { type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["ElementRef"] },
+    { type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["NgZone"] },
+    { type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["ChangeDetectorRef"] }
+];
+Carousel.propDecorators = {
+    page: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Input"] }],
+    numVisible: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Input"] }],
+    numScroll: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Input"] }],
+    responsiveOptions: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Input"] }],
+    orientation: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Input"] }],
+    verticalViewPortHeight: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Input"] }],
+    contentClass: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Input"] }],
+    indicatorsContentClass: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Input"] }],
+    indicatorsContentStyle: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Input"] }],
+    indicatorStyleClass: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Input"] }],
+    indicatorStyle: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Input"] }],
+    value: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Input"] }],
+    circular: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Input"] }],
+    showIndicators: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Input"] }],
+    showNavigators: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Input"] }],
+    autoplayInterval: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Input"] }],
+    style: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Input"] }],
+    styleClass: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Input"] }],
+    onPage: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Output"] }],
+    itemsContainer: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["ViewChild"], args: ['itemsContainer',] }],
+    headerFacet: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["ContentChild"], args: [primeng_api__WEBPACK_IMPORTED_MODULE_1__["Header"],] }],
+    footerFacet: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["ContentChild"], args: [primeng_api__WEBPACK_IMPORTED_MODULE_1__["Footer"],] }],
+    templates: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["ContentChildren"], args: [primeng_api__WEBPACK_IMPORTED_MODULE_1__["PrimeTemplate"],] }]
+};
+(function () { (typeof ngDevMode === "undefined" || ngDevMode) && _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](Carousel, [{
+        type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"],
+        args: [{
+                selector: 'p-carousel',
+                template: `
+		<div [attr.id]="id" [ngClass]="{'p-carousel p-component':true, 'p-carousel-vertical': isVertical(), 'p-carousel-horizontal': !isVertical()}" [ngStyle]="style" [class]="styleClass">
+			<div class="p-carousel-header" *ngIf="headerFacet || headerTemplate">
+                <ng-content select="p-header"></ng-content>
+                <ng-container *ngTemplateOutlet="headerTemplate"></ng-container>
+			</div>
+			<div [class]="contentClass" [ngClass]="'p-carousel-content'">
+				<div class="p-carousel-container">
+					<button type="button" *ngIf="showNavigators" [ngClass]="{'p-carousel-prev p-link':true, 'p-disabled': isBackwardNavDisabled()}" [disabled]="isBackwardNavDisabled()" (click)="navBackward($event)" pRipple>
+						<span [ngClass]="{'p-carousel-prev-icon pi': true, 'pi-chevron-left': !isVertical(), 'pi-chevron-up': isVertical()}"></span>
+					</button>
+					<div class="p-carousel-items-content" [ngStyle]="{'height': isVertical() ? verticalViewPortHeight : 'auto'}">
+						<div #itemsContainer class="p-carousel-items-container" (transitionend)="onTransitionEnd()" (touchend)="onTouchEnd($event)" (touchstart)="onTouchStart($event)" (touchmove)="onTouchMove($event)">
+                            <div *ngFor="let item of clonedItemsForStarting; let index = index" [ngClass]= "{'p-carousel-item p-carousel-item-cloned': true,
+                                'p-carousel-item-active': (totalShiftedItems * -1) === (value.length),
+							    'p-carousel-item-start': 0 === index,
+							    'p-carousel-item-end': (clonedItemsForStarting.length - 1) === index}">
+								<ng-container *ngTemplateOutlet="itemTemplate; context: {$implicit: item}"></ng-container>
+							</div>
+                            <div *ngFor="let item of value; let index = index" [ngClass]= "{'p-carousel-item': true,
+                                'p-carousel-item-active': (firstIndex() <= index && lastIndex() >= index),
+							    'p-carousel-item-start': firstIndex() === index,
+							    'p-carousel-item-end': lastIndex() === index}">
+								<ng-container *ngTemplateOutlet="itemTemplate; context: {$implicit: item}"></ng-container>
+							</div>
+                            <div *ngFor="let item of clonedItemsForFinishing; let index = index" [ngClass]= "{'p-carousel-item p-carousel-item-cloned': true,
+                                'p-carousel-item-active': ((totalShiftedItems *-1) === numVisible),
+							    'p-carousel-item-start': 0 === index,
+							    'p-carousel-item-end': (clonedItemsForFinishing.length - 1) === index}">
+								<ng-container *ngTemplateOutlet="itemTemplate; context: {$implicit: item}"></ng-container>
+							</div>
+						</div>
+					</div>
+					<button type="button" *ngIf="showNavigators" [ngClass]="{'p-carousel-next p-link': true, 'p-disabled': isForwardNavDisabled()}" [disabled]="isForwardNavDisabled()" (click)="navForward($event)" pRipple>
+						<span [ngClass]="{'p-carousel-prev-icon pi': true, 'pi-chevron-right': !isVertical(), 'pi-chevron-down': isVertical()}"></span>
+					</button>
+				</div>
+				<ul [ngClass]="'p-carousel-indicators p-reset'" [class]="indicatorsContentClass" [ngStyle]="indicatorsContentStyle" *ngIf="showIndicators">
+					<li *ngFor="let totalDot of totalDotsArray(); let i = index" [ngClass]="{'p-carousel-indicator':true,'p-highlight': _page === i}">
+						<button type="button" [ngClass]="'p-link'" (click)="onDotClick($event, i)" [class]="indicatorStyleClass" [ngStyle]="indicatorStyle"></button>
+					</li>
+				</ul>
+			</div>
+			<div class="p-carousel-footer" *ngIf="footerFacet || footerTemplate">
+                <ng-content select="p-footer"></ng-content>
+                <ng-container *ngTemplateOutlet="footerTemplate"></ng-container>
+			</div>
+		</div>
+    `,
+                changeDetection: _angular_core__WEBPACK_IMPORTED_MODULE_0__["ChangeDetectionStrategy"].OnPush,
+                encapsulation: _angular_core__WEBPACK_IMPORTED_MODULE_0__["ViewEncapsulation"].None,
+                styles: [".p-carousel,.p-carousel-content{display:flex;flex-direction:column}.p-carousel-content{overflow:auto}.p-carousel-next,.p-carousel-prev{-ms-grid-row-align:center;align-items:center;align-self:center;display:flex;flex-grow:0;flex-shrink:0;justify-content:center;overflow:hidden;position:relative}.p-carousel-container{display:flex;flex-direction:row}.p-carousel-items-content{overflow:hidden;width:100%}.p-carousel-indicators,.p-carousel-items-container{display:flex;flex-direction:row}.p-carousel-indicators{flex-wrap:wrap;justify-content:center}.p-carousel-indicator>button{align-items:center;display:flex;justify-content:center}.p-carousel-vertical .p-carousel-container{flex-direction:column}.p-carousel-vertical .p-carousel-items-container{flex-direction:column;height:100%}.p-items-hidden .p-carousel-item{visibility:hidden}.p-items-hidden .p-carousel-item.p-carousel-item-active{visibility:visible}"]
+            }]
+    }], function () { return [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["ElementRef"] }, { type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["NgZone"] }, { type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["ChangeDetectorRef"] }]; }, { orientation: [{
+            type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Input"]
+        }], verticalViewPortHeight: [{
+            type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Input"]
+        }], contentClass: [{
+            type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Input"]
+        }], indicatorsContentClass: [{
+            type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Input"]
+        }], indicatorStyleClass: [{
+            type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Input"]
+        }], circular: [{
+            type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Input"]
+        }], showIndicators: [{
+            type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Input"]
+        }], showNavigators: [{
+            type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Input"]
+        }], autoplayInterval: [{
+            type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Input"]
+        }], onPage: [{
+            type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Output"]
+        }], page: [{
+            type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Input"]
+        }], numVisible: [{
+            type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Input"]
+        }], numScroll: [{
+            type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Input"]
+        }], value: [{
+            type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Input"]
+        }], responsiveOptions: [{
+            type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Input"]
+        }], indicatorsContentStyle: [{
+            type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Input"]
+        }], indicatorStyle: [{
+            type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Input"]
+        }], style: [{
+            type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Input"]
+        }], styleClass: [{
+            type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Input"]
+        }], itemsContainer: [{
+            type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["ViewChild"],
+            args: ['itemsContainer']
+        }], headerFacet: [{
+            type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["ContentChild"],
+            args: [primeng_api__WEBPACK_IMPORTED_MODULE_1__["Header"]]
+        }], footerFacet: [{
+            type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["ContentChild"],
+            args: [primeng_api__WEBPACK_IMPORTED_MODULE_1__["Footer"]]
+        }], templates: [{
+            type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["ContentChildren"],
+            args: [primeng_api__WEBPACK_IMPORTED_MODULE_1__["PrimeTemplate"]]
+        }] }); })();
+class CarouselModule {
+}
+CarouselModule.ɵfac = function CarouselModule_Factory(t) { return new (t || CarouselModule)(); };
+CarouselModule.ɵmod = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineNgModule"]({ type: CarouselModule });
+CarouselModule.ɵinj = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineInjector"]({ imports: [[_angular_common__WEBPACK_IMPORTED_MODULE_3__["CommonModule"], primeng_api__WEBPACK_IMPORTED_MODULE_1__["SharedModule"], primeng_ripple__WEBPACK_IMPORTED_MODULE_2__["RippleModule"]], _angular_common__WEBPACK_IMPORTED_MODULE_3__["CommonModule"], primeng_api__WEBPACK_IMPORTED_MODULE_1__["SharedModule"]] });
+(function () { (typeof ngJitMode === "undefined" || ngJitMode) && _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵsetNgModuleScope"](CarouselModule, { declarations: function () { return [Carousel]; }, imports: function () { return [_angular_common__WEBPACK_IMPORTED_MODULE_3__["CommonModule"], primeng_api__WEBPACK_IMPORTED_MODULE_1__["SharedModule"], primeng_ripple__WEBPACK_IMPORTED_MODULE_2__["RippleModule"]]; }, exports: function () { return [_angular_common__WEBPACK_IMPORTED_MODULE_3__["CommonModule"], Carousel, primeng_api__WEBPACK_IMPORTED_MODULE_1__["SharedModule"]]; } }); })();
+(function () { (typeof ngDevMode === "undefined" || ngDevMode) && _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](CarouselModule, [{
+        type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["NgModule"],
+        args: [{
+                imports: [_angular_common__WEBPACK_IMPORTED_MODULE_3__["CommonModule"], primeng_api__WEBPACK_IMPORTED_MODULE_1__["SharedModule"], primeng_ripple__WEBPACK_IMPORTED_MODULE_2__["RippleModule"]],
+                exports: [_angular_common__WEBPACK_IMPORTED_MODULE_3__["CommonModule"], Carousel, primeng_api__WEBPACK_IMPORTED_MODULE_1__["SharedModule"]],
+                declarations: [Carousel]
+            }]
+    }], null, null); })();
+
+/**
+ * Generated bundle index. Do not edit.
+ */
+
+
+
+//# sourceMappingURL=primeng-carousel.js.map
 
 /***/ }),
 
@@ -24413,6 +26520,144 @@ class AsapAction extends _AsyncAction__WEBPACK_IMPORTED_MODULE_1__["AsyncAction"
 
 /***/ }),
 
+/***/ "Q4Mo":
+/*!**********************************************************************!*\
+  !*** ./node_modules/primeng/__ivy_ngcc__/fesm2015/primeng-ripple.js ***!
+  \**********************************************************************/
+/*! exports provided: Ripple, RippleModule */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Ripple", function() { return Ripple; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "RippleModule", function() { return RippleModule; });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "fXoL");
+/* harmony import */ var _angular_common__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/common */ "ofXK");
+/* harmony import */ var primeng_dom__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! primeng/dom */ "YyRF");
+/* harmony import */ var primeng_api__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! primeng/api */ "7zfz");
+
+
+
+
+
+
+
+class Ripple {
+    constructor(el, zone, config) {
+        this.el = el;
+        this.zone = zone;
+        this.config = config;
+    }
+    ngAfterViewInit() {
+        if (this.config && this.config.ripple) {
+            this.zone.runOutsideAngular(() => {
+                this.create();
+                this.mouseDownListener = this.onMouseDown.bind(this);
+                this.el.nativeElement.addEventListener('mousedown', this.mouseDownListener);
+            });
+        }
+    }
+    onMouseDown(event) {
+        let ink = this.getInk();
+        if (!ink || getComputedStyle(ink, null).display === 'none') {
+            return;
+        }
+        primeng_dom__WEBPACK_IMPORTED_MODULE_2__["DomHandler"].removeClass(ink, 'p-ink-active');
+        if (!primeng_dom__WEBPACK_IMPORTED_MODULE_2__["DomHandler"].getHeight(ink) && !primeng_dom__WEBPACK_IMPORTED_MODULE_2__["DomHandler"].getWidth(ink)) {
+            let d = Math.max(primeng_dom__WEBPACK_IMPORTED_MODULE_2__["DomHandler"].getOuterWidth(this.el.nativeElement), primeng_dom__WEBPACK_IMPORTED_MODULE_2__["DomHandler"].getOuterHeight(this.el.nativeElement));
+            ink.style.height = d + 'px';
+            ink.style.width = d + 'px';
+        }
+        let offset = primeng_dom__WEBPACK_IMPORTED_MODULE_2__["DomHandler"].getOffset(this.el.nativeElement);
+        let x = event.pageX - offset.left + document.body.scrollTop - primeng_dom__WEBPACK_IMPORTED_MODULE_2__["DomHandler"].getWidth(ink) / 2;
+        let y = event.pageY - offset.top + document.body.scrollLeft - primeng_dom__WEBPACK_IMPORTED_MODULE_2__["DomHandler"].getHeight(ink) / 2;
+        ink.style.top = y + 'px';
+        ink.style.left = x + 'px';
+        primeng_dom__WEBPACK_IMPORTED_MODULE_2__["DomHandler"].addClass(ink, 'p-ink-active');
+    }
+    getInk() {
+        for (let i = 0; i < this.el.nativeElement.children.length; i++) {
+            if (this.el.nativeElement.children[i].className.indexOf('p-ink') !== -1) {
+                return this.el.nativeElement.children[i];
+            }
+        }
+        return null;
+    }
+    resetInk() {
+        let ink = this.getInk();
+        if (ink) {
+            primeng_dom__WEBPACK_IMPORTED_MODULE_2__["DomHandler"].removeClass(ink, 'p-ink-active');
+        }
+    }
+    onAnimationEnd(event) {
+        primeng_dom__WEBPACK_IMPORTED_MODULE_2__["DomHandler"].removeClass(event.currentTarget, 'p-ink-active');
+    }
+    create() {
+        let ink = document.createElement('span');
+        ink.className = 'p-ink';
+        this.el.nativeElement.appendChild(ink);
+        this.animationListener = this.onAnimationEnd.bind(this);
+        ink.addEventListener('animationend', this.animationListener);
+    }
+    remove() {
+        let ink = this.getInk();
+        if (ink) {
+            this.el.nativeElement.removeEventListener('mousedown', this.mouseDownListener);
+            ink.removeEventListener('animationend', this.animationListener);
+            primeng_dom__WEBPACK_IMPORTED_MODULE_2__["DomHandler"].removeElement(ink);
+        }
+    }
+    ngOnDestroy() {
+        if (this.config && this.config.ripple) {
+            this.remove();
+        }
+    }
+}
+Ripple.ɵfac = function Ripple_Factory(t) { return new (t || Ripple)(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_angular_core__WEBPACK_IMPORTED_MODULE_0__["ElementRef"]), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_angular_core__WEBPACK_IMPORTED_MODULE_0__["NgZone"]), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](primeng_api__WEBPACK_IMPORTED_MODULE_3__["PrimeNGConfig"], 8)); };
+Ripple.ɵdir = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineDirective"]({ type: Ripple, selectors: [["", "pRipple", ""]], hostVars: 2, hostBindings: function Ripple_HostBindings(rf, ctx) { if (rf & 2) {
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵclassProp"]("p-ripple", true);
+    } } });
+Ripple.ctorParameters = () => [
+    { type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["ElementRef"] },
+    { type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["NgZone"] },
+    { type: primeng_api__WEBPACK_IMPORTED_MODULE_3__["PrimeNGConfig"], decorators: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Optional"] }] }
+];
+(function () { (typeof ngDevMode === "undefined" || ngDevMode) && _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](Ripple, [{
+        type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Directive"],
+        args: [{
+                selector: '[pRipple]',
+                host: {
+                    '[class.p-ripple]': 'true'
+                }
+            }]
+    }], function () { return [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["ElementRef"] }, { type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["NgZone"] }, { type: primeng_api__WEBPACK_IMPORTED_MODULE_3__["PrimeNGConfig"], decorators: [{
+                type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Optional"]
+            }] }]; }, null); })();
+class RippleModule {
+}
+RippleModule.ɵfac = function RippleModule_Factory(t) { return new (t || RippleModule)(); };
+RippleModule.ɵmod = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineNgModule"]({ type: RippleModule });
+RippleModule.ɵinj = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineInjector"]({ imports: [[_angular_common__WEBPACK_IMPORTED_MODULE_1__["CommonModule"]]] });
+(function () { (typeof ngJitMode === "undefined" || ngJitMode) && _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵsetNgModuleScope"](RippleModule, { declarations: function () { return [Ripple]; }, imports: function () { return [_angular_common__WEBPACK_IMPORTED_MODULE_1__["CommonModule"]]; }, exports: function () { return [Ripple]; } }); })();
+(function () { (typeof ngDevMode === "undefined" || ngDevMode) && _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](RippleModule, [{
+        type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["NgModule"],
+        args: [{
+                imports: [_angular_common__WEBPACK_IMPORTED_MODULE_1__["CommonModule"]],
+                exports: [Ripple],
+                declarations: [Ripple]
+            }]
+    }], null, null); })();
+
+/**
+ * Generated bundle index. Do not edit.
+ */
+
+
+
+//# sourceMappingURL=primeng-ripple.js.map
+
+/***/ }),
+
 /***/ "QIAL":
 /*!*************************************************************************!*\
   !*** ./node_modules/rxjs/_esm2015/internal/util/isInteropObservable.js ***!
@@ -24581,6 +26826,1240 @@ function dispatchError(state) {
     subject.error(err);
 }
 //# sourceMappingURL=bindCallback.js.map
+
+/***/ }),
+
+/***/ "R0Ic":
+/*!******************************************************************************!*\
+  !*** ./node_modules/@angular/animations/__ivy_ngcc__/fesm2015/animations.js ***!
+  \******************************************************************************/
+/*! exports provided: AUTO_STYLE, AnimationBuilder, AnimationFactory, NoopAnimationPlayer, animate, animateChild, animation, group, keyframes, query, sequence, stagger, state, style, transition, trigger, useAnimation, ɵAnimationGroupPlayer, ɵPRE_STYLE */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "AUTO_STYLE", function() { return AUTO_STYLE; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "AnimationBuilder", function() { return AnimationBuilder; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "AnimationFactory", function() { return AnimationFactory; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NoopAnimationPlayer", function() { return NoopAnimationPlayer; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "animate", function() { return animate; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "animateChild", function() { return animateChild; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "animation", function() { return animation; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "group", function() { return group; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "keyframes", function() { return keyframes; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "query", function() { return query; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "sequence", function() { return sequence; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "stagger", function() { return stagger; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "state", function() { return state; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "style", function() { return style; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "transition", function() { return transition; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "trigger", function() { return trigger; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "useAnimation", function() { return useAnimation; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ɵAnimationGroupPlayer", function() { return AnimationGroupPlayer; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ɵPRE_STYLE", function() { return ɵPRE_STYLE; });
+/**
+ * @license Angular v11.2.14
+ * (c) 2010-2021 Google LLC. https://angular.io/
+ * License: MIT
+ */
+
+/**
+ * An injectable service that produces an animation sequence programmatically within an
+ * Angular component or directive.
+ * Provided by the `BrowserAnimationsModule` or `NoopAnimationsModule`.
+ *
+ * @usageNotes
+ *
+ * To use this service, add it to your component or directive as a dependency.
+ * The service is instantiated along with your component.
+ *
+ * Apps do not typically need to create their own animation players, but if you
+ * do need to, follow these steps:
+ *
+ * 1. Use the `build()` method to create a programmatic animation using the
+ * `animate()` function. The method returns an `AnimationFactory` instance.
+ *
+ * 2. Use the factory object to create an `AnimationPlayer` and attach it to a DOM element.
+ *
+ * 3. Use the player object to control the animation programmatically.
+ *
+ * For example:
+ *
+ * ```ts
+ * // import the service from BrowserAnimationsModule
+ * import {AnimationBuilder} from '@angular/animations';
+ * // require the service as a dependency
+ * class MyCmp {
+ *   constructor(private _builder: AnimationBuilder) {}
+ *
+ *   makeAnimation(element: any) {
+ *     // first define a reusable animation
+ *     const myAnimation = this._builder.build([
+ *       style({ width: 0 }),
+ *       animate(1000, style({ width: '100px' }))
+ *     ]);
+ *
+ *     // use the returned factory object to create a player
+ *     const player = myAnimation.create(element);
+ *
+ *     player.play();
+ *   }
+ * }
+ * ```
+ *
+ * @publicApi
+ */
+class AnimationBuilder {
+}
+/**
+ * A factory object returned from the `AnimationBuilder`.`build()` method.
+ *
+ * @publicApi
+ */
+class AnimationFactory {
+}
+
+/**
+ * @license
+ * Copyright Google LLC All Rights Reserved.
+ *
+ * Use of this source code is governed by an MIT-style license that can be
+ * found in the LICENSE file at https://angular.io/license
+ */
+/**
+ * Specifies automatic styling.
+ *
+ * @publicApi
+ */
+const AUTO_STYLE = '*';
+/**
+ * Creates a named animation trigger, containing a  list of `state()`
+ * and `transition()` entries to be evaluated when the expression
+ * bound to the trigger changes.
+ *
+ * @param name An identifying string.
+ * @param definitions  An animation definition object, containing an array of `state()`
+ * and `transition()` declarations.
+ *
+ * @return An object that encapsulates the trigger data.
+ *
+ * @usageNotes
+ * Define an animation trigger in the `animations` section of `@Component` metadata.
+ * In the template, reference the trigger by name and bind it to a trigger expression that
+ * evaluates to a defined animation state, using the following format:
+ *
+ * `[@triggerName]="expression"`
+ *
+ * Animation trigger bindings convert all values to strings, and then match the
+ * previous and current values against any linked transitions.
+ * Booleans can be specified as `1` or `true` and `0` or `false`.
+ *
+ * ### Usage Example
+ *
+ * The following example creates an animation trigger reference based on the provided
+ * name value.
+ * The provided animation value is expected to be an array consisting of state and
+ * transition declarations.
+ *
+ * ```typescript
+ * @Component({
+ *   selector: "my-component",
+ *   templateUrl: "my-component-tpl.html",
+ *   animations: [
+ *     trigger("myAnimationTrigger", [
+ *       state(...),
+ *       state(...),
+ *       transition(...),
+ *       transition(...)
+ *     ])
+ *   ]
+ * })
+ * class MyComponent {
+ *   myStatusExp = "something";
+ * }
+ * ```
+ *
+ * The template associated with this component makes use of the defined trigger
+ * by binding to an element within its template code.
+ *
+ * ```html
+ * <!-- somewhere inside of my-component-tpl.html -->
+ * <div [@myAnimationTrigger]="myStatusExp">...</div>
+ * ```
+ *
+ * ### Using an inline function
+ * The `transition` animation method also supports reading an inline function which can decide
+ * if its associated animation should be run.
+ *
+ * ```typescript
+ * // this method is run each time the `myAnimationTrigger` trigger value changes.
+ * function myInlineMatcherFn(fromState: string, toState: string, element: any, params: {[key:
+ string]: any}): boolean {
+ *   // notice that `element` and `params` are also available here
+ *   return toState == 'yes-please-animate';
+ * }
+ *
+ * @Component({
+ *   selector: 'my-component',
+ *   templateUrl: 'my-component-tpl.html',
+ *   animations: [
+ *     trigger('myAnimationTrigger', [
+ *       transition(myInlineMatcherFn, [
+ *         // the animation sequence code
+ *       ]),
+ *     ])
+ *   ]
+ * })
+ * class MyComponent {
+ *   myStatusExp = "yes-please-animate";
+ * }
+ * ```
+ *
+ * ### Disabling Animations
+ * When true, the special animation control binding `@.disabled` binding prevents
+ * all animations from rendering.
+ * Place the  `@.disabled` binding on an element to disable
+ * animations on the element itself, as well as any inner animation triggers
+ * within the element.
+ *
+ * The following example shows how to use this feature:
+ *
+ * ```typescript
+ * @Component({
+ *   selector: 'my-component',
+ *   template: `
+ *     <div [@.disabled]="isDisabled">
+ *       <div [@childAnimation]="exp"></div>
+ *     </div>
+ *   `,
+ *   animations: [
+ *     trigger("childAnimation", [
+ *       // ...
+ *     ])
+ *   ]
+ * })
+ * class MyComponent {
+ *   isDisabled = true;
+ *   exp = '...';
+ * }
+ * ```
+ *
+ * When `@.disabled` is true, it prevents the `@childAnimation` trigger from animating,
+ * along with any inner animations.
+ *
+ * ### Disable animations application-wide
+ * When an area of the template is set to have animations disabled,
+ * **all** inner components have their animations disabled as well.
+ * This means that you can disable all animations for an app
+ * by placing a host binding set on `@.disabled` on the topmost Angular component.
+ *
+ * ```typescript
+ * import {Component, HostBinding} from '@angular/core';
+ *
+ * @Component({
+ *   selector: 'app-component',
+ *   templateUrl: 'app.component.html',
+ * })
+ * class AppComponent {
+ *   @HostBinding('@.disabled')
+ *   public animationsDisabled = true;
+ * }
+ * ```
+ *
+ * ### Overriding disablement of inner animations
+ * Despite inner animations being disabled, a parent animation can `query()`
+ * for inner elements located in disabled areas of the template and still animate
+ * them if needed. This is also the case for when a sub animation is
+ * queried by a parent and then later animated using `animateChild()`.
+ *
+ * ### Detecting when an animation is disabled
+ * If a region of the DOM (or the entire application) has its animations disabled, the animation
+ * trigger callbacks still fire, but for zero seconds. When the callback fires, it provides
+ * an instance of an `AnimationEvent`. If animations are disabled,
+ * the `.disabled` flag on the event is true.
+ *
+ * @publicApi
+ */
+function trigger(name, definitions) {
+    return { type: 7 /* Trigger */, name, definitions, options: {} };
+}
+/**
+ * Defines an animation step that combines styling information with timing information.
+ *
+ * @param timings Sets `AnimateTimings` for the parent animation.
+ * A string in the format "duration [delay] [easing]".
+ *  - Duration and delay are expressed as a number and optional time unit,
+ * such as "1s" or "10ms" for one second and 10 milliseconds, respectively.
+ * The default unit is milliseconds.
+ *  - The easing value controls how the animation accelerates and decelerates
+ * during its runtime. Value is one of  `ease`, `ease-in`, `ease-out`,
+ * `ease-in-out`, or a `cubic-bezier()` function call.
+ * If not supplied, no easing is applied.
+ *
+ * For example, the string "1s 100ms ease-out" specifies a duration of
+ * 1000 milliseconds, and delay of 100 ms, and the "ease-out" easing style,
+ * which decelerates near the end of the duration.
+ * @param styles Sets AnimationStyles for the parent animation.
+ * A function call to either `style()` or `keyframes()`
+ * that returns a collection of CSS style entries to be applied to the parent animation.
+ * When null, uses the styles from the destination state.
+ * This is useful when describing an animation step that will complete an animation;
+ * see "Animating to the final state" in `transitions()`.
+ * @returns An object that encapsulates the animation step.
+ *
+ * @usageNotes
+ * Call within an animation `sequence()`, `{@link animations/group group()}`, or
+ * `transition()` call to specify an animation step
+ * that applies given style data to the parent animation for a given amount of time.
+ *
+ * ### Syntax Examples
+ * **Timing examples**
+ *
+ * The following examples show various `timings` specifications.
+ * - `animate(500)` : Duration is 500 milliseconds.
+ * - `animate("1s")` : Duration is 1000 milliseconds.
+ * - `animate("100ms 0.5s")` : Duration is 100 milliseconds, delay is 500 milliseconds.
+ * - `animate("5s ease-in")` : Duration is 5000 milliseconds, easing in.
+ * - `animate("5s 10ms cubic-bezier(.17,.67,.88,.1)")` : Duration is 5000 milliseconds, delay is 10
+ * milliseconds, easing according to a bezier curve.
+ *
+ * **Style examples**
+ *
+ * The following example calls `style()` to set a single CSS style.
+ * ```typescript
+ * animate(500, style({ background: "red" }))
+ * ```
+ * The following example calls `keyframes()` to set a CSS style
+ * to different values for successive keyframes.
+ * ```typescript
+ * animate(500, keyframes(
+ *  [
+ *   style({ background: "blue" }),
+ *   style({ background: "red" })
+ *  ])
+ * ```
+ *
+ * @publicApi
+ */
+function animate(timings, styles = null) {
+    return { type: 4 /* Animate */, styles, timings };
+}
+/**
+ * @description Defines a list of animation steps to be run in parallel.
+ *
+ * @param steps An array of animation step objects.
+ * - When steps are defined by `style()` or `animate()`
+ * function calls, each call within the group is executed instantly.
+ * - To specify offset styles to be applied at a later time, define steps with
+ * `keyframes()`, or use `animate()` calls with a delay value.
+ * For example:
+ *
+ * ```typescript
+ * group([
+ *   animate("1s", style({ background: "black" })),
+ *   animate("2s", style({ color: "white" }))
+ * ])
+ * ```
+ *
+ * @param options An options object containing a delay and
+ * developer-defined parameters that provide styling defaults and
+ * can be overridden on invocation.
+ *
+ * @return An object that encapsulates the group data.
+ *
+ * @usageNotes
+ * Grouped animations are useful when a series of styles must be
+ * animated at different starting times and closed off at different ending times.
+ *
+ * When called within a `sequence()` or a
+ * `transition()` call, does not continue to the next
+ * instruction until all of the inner animation steps have completed.
+ *
+ * @publicApi
+ */
+function group(steps, options = null) {
+    return { type: 3 /* Group */, steps, options };
+}
+/**
+ * Defines a list of animation steps to be run sequentially, one by one.
+ *
+ * @param steps An array of animation step objects.
+ * - Steps defined by `style()` calls apply the styling data immediately.
+ * - Steps defined by `animate()` calls apply the styling data over time
+ *   as specified by the timing data.
+ *
+ * ```typescript
+ * sequence([
+ *   style({ opacity: 0 }),
+ *   animate("1s", style({ opacity: 1 }))
+ * ])
+ * ```
+ *
+ * @param options An options object containing a delay and
+ * developer-defined parameters that provide styling defaults and
+ * can be overridden on invocation.
+ *
+ * @return An object that encapsulates the sequence data.
+ *
+ * @usageNotes
+ * When you pass an array of steps to a
+ * `transition()` call, the steps run sequentially by default.
+ * Compare this to the `{@link animations/group group()}` call, which runs animation steps in
+ *parallel.
+ *
+ * When a sequence is used within a `{@link animations/group group()}` or a `transition()` call,
+ * execution continues to the next instruction only after each of the inner animation
+ * steps have completed.
+ *
+ * @publicApi
+ **/
+function sequence(steps, options = null) {
+    return { type: 2 /* Sequence */, steps, options };
+}
+/**
+ * Declares a key/value object containing CSS properties/styles that
+ * can then be used for an animation `state`, within an animation `sequence`,
+ * or as styling data for calls to `animate()` and `keyframes()`.
+ *
+ * @param tokens A set of CSS styles or HTML styles associated with an animation state.
+ * The value can be any of the following:
+ * - A key-value style pair associating a CSS property with a value.
+ * - An array of key-value style pairs.
+ * - An asterisk (*), to use auto-styling, where styles are derived from the element
+ * being animated and applied to the animation when it starts.
+ *
+ * Auto-styling can be used to define a state that depends on layout or other
+ * environmental factors.
+ *
+ * @return An object that encapsulates the style data.
+ *
+ * @usageNotes
+ * The following examples create animation styles that collect a set of
+ * CSS property values:
+ *
+ * ```typescript
+ * // string values for CSS properties
+ * style({ background: "red", color: "blue" })
+ *
+ * // numerical pixel values
+ * style({ width: 100, height: 0 })
+ * ```
+ *
+ * The following example uses auto-styling to allow a component to animate from
+ * a height of 0 up to the height of the parent element:
+ *
+ * ```
+ * style({ height: 0 }),
+ * animate("1s", style({ height: "*" }))
+ * ```
+ *
+ * @publicApi
+ **/
+function style(tokens) {
+    return { type: 6 /* Style */, styles: tokens, offset: null };
+}
+/**
+ * Declares an animation state within a trigger attached to an element.
+ *
+ * @param name One or more names for the defined state in a comma-separated string.
+ * The following reserved state names can be supplied to define a style for specific use
+ * cases:
+ *
+ * - `void` You can associate styles with this name to be used when
+ * the element is detached from the application. For example, when an `ngIf` evaluates
+ * to false, the state of the associated element is void.
+ *  - `*` (asterisk) Indicates the default state. You can associate styles with this name
+ * to be used as the fallback when the state that is being animated is not declared
+ * within the trigger.
+ *
+ * @param styles A set of CSS styles associated with this state, created using the
+ * `style()` function.
+ * This set of styles persists on the element once the state has been reached.
+ * @param options Parameters that can be passed to the state when it is invoked.
+ * 0 or more key-value pairs.
+ * @return An object that encapsulates the new state data.
+ *
+ * @usageNotes
+ * Use the `trigger()` function to register states to an animation trigger.
+ * Use the `transition()` function to animate between states.
+ * When a state is active within a component, its associated styles persist on the element,
+ * even when the animation ends.
+ *
+ * @publicApi
+ **/
+function state(name, styles, options) {
+    return { type: 0 /* State */, name, styles, options };
+}
+/**
+ * Defines a set of animation styles, associating each style with an optional `offset` value.
+ *
+ * @param steps A set of animation styles with optional offset data.
+ * The optional `offset` value for a style specifies a percentage of the total animation
+ * time at which that style is applied.
+ * @returns An object that encapsulates the keyframes data.
+ *
+ * @usageNotes
+ * Use with the `animate()` call. Instead of applying animations
+ * from the current state
+ * to the destination state, keyframes describe how each style entry is applied and at what point
+ * within the animation arc.
+ * Compare [CSS Keyframe Animations](https://www.w3schools.com/css/css3_animations.asp).
+ *
+ * ### Usage
+ *
+ * In the following example, the offset values describe
+ * when each `backgroundColor` value is applied. The color is red at the start, and changes to
+ * blue when 20% of the total time has elapsed.
+ *
+ * ```typescript
+ * // the provided offset values
+ * animate("5s", keyframes([
+ *   style({ backgroundColor: "red", offset: 0 }),
+ *   style({ backgroundColor: "blue", offset: 0.2 }),
+ *   style({ backgroundColor: "orange", offset: 0.3 }),
+ *   style({ backgroundColor: "black", offset: 1 })
+ * ]))
+ * ```
+ *
+ * If there are no `offset` values specified in the style entries, the offsets
+ * are calculated automatically.
+ *
+ * ```typescript
+ * animate("5s", keyframes([
+ *   style({ backgroundColor: "red" }) // offset = 0
+ *   style({ backgroundColor: "blue" }) // offset = 0.33
+ *   style({ backgroundColor: "orange" }) // offset = 0.66
+ *   style({ backgroundColor: "black" }) // offset = 1
+ * ]))
+ *```
+
+ * @publicApi
+ */
+function keyframes(steps) {
+    return { type: 5 /* Keyframes */, steps };
+}
+/**
+ * Declares an animation transition as a sequence of animation steps to run when a given
+ * condition is satisfied. The condition is a Boolean expression or function that compares
+ * the previous and current animation states, and returns true if this transition should occur.
+ * When the state criteria of a defined transition are met, the associated animation is
+ * triggered.
+ *
+ * @param stateChangeExpr A Boolean expression or function that compares the previous and current
+ * animation states, and returns true if this transition should occur. Note that  "true" and "false"
+ * match 1 and 0, respectively. An expression is evaluated each time a state change occurs in the
+ * animation trigger element.
+ * The animation steps run when the expression evaluates to true.
+ *
+ * - A state-change string takes the form "state1 => state2", where each side is a defined animation
+ * state, or an asterix (*) to refer to a dynamic start or end state.
+ *   - The expression string can contain multiple comma-separated statements;
+ * for example "state1 => state2, state3 => state4".
+ *   - Special values `:enter` and `:leave` initiate a transition on the entry and exit states,
+ * equivalent to  "void => *"  and "* => void".
+ *   - Special values `:increment` and `:decrement` initiate a transition when a numeric value has
+ * increased or decreased in value.
+ * - A function is executed each time a state change occurs in the animation trigger element.
+ * The animation steps run when the function returns true.
+ *
+ * @param steps One or more animation objects, as returned by the `animate()` or
+ * `sequence()` function, that form a transformation from one state to another.
+ * A sequence is used by default when you pass an array.
+ * @param options An options object that can contain a delay value for the start of the animation,
+ * and additional developer-defined parameters. Provided values for additional parameters are used
+ * as defaults, and override values can be passed to the caller on invocation.
+ * @returns An object that encapsulates the transition data.
+ *
+ * @usageNotes
+ * The template associated with a component binds an animation trigger to an element.
+ *
+ * ```HTML
+ * <!-- somewhere inside of my-component-tpl.html -->
+ * <div [@myAnimationTrigger]="myStatusExp">...</div>
+ * ```
+ *
+ * All transitions are defined within an animation trigger,
+ * along with named states that the transitions change to and from.
+ *
+ * ```typescript
+ * trigger("myAnimationTrigger", [
+ *  // define states
+ *  state("on", style({ background: "green" })),
+ *  state("off", style({ background: "grey" })),
+ *  ...]
+ * ```
+ *
+ * Note that when you call the `sequence()` function within a `{@link animations/group group()}`
+ * or a `transition()` call, execution does not continue to the next instruction
+ * until each of the inner animation steps have completed.
+ *
+ * ### Syntax examples
+ *
+ * The following examples define transitions between the two defined states (and default states),
+ * using various options:
+ *
+ * ```typescript
+ * // Transition occurs when the state value
+ * // bound to "myAnimationTrigger" changes from "on" to "off"
+ * transition("on => off", animate(500))
+ * // Run the same animation for both directions
+ * transition("on <=> off", animate(500))
+ * // Define multiple state-change pairs separated by commas
+ * transition("on => off, off => void", animate(500))
+ * ```
+ *
+ * ### Special values for state-change expressions
+ *
+ * - Catch-all state change for when an element is inserted into the page and the
+ * destination state is unknown:
+ *
+ * ```typescript
+ * transition("void => *", [
+ *  style({ opacity: 0 }),
+ *  animate(500)
+ *  ])
+ * ```
+ *
+ * - Capture a state change between any states:
+ *
+ *  `transition("* => *", animate("1s 0s"))`
+ *
+ * - Entry and exit transitions:
+ *
+ * ```typescript
+ * transition(":enter", [
+ *   style({ opacity: 0 }),
+ *   animate(500, style({ opacity: 1 }))
+ *   ]),
+ * transition(":leave", [
+ *   animate(500, style({ opacity: 0 }))
+ *   ])
+ * ```
+ *
+ * - Use `:increment` and `:decrement` to initiate transitions:
+ *
+ * ```typescript
+ * transition(":increment", group([
+ *  query(':enter', [
+ *     style({ left: '100%' }),
+ *     animate('0.5s ease-out', style('*'))
+ *   ]),
+ *  query(':leave', [
+ *     animate('0.5s ease-out', style({ left: '-100%' }))
+ *  ])
+ * ]))
+ *
+ * transition(":decrement", group([
+ *  query(':enter', [
+ *     style({ left: '100%' }),
+ *     animate('0.5s ease-out', style('*'))
+ *   ]),
+ *  query(':leave', [
+ *     animate('0.5s ease-out', style({ left: '-100%' }))
+ *  ])
+ * ]))
+ * ```
+ *
+ * ### State-change functions
+ *
+ * Here is an example of a `fromState` specified as a state-change function that invokes an
+ * animation when true:
+ *
+ * ```typescript
+ * transition((fromState, toState) =>
+ *  {
+ *   return fromState == "off" && toState == "on";
+ *  },
+ *  animate("1s 0s"))
+ * ```
+ *
+ * ### Animating to the final state
+ *
+ * If the final step in a transition is a call to `animate()` that uses a timing value
+ * with no style data, that step is automatically considered the final animation arc,
+ * for the element to reach the final state. Angular automatically adds or removes
+ * CSS styles to ensure that the element is in the correct final state.
+ *
+ * The following example defines a transition that starts by hiding the element,
+ * then makes sure that it animates properly to whatever state is currently active for trigger:
+ *
+ * ```typescript
+ * transition("void => *", [
+ *   style({ opacity: 0 }),
+ *   animate(500)
+ *  ])
+ * ```
+ * ### Boolean value matching
+ * If a trigger binding value is a Boolean, it can be matched using a transition expression
+ * that compares true and false or 1 and 0. For example:
+ *
+ * ```
+ * // in the template
+ * <div [@openClose]="open ? true : false">...</div>
+ * // in the component metadata
+ * trigger('openClose', [
+ *   state('true', style({ height: '*' })),
+ *   state('false', style({ height: '0px' })),
+ *   transition('false <=> true', animate(500))
+ * ])
+ * ```
+ *
+ * @publicApi
+ **/
+function transition(stateChangeExpr, steps, options = null) {
+    return { type: 1 /* Transition */, expr: stateChangeExpr, animation: steps, options };
+}
+/**
+ * Produces a reusable animation that can be invoked in another animation or sequence,
+ * by calling the `useAnimation()` function.
+ *
+ * @param steps One or more animation objects, as returned by the `animate()`
+ * or `sequence()` function, that form a transformation from one state to another.
+ * A sequence is used by default when you pass an array.
+ * @param options An options object that can contain a delay value for the start of the
+ * animation, and additional developer-defined parameters.
+ * Provided values for additional parameters are used as defaults,
+ * and override values can be passed to the caller on invocation.
+ * @returns An object that encapsulates the animation data.
+ *
+ * @usageNotes
+ * The following example defines a reusable animation, providing some default parameter
+ * values.
+ *
+ * ```typescript
+ * var fadeAnimation = animation([
+ *   style({ opacity: '{{ start }}' }),
+ *   animate('{{ time }}',
+ *   style({ opacity: '{{ end }}'}))
+ *   ],
+ *   { params: { time: '1000ms', start: 0, end: 1 }});
+ * ```
+ *
+ * The following invokes the defined animation with a call to `useAnimation()`,
+ * passing in override parameter values.
+ *
+ * ```js
+ * useAnimation(fadeAnimation, {
+ *   params: {
+ *     time: '2s',
+ *     start: 1,
+ *     end: 0
+ *   }
+ * })
+ * ```
+ *
+ * If any of the passed-in parameter values are missing from this call,
+ * the default values are used. If one or more parameter values are missing before a step is
+ * animated, `useAnimation()` throws an error.
+ *
+ * @publicApi
+ */
+function animation(steps, options = null) {
+    return { type: 8 /* Reference */, animation: steps, options };
+}
+/**
+ * Executes a queried inner animation element within an animation sequence.
+ *
+ * @param options An options object that can contain a delay value for the start of the
+ * animation, and additional override values for developer-defined parameters.
+ * @return An object that encapsulates the child animation data.
+ *
+ * @usageNotes
+ * Each time an animation is triggered in Angular, the parent animation
+ * has priority and any child animations are blocked. In order
+ * for a child animation to run, the parent animation must query each of the elements
+ * containing child animations, and run them using this function.
+ *
+ * Note that this feature is designed to be used with `query()` and it will only work
+ * with animations that are assigned using the Angular animation library. CSS keyframes
+ * and transitions are not handled by this API.
+ *
+ * @publicApi
+ */
+function animateChild(options = null) {
+    return { type: 9 /* AnimateChild */, options };
+}
+/**
+ * Starts a reusable animation that is created using the `animation()` function.
+ *
+ * @param animation The reusable animation to start.
+ * @param options An options object that can contain a delay value for the start of
+ * the animation, and additional override values for developer-defined parameters.
+ * @return An object that contains the animation parameters.
+ *
+ * @publicApi
+ */
+function useAnimation(animation, options = null) {
+    return { type: 10 /* AnimateRef */, animation, options };
+}
+/**
+ * Finds one or more inner elements within the current element that is
+ * being animated within a sequence. Use with `animate()`.
+ *
+ * @param selector The element to query, or a set of elements that contain Angular-specific
+ * characteristics, specified with one or more of the following tokens.
+ *  - `query(":enter")` or `query(":leave")` : Query for newly inserted/removed elements.
+ *  - `query(":animating")` : Query all currently animating elements.
+ *  - `query("@triggerName")` : Query elements that contain an animation trigger.
+ *  - `query("@*")` : Query all elements that contain an animation triggers.
+ *  - `query(":self")` : Include the current element into the animation sequence.
+ *
+ * @param animation One or more animation steps to apply to the queried element or elements.
+ * An array is treated as an animation sequence.
+ * @param options An options object. Use the 'limit' field to limit the total number of
+ * items to collect.
+ * @return An object that encapsulates the query data.
+ *
+ * @usageNotes
+ * Tokens can be merged into a combined query selector string. For example:
+ *
+ * ```typescript
+ *  query(':self, .record:enter, .record:leave, @subTrigger', [...])
+ * ```
+ *
+ * The `query()` function collects multiple elements and works internally by using
+ * `element.querySelectorAll`. Use the `limit` field of an options object to limit
+ * the total number of items to be collected. For example:
+ *
+ * ```js
+ * query('div', [
+ *   animate(...),
+ *   animate(...)
+ * ], { limit: 1 })
+ * ```
+ *
+ * By default, throws an error when zero items are found. Set the
+ * `optional` flag to ignore this error. For example:
+ *
+ * ```js
+ * query('.some-element-that-may-not-be-there', [
+ *   animate(...),
+ *   animate(...)
+ * ], { optional: true })
+ * ```
+ *
+ * ### Usage Example
+ *
+ * The following example queries for inner elements and animates them
+ * individually using `animate()`.
+ *
+ * ```typescript
+ * @Component({
+ *   selector: 'inner',
+ *   template: `
+ *     <div [@queryAnimation]="exp">
+ *       <h1>Title</h1>
+ *       <div class="content">
+ *         Blah blah blah
+ *       </div>
+ *     </div>
+ *   `,
+ *   animations: [
+ *    trigger('queryAnimation', [
+ *      transition('* => goAnimate', [
+ *        // hide the inner elements
+ *        query('h1', style({ opacity: 0 })),
+ *        query('.content', style({ opacity: 0 })),
+ *
+ *        // animate the inner elements in, one by one
+ *        query('h1', animate(1000, style({ opacity: 1 }))),
+ *        query('.content', animate(1000, style({ opacity: 1 }))),
+ *      ])
+ *    ])
+ *  ]
+ * })
+ * class Cmp {
+ *   exp = '';
+ *
+ *   goAnimate() {
+ *     this.exp = 'goAnimate';
+ *   }
+ * }
+ * ```
+ *
+ * @publicApi
+ */
+function query(selector, animation, options = null) {
+    return { type: 11 /* Query */, selector, animation, options };
+}
+/**
+ * Use within an animation `query()` call to issue a timing gap after
+ * each queried item is animated.
+ *
+ * @param timings A delay value.
+ * @param animation One ore more animation steps.
+ * @returns An object that encapsulates the stagger data.
+ *
+ * @usageNotes
+ * In the following example, a container element wraps a list of items stamped out
+ * by an `ngFor`. The container element contains an animation trigger that will later be set
+ * to query for each of the inner items.
+ *
+ * Each time items are added, the opacity fade-in animation runs,
+ * and each removed item is faded out.
+ * When either of these animations occur, the stagger effect is
+ * applied after each item's animation is started.
+ *
+ * ```html
+ * <!-- list.component.html -->
+ * <button (click)="toggle()">Show / Hide Items</button>
+ * <hr />
+ * <div [@listAnimation]="items.length">
+ *   <div *ngFor="let item of items">
+ *     {{ item }}
+ *   </div>
+ * </div>
+ * ```
+ *
+ * Here is the component code:
+ *
+ * ```typescript
+ * import {trigger, transition, style, animate, query, stagger} from '@angular/animations';
+ * @Component({
+ *   templateUrl: 'list.component.html',
+ *   animations: [
+ *     trigger('listAnimation', [
+ *     ...
+ *     ])
+ *   ]
+ * })
+ * class ListComponent {
+ *   items = [];
+ *
+ *   showItems() {
+ *     this.items = [0,1,2,3,4];
+ *   }
+ *
+ *   hideItems() {
+ *     this.items = [];
+ *   }
+ *
+ *   toggle() {
+ *     this.items.length ? this.hideItems() : this.showItems();
+ *    }
+ *  }
+ * ```
+ *
+ * Here is the animation trigger code:
+ *
+ * ```typescript
+ * trigger('listAnimation', [
+ *   transition('* => *', [ // each time the binding value changes
+ *     query(':leave', [
+ *       stagger(100, [
+ *         animate('0.5s', style({ opacity: 0 }))
+ *       ])
+ *     ]),
+ *     query(':enter', [
+ *       style({ opacity: 0 }),
+ *       stagger(100, [
+ *         animate('0.5s', style({ opacity: 1 }))
+ *       ])
+ *     ])
+ *   ])
+ * ])
+ * ```
+ *
+ * @publicApi
+ */
+function stagger(timings, animation) {
+    return { type: 12 /* Stagger */, timings, animation };
+}
+
+/**
+ * @license
+ * Copyright Google LLC All Rights Reserved.
+ *
+ * Use of this source code is governed by an MIT-style license that can be
+ * found in the LICENSE file at https://angular.io/license
+ */
+function scheduleMicroTask(cb) {
+    Promise.resolve(null).then(cb);
+}
+
+/**
+ * @license
+ * Copyright Google LLC All Rights Reserved.
+ *
+ * Use of this source code is governed by an MIT-style license that can be
+ * found in the LICENSE file at https://angular.io/license
+ */
+/**
+ * An empty programmatic controller for reusable animations.
+ * Used internally when animations are disabled, to avoid
+ * checking for the null case when an animation player is expected.
+ *
+ * @see `animate()`
+ * @see `AnimationPlayer`
+ * @see `GroupPlayer`
+ *
+ * @publicApi
+ */
+class NoopAnimationPlayer {
+    constructor(duration = 0, delay = 0) {
+        this._onDoneFns = [];
+        this._onStartFns = [];
+        this._onDestroyFns = [];
+        this._started = false;
+        this._destroyed = false;
+        this._finished = false;
+        this._position = 0;
+        this.parentPlayer = null;
+        this.totalTime = duration + delay;
+    }
+    _onFinish() {
+        if (!this._finished) {
+            this._finished = true;
+            this._onDoneFns.forEach(fn => fn());
+            this._onDoneFns = [];
+        }
+    }
+    onStart(fn) {
+        this._onStartFns.push(fn);
+    }
+    onDone(fn) {
+        this._onDoneFns.push(fn);
+    }
+    onDestroy(fn) {
+        this._onDestroyFns.push(fn);
+    }
+    hasStarted() {
+        return this._started;
+    }
+    init() { }
+    play() {
+        if (!this.hasStarted()) {
+            this._onStart();
+            this.triggerMicrotask();
+        }
+        this._started = true;
+    }
+    /** @internal */
+    triggerMicrotask() {
+        scheduleMicroTask(() => this._onFinish());
+    }
+    _onStart() {
+        this._onStartFns.forEach(fn => fn());
+        this._onStartFns = [];
+    }
+    pause() { }
+    restart() { }
+    finish() {
+        this._onFinish();
+    }
+    destroy() {
+        if (!this._destroyed) {
+            this._destroyed = true;
+            if (!this.hasStarted()) {
+                this._onStart();
+            }
+            this.finish();
+            this._onDestroyFns.forEach(fn => fn());
+            this._onDestroyFns = [];
+        }
+    }
+    reset() { }
+    setPosition(position) {
+        this._position = this.totalTime ? position * this.totalTime : 1;
+    }
+    getPosition() {
+        return this.totalTime ? this._position / this.totalTime : 1;
+    }
+    /** @internal */
+    triggerCallback(phaseName) {
+        const methods = phaseName == 'start' ? this._onStartFns : this._onDoneFns;
+        methods.forEach(fn => fn());
+        methods.length = 0;
+    }
+}
+
+/**
+ * @license
+ * Copyright Google LLC All Rights Reserved.
+ *
+ * Use of this source code is governed by an MIT-style license that can be
+ * found in the LICENSE file at https://angular.io/license
+ */
+/**
+ * A programmatic controller for a group of reusable animations.
+ * Used internally to control animations.
+ *
+ * @see `AnimationPlayer`
+ * @see `{@link animations/group group()}`
+ *
+ */
+class AnimationGroupPlayer {
+    constructor(_players) {
+        this._onDoneFns = [];
+        this._onStartFns = [];
+        this._finished = false;
+        this._started = false;
+        this._destroyed = false;
+        this._onDestroyFns = [];
+        this.parentPlayer = null;
+        this.totalTime = 0;
+        this.players = _players;
+        let doneCount = 0;
+        let destroyCount = 0;
+        let startCount = 0;
+        const total = this.players.length;
+        if (total == 0) {
+            scheduleMicroTask(() => this._onFinish());
+        }
+        else {
+            this.players.forEach(player => {
+                player.onDone(() => {
+                    if (++doneCount == total) {
+                        this._onFinish();
+                    }
+                });
+                player.onDestroy(() => {
+                    if (++destroyCount == total) {
+                        this._onDestroy();
+                    }
+                });
+                player.onStart(() => {
+                    if (++startCount == total) {
+                        this._onStart();
+                    }
+                });
+            });
+        }
+        this.totalTime = this.players.reduce((time, player) => Math.max(time, player.totalTime), 0);
+    }
+    _onFinish() {
+        if (!this._finished) {
+            this._finished = true;
+            this._onDoneFns.forEach(fn => fn());
+            this._onDoneFns = [];
+        }
+    }
+    init() {
+        this.players.forEach(player => player.init());
+    }
+    onStart(fn) {
+        this._onStartFns.push(fn);
+    }
+    _onStart() {
+        if (!this.hasStarted()) {
+            this._started = true;
+            this._onStartFns.forEach(fn => fn());
+            this._onStartFns = [];
+        }
+    }
+    onDone(fn) {
+        this._onDoneFns.push(fn);
+    }
+    onDestroy(fn) {
+        this._onDestroyFns.push(fn);
+    }
+    hasStarted() {
+        return this._started;
+    }
+    play() {
+        if (!this.parentPlayer) {
+            this.init();
+        }
+        this._onStart();
+        this.players.forEach(player => player.play());
+    }
+    pause() {
+        this.players.forEach(player => player.pause());
+    }
+    restart() {
+        this.players.forEach(player => player.restart());
+    }
+    finish() {
+        this._onFinish();
+        this.players.forEach(player => player.finish());
+    }
+    destroy() {
+        this._onDestroy();
+    }
+    _onDestroy() {
+        if (!this._destroyed) {
+            this._destroyed = true;
+            this._onFinish();
+            this.players.forEach(player => player.destroy());
+            this._onDestroyFns.forEach(fn => fn());
+            this._onDestroyFns = [];
+        }
+    }
+    reset() {
+        this.players.forEach(player => player.reset());
+        this._destroyed = false;
+        this._finished = false;
+        this._started = false;
+    }
+    setPosition(p) {
+        const timeAtPosition = p * this.totalTime;
+        this.players.forEach(player => {
+            const position = player.totalTime ? Math.min(1, timeAtPosition / player.totalTime) : 1;
+            player.setPosition(position);
+        });
+    }
+    getPosition() {
+        const longestPlayer = this.players.reduce((longestSoFar, player) => {
+            const newPlayerIsLongest = longestSoFar === null || player.totalTime > longestSoFar.totalTime;
+            return newPlayerIsLongest ? player : longestSoFar;
+        }, null);
+        return longestPlayer != null ? longestPlayer.getPosition() : 0;
+    }
+    beforeDestroy() {
+        this.players.forEach(player => {
+            if (player.beforeDestroy) {
+                player.beforeDestroy();
+            }
+        });
+    }
+    /** @internal */
+    triggerCallback(phaseName) {
+        const methods = phaseName == 'start' ? this._onStartFns : this._onDoneFns;
+        methods.forEach(fn => fn());
+        methods.length = 0;
+    }
+}
+
+/**
+ * @license
+ * Copyright Google LLC All Rights Reserved.
+ *
+ * Use of this source code is governed by an MIT-style license that can be
+ * found in the LICENSE file at https://angular.io/license
+ */
+const ɵPRE_STYLE = '!';
+
+/**
+ * @license
+ * Copyright Google LLC All Rights Reserved.
+ *
+ * Use of this source code is governed by an MIT-style license that can be
+ * found in the LICENSE file at https://angular.io/license
+ */
+
+/**
+ * @license
+ * Copyright Google LLC All Rights Reserved.
+ *
+ * Use of this source code is governed by an MIT-style license that can be
+ * found in the LICENSE file at https://angular.io/license
+ */
+
+/**
+ * @license
+ * Copyright Google LLC All Rights Reserved.
+ *
+ * Use of this source code is governed by an MIT-style license that can be
+ * found in the LICENSE file at https://angular.io/license
+ */
+
+/**
+ * Generated bundle index. Do not edit.
+ */
+
+
+
+//# sourceMappingURL=animations.js.map
 
 /***/ }),
 
@@ -25852,6 +29331,545 @@ class QueueAction extends _AsyncAction__WEBPACK_IMPORTED_MODULE_0__["AsyncAction
 
 /***/ }),
 
+/***/ "YyRF":
+/*!*******************************************************************!*\
+  !*** ./node_modules/primeng/__ivy_ngcc__/fesm2015/primeng-dom.js ***!
+  \*******************************************************************/
+/*! exports provided: ConnectedOverlayScrollHandler, DomHandler */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ConnectedOverlayScrollHandler", function() { return ConnectedOverlayScrollHandler; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "DomHandler", function() { return DomHandler; });
+/**
+ * @dynamic is for runtime initializing DomHandler.browser
+ *
+ * If delete below comment, we can see this error message:
+ *  Metadata collected contains an error that will be reported at runtime:
+ *  Only initialized variables and constants can be referenced
+ *  because the value of this variable is needed by the template compiler.
+ */
+// @dynamic
+class DomHandler {
+    static addClass(element, className) {
+        if (element.classList)
+            element.classList.add(className);
+        else
+            element.className += ' ' + className;
+    }
+    static addMultipleClasses(element, className) {
+        if (element.classList) {
+            let styles = className.trim().split(' ');
+            for (let i = 0; i < styles.length; i++) {
+                element.classList.add(styles[i]);
+            }
+        }
+        else {
+            let styles = className.split(' ');
+            for (let i = 0; i < styles.length; i++) {
+                element.className += ' ' + styles[i];
+            }
+        }
+    }
+    static removeClass(element, className) {
+        if (element.classList)
+            element.classList.remove(className);
+        else
+            element.className = element.className.replace(new RegExp('(^|\\b)' + className.split(' ').join('|') + '(\\b|$)', 'gi'), ' ');
+    }
+    static hasClass(element, className) {
+        if (element.classList)
+            return element.classList.contains(className);
+        else
+            return new RegExp('(^| )' + className + '( |$)', 'gi').test(element.className);
+    }
+    static siblings(element) {
+        return Array.prototype.filter.call(element.parentNode.children, function (child) {
+            return child !== element;
+        });
+    }
+    static find(element, selector) {
+        return Array.from(element.querySelectorAll(selector));
+    }
+    static findSingle(element, selector) {
+        if (element) {
+            return element.querySelector(selector);
+        }
+        return null;
+    }
+    static index(element) {
+        let children = element.parentNode.childNodes;
+        let num = 0;
+        for (var i = 0; i < children.length; i++) {
+            if (children[i] == element)
+                return num;
+            if (children[i].nodeType == 1)
+                num++;
+        }
+        return -1;
+    }
+    static indexWithinGroup(element, attributeName) {
+        let children = element.parentNode ? element.parentNode.childNodes : [];
+        let num = 0;
+        for (var i = 0; i < children.length; i++) {
+            if (children[i] == element)
+                return num;
+            if (children[i].attributes && children[i].attributes[attributeName] && children[i].nodeType == 1)
+                num++;
+        }
+        return -1;
+    }
+    static relativePosition(element, target) {
+        let elementDimensions = element.offsetParent ? { width: element.offsetWidth, height: element.offsetHeight } : this.getHiddenElementDimensions(element);
+        const targetHeight = target.offsetHeight;
+        const targetOffset = target.getBoundingClientRect();
+        const viewport = this.getViewport();
+        let top, left;
+        if ((targetOffset.top + targetHeight + elementDimensions.height) > viewport.height) {
+            top = -1 * (elementDimensions.height);
+            element.style.transformOrigin = 'bottom';
+            if (targetOffset.top + top < 0) {
+                top = -1 * targetOffset.top;
+            }
+        }
+        else {
+            top = targetHeight;
+            element.style.transformOrigin = 'top';
+        }
+        if (elementDimensions.width > viewport.width) {
+            // element wider then viewport and cannot fit on screen (align at left side of viewport)
+            left = targetOffset.left * -1;
+        }
+        else if ((targetOffset.left + elementDimensions.width) > viewport.width) {
+            // element wider then viewport but can be fit on screen (align at right side of viewport)
+            left = (targetOffset.left + elementDimensions.width - viewport.width) * -1;
+        }
+        else {
+            // element fits on screen (align with target)
+            left = 0;
+        }
+        element.style.top = top + 'px';
+        element.style.left = left + 'px';
+    }
+    static absolutePosition(element, target) {
+        let elementDimensions = element.offsetParent ? { width: element.offsetWidth, height: element.offsetHeight } : this.getHiddenElementDimensions(element);
+        let elementOuterHeight = elementDimensions.height;
+        let elementOuterWidth = elementDimensions.width;
+        let targetOuterHeight = target.offsetHeight;
+        let targetOuterWidth = target.offsetWidth;
+        let targetOffset = target.getBoundingClientRect();
+        let windowScrollTop = this.getWindowScrollTop();
+        let windowScrollLeft = this.getWindowScrollLeft();
+        let viewport = this.getViewport();
+        let top, left;
+        if (targetOffset.top + targetOuterHeight + elementOuterHeight > viewport.height) {
+            top = targetOffset.top + windowScrollTop - elementOuterHeight;
+            element.style.transformOrigin = 'bottom';
+            if (top < 0) {
+                top = windowScrollTop;
+            }
+        }
+        else {
+            top = targetOuterHeight + targetOffset.top + windowScrollTop;
+            element.style.transformOrigin = 'top';
+        }
+        if (targetOffset.left + elementOuterWidth > viewport.width)
+            left = Math.max(0, targetOffset.left + windowScrollLeft + targetOuterWidth - elementOuterWidth);
+        else
+            left = targetOffset.left + windowScrollLeft;
+        element.style.top = top + 'px';
+        element.style.left = left + 'px';
+    }
+    static getParents(element, parents = []) {
+        return element['parentNode'] === null ? parents : this.getParents(element.parentNode, parents.concat([element.parentNode]));
+    }
+    static getScrollableParents(element) {
+        let scrollableParents = [];
+        if (element) {
+            let parents = this.getParents(element);
+            const overflowRegex = /(auto|scroll)/;
+            const overflowCheck = (node) => {
+                let styleDeclaration = window['getComputedStyle'](node, null);
+                return overflowRegex.test(styleDeclaration.getPropertyValue('overflow')) || overflowRegex.test(styleDeclaration.getPropertyValue('overflowX')) || overflowRegex.test(styleDeclaration.getPropertyValue('overflowY'));
+            };
+            for (let parent of parents) {
+                let scrollSelectors = parent.nodeType === 1 && parent.dataset['scrollselectors'];
+                if (scrollSelectors) {
+                    let selectors = scrollSelectors.split(',');
+                    for (let selector of selectors) {
+                        let el = this.findSingle(parent, selector);
+                        if (el && overflowCheck(el)) {
+                            scrollableParents.push(el);
+                        }
+                    }
+                }
+                if (parent.nodeType !== 9 && overflowCheck(parent)) {
+                    scrollableParents.push(parent);
+                }
+            }
+        }
+        return scrollableParents;
+    }
+    static getHiddenElementOuterHeight(element) {
+        element.style.visibility = 'hidden';
+        element.style.display = 'block';
+        let elementHeight = element.offsetHeight;
+        element.style.display = 'none';
+        element.style.visibility = 'visible';
+        return elementHeight;
+    }
+    static getHiddenElementOuterWidth(element) {
+        element.style.visibility = 'hidden';
+        element.style.display = 'block';
+        let elementWidth = element.offsetWidth;
+        element.style.display = 'none';
+        element.style.visibility = 'visible';
+        return elementWidth;
+    }
+    static getHiddenElementDimensions(element) {
+        let dimensions = {};
+        element.style.visibility = 'hidden';
+        element.style.display = 'block';
+        dimensions.width = element.offsetWidth;
+        dimensions.height = element.offsetHeight;
+        element.style.display = 'none';
+        element.style.visibility = 'visible';
+        return dimensions;
+    }
+    static scrollInView(container, item) {
+        let borderTopValue = getComputedStyle(container).getPropertyValue('borderTopWidth');
+        let borderTop = borderTopValue ? parseFloat(borderTopValue) : 0;
+        let paddingTopValue = getComputedStyle(container).getPropertyValue('paddingTop');
+        let paddingTop = paddingTopValue ? parseFloat(paddingTopValue) : 0;
+        let containerRect = container.getBoundingClientRect();
+        let itemRect = item.getBoundingClientRect();
+        let offset = (itemRect.top + document.body.scrollTop) - (containerRect.top + document.body.scrollTop) - borderTop - paddingTop;
+        let scroll = container.scrollTop;
+        let elementHeight = container.clientHeight;
+        let itemHeight = this.getOuterHeight(item);
+        if (offset < 0) {
+            container.scrollTop = scroll + offset;
+        }
+        else if ((offset + itemHeight) > elementHeight) {
+            container.scrollTop = scroll + offset - elementHeight + itemHeight;
+        }
+    }
+    static fadeIn(element, duration) {
+        element.style.opacity = 0;
+        let last = +new Date();
+        let opacity = 0;
+        let tick = function () {
+            opacity = +element.style.opacity.replace(",", ".") + (new Date().getTime() - last) / duration;
+            element.style.opacity = opacity;
+            last = +new Date();
+            if (+opacity < 1) {
+                (window.requestAnimationFrame && requestAnimationFrame(tick)) || setTimeout(tick, 16);
+            }
+        };
+        tick();
+    }
+    static fadeOut(element, ms) {
+        var opacity = 1, interval = 50, duration = ms, gap = interval / duration;
+        let fading = setInterval(() => {
+            opacity = opacity - gap;
+            if (opacity <= 0) {
+                opacity = 0;
+                clearInterval(fading);
+            }
+            element.style.opacity = opacity;
+        }, interval);
+    }
+    static getWindowScrollTop() {
+        let doc = document.documentElement;
+        return (window.pageYOffset || doc.scrollTop) - (doc.clientTop || 0);
+    }
+    static getWindowScrollLeft() {
+        let doc = document.documentElement;
+        return (window.pageXOffset || doc.scrollLeft) - (doc.clientLeft || 0);
+    }
+    static matches(element, selector) {
+        var p = Element.prototype;
+        var f = p['matches'] || p.webkitMatchesSelector || p['mozMatchesSelector'] || p['msMatchesSelector'] || function (s) {
+            return [].indexOf.call(document.querySelectorAll(s), this) !== -1;
+        };
+        return f.call(element, selector);
+    }
+    static getOuterWidth(el, margin) {
+        let width = el.offsetWidth;
+        if (margin) {
+            let style = getComputedStyle(el);
+            width += parseFloat(style.marginLeft) + parseFloat(style.marginRight);
+        }
+        return width;
+    }
+    static getHorizontalPadding(el) {
+        let style = getComputedStyle(el);
+        return parseFloat(style.paddingLeft) + parseFloat(style.paddingRight);
+    }
+    static getHorizontalMargin(el) {
+        let style = getComputedStyle(el);
+        return parseFloat(style.marginLeft) + parseFloat(style.marginRight);
+    }
+    static innerWidth(el) {
+        let width = el.offsetWidth;
+        let style = getComputedStyle(el);
+        width += parseFloat(style.paddingLeft) + parseFloat(style.paddingRight);
+        return width;
+    }
+    static width(el) {
+        let width = el.offsetWidth;
+        let style = getComputedStyle(el);
+        width -= parseFloat(style.paddingLeft) + parseFloat(style.paddingRight);
+        return width;
+    }
+    static getInnerHeight(el) {
+        let height = el.offsetHeight;
+        let style = getComputedStyle(el);
+        height += parseFloat(style.paddingTop) + parseFloat(style.paddingBottom);
+        return height;
+    }
+    static getOuterHeight(el, margin) {
+        let height = el.offsetHeight;
+        if (margin) {
+            let style = getComputedStyle(el);
+            height += parseFloat(style.marginTop) + parseFloat(style.marginBottom);
+        }
+        return height;
+    }
+    static getHeight(el) {
+        let height = el.offsetHeight;
+        let style = getComputedStyle(el);
+        height -= parseFloat(style.paddingTop) + parseFloat(style.paddingBottom) + parseFloat(style.borderTopWidth) + parseFloat(style.borderBottomWidth);
+        return height;
+    }
+    static getWidth(el) {
+        let width = el.offsetWidth;
+        let style = getComputedStyle(el);
+        width -= parseFloat(style.paddingLeft) + parseFloat(style.paddingRight) + parseFloat(style.borderLeftWidth) + parseFloat(style.borderRightWidth);
+        return width;
+    }
+    static getViewport() {
+        let win = window, d = document, e = d.documentElement, g = d.getElementsByTagName('body')[0], w = win.innerWidth || e.clientWidth || g.clientWidth, h = win.innerHeight || e.clientHeight || g.clientHeight;
+        return { width: w, height: h };
+    }
+    static getOffset(el) {
+        var rect = el.getBoundingClientRect();
+        return {
+            top: rect.top + (window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop || 0),
+            left: rect.left + (window.pageXOffset || document.documentElement.scrollLeft || document.body.scrollLeft || 0),
+        };
+    }
+    static replaceElementWith(element, replacementElement) {
+        let parentNode = element.parentNode;
+        if (!parentNode)
+            throw `Can't replace element`;
+        return parentNode.replaceChild(replacementElement, element);
+    }
+    static getUserAgent() {
+        return navigator.userAgent;
+    }
+    static isIE() {
+        var ua = window.navigator.userAgent;
+        var msie = ua.indexOf('MSIE ');
+        if (msie > 0) {
+            // IE 10 or older => return version number
+            return true;
+        }
+        var trident = ua.indexOf('Trident/');
+        if (trident > 0) {
+            // IE 11 => return version number
+            var rv = ua.indexOf('rv:');
+            return true;
+        }
+        var edge = ua.indexOf('Edge/');
+        if (edge > 0) {
+            // Edge (IE 12+) => return version number
+            return true;
+        }
+        // other browser
+        return false;
+    }
+    static isIOS() {
+        return /iPad|iPhone|iPod/.test(navigator.userAgent) && !window['MSStream'];
+    }
+    static isAndroid() {
+        return /(android)/i.test(navigator.userAgent);
+    }
+    static appendChild(element, target) {
+        if (this.isElement(target))
+            target.appendChild(element);
+        else if (target.el && target.el.nativeElement)
+            target.el.nativeElement.appendChild(element);
+        else
+            throw 'Cannot append ' + target + ' to ' + element;
+    }
+    static removeChild(element, target) {
+        if (this.isElement(target))
+            target.removeChild(element);
+        else if (target.el && target.el.nativeElement)
+            target.el.nativeElement.removeChild(element);
+        else
+            throw 'Cannot remove ' + element + ' from ' + target;
+    }
+    static removeElement(element) {
+        if (!('remove' in Element.prototype))
+            element.parentNode.removeChild(element);
+        else
+            element.remove();
+    }
+    static isElement(obj) {
+        return (typeof HTMLElement === "object" ? obj instanceof HTMLElement :
+            obj && typeof obj === "object" && obj !== null && obj.nodeType === 1 && typeof obj.nodeName === "string");
+    }
+    static calculateScrollbarWidth(el) {
+        if (el) {
+            let style = getComputedStyle(el);
+            return (el.offsetWidth - el.clientWidth - parseFloat(style.borderLeftWidth) - parseFloat(style.borderRightWidth));
+        }
+        else {
+            if (this.calculatedScrollbarWidth !== null)
+                return this.calculatedScrollbarWidth;
+            let scrollDiv = document.createElement("div");
+            scrollDiv.className = "p-scrollbar-measure";
+            document.body.appendChild(scrollDiv);
+            let scrollbarWidth = scrollDiv.offsetWidth - scrollDiv.clientWidth;
+            document.body.removeChild(scrollDiv);
+            this.calculatedScrollbarWidth = scrollbarWidth;
+            return scrollbarWidth;
+        }
+    }
+    static calculateScrollbarHeight() {
+        if (this.calculatedScrollbarHeight !== null)
+            return this.calculatedScrollbarHeight;
+        let scrollDiv = document.createElement("div");
+        scrollDiv.className = "p-scrollbar-measure";
+        document.body.appendChild(scrollDiv);
+        let scrollbarHeight = scrollDiv.offsetHeight - scrollDiv.clientHeight;
+        document.body.removeChild(scrollDiv);
+        this.calculatedScrollbarWidth = scrollbarHeight;
+        return scrollbarHeight;
+    }
+    static invokeElementMethod(element, methodName, args) {
+        element[methodName].apply(element, args);
+    }
+    static clearSelection() {
+        if (window.getSelection) {
+            if (window.getSelection().empty) {
+                window.getSelection().empty();
+            }
+            else if (window.getSelection().removeAllRanges && window.getSelection().rangeCount > 0 && window.getSelection().getRangeAt(0).getClientRects().length > 0) {
+                window.getSelection().removeAllRanges();
+            }
+        }
+        else if (document['selection'] && document['selection'].empty) {
+            try {
+                document['selection'].empty();
+            }
+            catch (error) {
+                //ignore IE bug
+            }
+        }
+    }
+    static getBrowser() {
+        if (!this.browser) {
+            let matched = this.resolveUserAgent();
+            this.browser = {};
+            if (matched.browser) {
+                this.browser[matched.browser] = true;
+                this.browser['version'] = matched.version;
+            }
+            if (this.browser['chrome']) {
+                this.browser['webkit'] = true;
+            }
+            else if (this.browser['webkit']) {
+                this.browser['safari'] = true;
+            }
+        }
+        return this.browser;
+    }
+    static resolveUserAgent() {
+        let ua = navigator.userAgent.toLowerCase();
+        let match = /(chrome)[ \/]([\w.]+)/.exec(ua) ||
+            /(webkit)[ \/]([\w.]+)/.exec(ua) ||
+            /(opera)(?:.*version|)[ \/]([\w.]+)/.exec(ua) ||
+            /(msie) ([\w.]+)/.exec(ua) ||
+            ua.indexOf("compatible") < 0 && /(mozilla)(?:.*? rv:([\w.]+)|)/.exec(ua) ||
+            [];
+        return {
+            browser: match[1] || "",
+            version: match[2] || "0"
+        };
+    }
+    static isInteger(value) {
+        if (Number.isInteger) {
+            return Number.isInteger(value);
+        }
+        else {
+            return typeof value === "number" && isFinite(value) && Math.floor(value) === value;
+        }
+    }
+    static isHidden(element) {
+        return element.offsetParent === null;
+    }
+    static getFocusableElements(element) {
+        let focusableElements = DomHandler.find(element, `button:not([tabindex = "-1"]):not([disabled]):not([style*="display:none"]):not([hidden]),
+                [href][clientHeight][clientWidth]:not([tabindex = "-1"]):not([disabled]):not([style*="display:none"]):not([hidden]),
+                input:not([tabindex = "-1"]):not([disabled]):not([style*="display:none"]):not([hidden]), select:not([tabindex = "-1"]):not([disabled]):not([style*="display:none"]):not([hidden]),
+                textarea:not([tabindex = "-1"]):not([disabled]):not([style*="display:none"]):not([hidden]), [tabIndex]:not([tabIndex = "-1"]):not([disabled]):not([style*="display:none"]):not([hidden]),
+                [contenteditable]:not([tabIndex = "-1"]):not([disabled]):not([style*="display:none"]):not([hidden])`);
+        let visibleFocusableElements = [];
+        for (let focusableElement of focusableElements) {
+            if (getComputedStyle(focusableElement).display != "none" && getComputedStyle(focusableElement).visibility != "hidden")
+                visibleFocusableElements.push(focusableElement);
+        }
+        return visibleFocusableElements;
+    }
+    static generateZIndex() {
+        this.zindex = this.zindex || 999;
+        return ++this.zindex;
+    }
+}
+DomHandler.zindex = 1000;
+DomHandler.calculatedScrollbarWidth = null;
+DomHandler.calculatedScrollbarHeight = null;
+
+class ConnectedOverlayScrollHandler {
+    constructor(element, listener = () => { }) {
+        this.element = element;
+        this.listener = listener;
+    }
+    bindScrollListener() {
+        this.scrollableParents = DomHandler.getScrollableParents(this.element);
+        for (let i = 0; i < this.scrollableParents.length; i++) {
+            this.scrollableParents[i].addEventListener('scroll', this.listener);
+        }
+    }
+    unbindScrollListener() {
+        if (this.scrollableParents) {
+            for (let i = 0; i < this.scrollableParents.length; i++) {
+                this.scrollableParents[i].removeEventListener('scroll', this.listener);
+            }
+        }
+    }
+    destroy() {
+        this.unbindScrollListener();
+        this.element = null;
+        this.listener = null;
+        this.scrollableParents = null;
+    }
+}
+
+/**
+ * Generated bundle index. Do not edit.
+ */
+
+
+
+//# sourceMappingURL=primeng-dom.js.map
+
+/***/ }),
+
 /***/ "ZUHj":
 /*!***********************************************************************!*\
   !*** ./node_modules/rxjs/_esm2015/internal/util/subscribeToResult.js ***!
@@ -26081,6 +30099,999 @@ function switchMapTo(innerObservable, resultSelector) {
     return resultSelector ? Object(_switchMap__WEBPACK_IMPORTED_MODULE_0__["switchMap"])(() => innerObservable, resultSelector) : Object(_switchMap__WEBPACK_IMPORTED_MODULE_0__["switchMap"])(() => innerObservable);
 }
 //# sourceMappingURL=switchMapTo.js.map
+
+/***/ }),
+
+/***/ "agSv":
+/*!****************************************************************************************!*\
+  !*** ./node_modules/@ngrx/store-devtools/__ivy_ngcc__/fesm2015/ngrx-store-devtools.js ***!
+  \****************************************************************************************/
+/*! exports provided: INITIAL_OPTIONS, RECOMPUTE, StoreDevtools, StoreDevtoolsConfig, StoreDevtoolsModule, ɵa, ɵb, ɵc, ɵd, ɵe, ɵf, ɵg, ɵh, ɵi, ɵj */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "INITIAL_OPTIONS", function() { return INITIAL_OPTIONS; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "RECOMPUTE", function() { return RECOMPUTE; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "StoreDevtools", function() { return StoreDevtools; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "StoreDevtoolsConfig", function() { return StoreDevtoolsConfig; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "StoreDevtoolsModule", function() { return StoreDevtoolsModule; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ɵa", function() { return IS_EXTENSION_OR_MONITOR_PRESENT; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ɵb", function() { return createIsExtensionOrMonitorPresent; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ɵc", function() { return createReduxDevtoolsExtension; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ɵd", function() { return createStateObservable; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ɵe", function() { return STORE_DEVTOOLS_CONFIG; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ɵf", function() { return noMonitor; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ɵg", function() { return createConfig; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ɵh", function() { return REDUX_DEVTOOLS_EXTENSION; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ɵi", function() { return DevtoolsExtension; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ɵj", function() { return DevtoolsDispatcher; });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "fXoL");
+/* harmony import */ var _ngrx_store__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @ngrx/store */ "l7P3");
+/* harmony import */ var rxjs__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! rxjs */ "qCKp");
+/* harmony import */ var rxjs_operators__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! rxjs/operators */ "kU1M");
+
+
+
+
+
+
+
+class StoreDevtoolsConfig {
+    constructor() {
+        this.maxAge = false;
+    }
+}
+const STORE_DEVTOOLS_CONFIG = new _angular_core__WEBPACK_IMPORTED_MODULE_0__["InjectionToken"]('@ngrx/store-devtools Options');
+const INITIAL_OPTIONS = new _angular_core__WEBPACK_IMPORTED_MODULE_0__["InjectionToken"]('@ngrx/store-devtools Initial Config');
+function noMonitor() {
+    return null;
+}
+const DEFAULT_NAME = 'NgRx Store DevTools';
+function createConfig(optionsInput) {
+    const DEFAULT_OPTIONS = {
+        maxAge: false,
+        monitor: noMonitor,
+        actionSanitizer: undefined,
+        stateSanitizer: undefined,
+        name: DEFAULT_NAME,
+        serialize: false,
+        logOnly: false,
+        autoPause: false,
+        // Add all features explicitly. This prevent buggy behavior for
+        // options like "lock" which might otherwise not show up.
+        features: {
+            pause: true,
+            lock: true,
+            persist: true,
+            export: true,
+            import: 'custom',
+            jump: true,
+            skip: true,
+            reorder: true,
+            dispatch: true,
+            test: true, // generate tests for the selected actions
+        },
+    };
+    const options = typeof optionsInput === 'function' ? optionsInput() : optionsInput;
+    const logOnly = options.logOnly
+        ? { pause: true, export: true, test: true }
+        : false;
+    const features = options.features || logOnly || DEFAULT_OPTIONS.features;
+    const config = Object.assign({}, DEFAULT_OPTIONS, { features }, options);
+    if (config.maxAge && config.maxAge < 2) {
+        throw new Error(`Devtools 'maxAge' cannot be less than 2, got ${config.maxAge}`);
+    }
+    return config;
+}
+
+const PERFORM_ACTION = 'PERFORM_ACTION';
+const REFRESH = 'REFRESH';
+const RESET = 'RESET';
+const ROLLBACK = 'ROLLBACK';
+const COMMIT = 'COMMIT';
+const SWEEP = 'SWEEP';
+const TOGGLE_ACTION = 'TOGGLE_ACTION';
+const SET_ACTIONS_ACTIVE = 'SET_ACTIONS_ACTIVE';
+const JUMP_TO_STATE = 'JUMP_TO_STATE';
+const JUMP_TO_ACTION = 'JUMP_TO_ACTION';
+const IMPORT_STATE = 'IMPORT_STATE';
+const LOCK_CHANGES = 'LOCK_CHANGES';
+const PAUSE_RECORDING = 'PAUSE_RECORDING';
+class PerformAction {
+    constructor(action, timestamp) {
+        this.action = action;
+        this.timestamp = timestamp;
+        this.type = PERFORM_ACTION;
+        if (typeof action.type === 'undefined') {
+            throw new Error('Actions may not have an undefined "type" property. ' +
+                'Have you misspelled a constant?');
+        }
+    }
+}
+class Refresh {
+    constructor() {
+        this.type = REFRESH;
+    }
+}
+class Reset {
+    constructor(timestamp) {
+        this.timestamp = timestamp;
+        this.type = RESET;
+    }
+}
+class Rollback {
+    constructor(timestamp) {
+        this.timestamp = timestamp;
+        this.type = ROLLBACK;
+    }
+}
+class Commit {
+    constructor(timestamp) {
+        this.timestamp = timestamp;
+        this.type = COMMIT;
+    }
+}
+class Sweep {
+    constructor() {
+        this.type = SWEEP;
+    }
+}
+class ToggleAction {
+    constructor(id) {
+        this.id = id;
+        this.type = TOGGLE_ACTION;
+    }
+}
+class SetActionsActive {
+    constructor(start, end, active = true) {
+        this.start = start;
+        this.end = end;
+        this.active = active;
+        this.type = SET_ACTIONS_ACTIVE;
+    }
+}
+class JumpToState {
+    constructor(index) {
+        this.index = index;
+        this.type = JUMP_TO_STATE;
+    }
+}
+class JumpToAction {
+    constructor(actionId) {
+        this.actionId = actionId;
+        this.type = JUMP_TO_ACTION;
+    }
+}
+class ImportState {
+    constructor(nextLiftedState) {
+        this.nextLiftedState = nextLiftedState;
+        this.type = IMPORT_STATE;
+    }
+}
+class LockChanges {
+    constructor(status) {
+        this.status = status;
+        this.type = LOCK_CHANGES;
+    }
+}
+class PauseRecording {
+    constructor(status) {
+        this.status = status;
+        this.type = PAUSE_RECORDING;
+    }
+}
+
+class DevtoolsDispatcher extends _ngrx_store__WEBPACK_IMPORTED_MODULE_1__["ActionsSubject"] {
+}
+DevtoolsDispatcher.ɵfac = function DevtoolsDispatcher_Factory(t) { return ɵDevtoolsDispatcher_BaseFactory(t || DevtoolsDispatcher); };
+DevtoolsDispatcher.ɵprov = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineInjectable"]({ token: DevtoolsDispatcher, factory: DevtoolsDispatcher.ɵfac });
+const ɵDevtoolsDispatcher_BaseFactory = /*@__PURE__*/ _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵgetInheritedFactory"](DevtoolsDispatcher);
+(function () { (typeof ngDevMode === "undefined" || ngDevMode) && _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](DevtoolsDispatcher, [{
+        type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Injectable"]
+    }], null, null); })();
+
+function difference(first, second) {
+    return first.filter((item) => second.indexOf(item) < 0);
+}
+/**
+ * Provides an app's view into the state of the lifted store.
+ */
+function unliftState(liftedState) {
+    const { computedStates, currentStateIndex } = liftedState;
+    // At start up NgRx dispatches init actions,
+    // When these init actions are being filtered out by the predicate or safe/block list options
+    // we don't have a complete computed states yet.
+    // At this point it could happen that we're out of bounds, when this happens we fall back to the last known state
+    if (currentStateIndex >= computedStates.length) {
+        const { state } = computedStates[computedStates.length - 1];
+        return state;
+    }
+    const { state } = computedStates[currentStateIndex];
+    return state;
+}
+function unliftAction(liftedState) {
+    return liftedState.actionsById[liftedState.nextActionId - 1];
+}
+/**
+ * Lifts an app's action into an action on the lifted store.
+ */
+function liftAction(action) {
+    return new PerformAction(action, +Date.now());
+}
+/**
+ * Sanitizes given actions with given function.
+ */
+function sanitizeActions(actionSanitizer, actions) {
+    return Object.keys(actions).reduce((sanitizedActions, actionIdx) => {
+        const idx = Number(actionIdx);
+        sanitizedActions[idx] = sanitizeAction(actionSanitizer, actions[idx], idx);
+        return sanitizedActions;
+    }, {});
+}
+/**
+ * Sanitizes given action with given function.
+ */
+function sanitizeAction(actionSanitizer, action, actionIdx) {
+    return Object.assign(Object.assign({}, action), { action: actionSanitizer(action.action, actionIdx) });
+}
+/**
+ * Sanitizes given states with given function.
+ */
+function sanitizeStates(stateSanitizer, states) {
+    return states.map((computedState, idx) => ({
+        state: sanitizeState(stateSanitizer, computedState.state, idx),
+        error: computedState.error,
+    }));
+}
+/**
+ * Sanitizes given state with given function.
+ */
+function sanitizeState(stateSanitizer, state, stateIdx) {
+    return stateSanitizer(state, stateIdx);
+}
+/**
+ * Read the config and tell if actions should be filtered
+ */
+function shouldFilterActions(config) {
+    return config.predicate || config.actionsSafelist || config.actionsBlocklist;
+}
+/**
+ * Return a full filtered lifted state
+ */
+function filterLiftedState(liftedState, predicate, safelist, blocklist) {
+    const filteredStagedActionIds = [];
+    const filteredActionsById = {};
+    const filteredComputedStates = [];
+    liftedState.stagedActionIds.forEach((id, idx) => {
+        const liftedAction = liftedState.actionsById[id];
+        if (!liftedAction)
+            return;
+        if (idx &&
+            isActionFiltered(liftedState.computedStates[idx], liftedAction, predicate, safelist, blocklist)) {
+            return;
+        }
+        filteredActionsById[id] = liftedAction;
+        filteredStagedActionIds.push(id);
+        filteredComputedStates.push(liftedState.computedStates[idx]);
+    });
+    return Object.assign(Object.assign({}, liftedState), { stagedActionIds: filteredStagedActionIds, actionsById: filteredActionsById, computedStates: filteredComputedStates });
+}
+/**
+ * Return true is the action should be ignored
+ */
+function isActionFiltered(state, action, predicate, safelist, blockedlist) {
+    const predicateMatch = predicate && !predicate(state, action.action);
+    const safelistMatch = safelist &&
+        !action.action.type.match(safelist.map((s) => escapeRegExp(s)).join('|'));
+    const blocklistMatch = blockedlist &&
+        action.action.type.match(blockedlist.map((s) => escapeRegExp(s)).join('|'));
+    return predicateMatch || safelistMatch || blocklistMatch;
+}
+/**
+ * Return string with escaped RegExp special characters
+ * https://stackoverflow.com/a/6969486/1337347
+ */
+function escapeRegExp(s) {
+    return s.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+}
+
+const ExtensionActionTypes = {
+    START: 'START',
+    DISPATCH: 'DISPATCH',
+    STOP: 'STOP',
+    ACTION: 'ACTION',
+};
+const REDUX_DEVTOOLS_EXTENSION = new _angular_core__WEBPACK_IMPORTED_MODULE_0__["InjectionToken"]('@ngrx/store-devtools Redux Devtools Extension');
+class DevtoolsExtension {
+    constructor(devtoolsExtension, config, dispatcher) {
+        this.config = config;
+        this.dispatcher = dispatcher;
+        this.devtoolsExtension = devtoolsExtension;
+        this.createActionStreams();
+    }
+    notify(action, state) {
+        if (!this.devtoolsExtension) {
+            return;
+        }
+        // Check to see if the action requires a full update of the liftedState.
+        // If it is a simple action generated by the user's app and the recording
+        // is not locked/paused, only send the action and the current state (fast).
+        //
+        // A full liftedState update (slow: serializes the entire liftedState) is
+        // only required when:
+        //   a) redux-devtools-extension fires the @@Init action (ignored by
+        //      @ngrx/store-devtools)
+        //   b) an action is generated by an @ngrx module (e.g. @ngrx/effects/init
+        //      or @ngrx/store/update-reducers)
+        //   c) the state has been recomputed due to time-traveling
+        //   d) any action that is not a PerformAction to err on the side of
+        //      caution.
+        if (action.type === PERFORM_ACTION) {
+            if (state.isLocked || state.isPaused) {
+                return;
+            }
+            const currentState = unliftState(state);
+            if (shouldFilterActions(this.config) &&
+                isActionFiltered(currentState, action, this.config.predicate, this.config.actionsSafelist, this.config.actionsBlocklist)) {
+                return;
+            }
+            const sanitizedState = this.config.stateSanitizer
+                ? sanitizeState(this.config.stateSanitizer, currentState, state.currentStateIndex)
+                : currentState;
+            const sanitizedAction = this.config.actionSanitizer
+                ? sanitizeAction(this.config.actionSanitizer, action, state.nextActionId)
+                : action;
+            this.sendToReduxDevtools(() => this.extensionConnection.send(sanitizedAction, sanitizedState));
+        }
+        else {
+            // Requires full state update
+            const sanitizedLiftedState = Object.assign(Object.assign({}, state), { stagedActionIds: state.stagedActionIds, actionsById: this.config.actionSanitizer
+                    ? sanitizeActions(this.config.actionSanitizer, state.actionsById)
+                    : state.actionsById, computedStates: this.config.stateSanitizer
+                    ? sanitizeStates(this.config.stateSanitizer, state.computedStates)
+                    : state.computedStates });
+            this.sendToReduxDevtools(() => this.devtoolsExtension.send(null, sanitizedLiftedState, this.getExtensionConfig(this.config)));
+        }
+    }
+    createChangesObservable() {
+        if (!this.devtoolsExtension) {
+            return rxjs__WEBPACK_IMPORTED_MODULE_2__["EMPTY"];
+        }
+        return new rxjs__WEBPACK_IMPORTED_MODULE_2__["Observable"]((subscriber) => {
+            const connection = this.devtoolsExtension.connect(this.getExtensionConfig(this.config));
+            this.extensionConnection = connection;
+            connection.init();
+            connection.subscribe((change) => subscriber.next(change));
+            return connection.unsubscribe;
+        });
+    }
+    createActionStreams() {
+        // Listens to all changes
+        const changes$ = this.createChangesObservable().pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_3__["share"])());
+        // Listen for the start action
+        const start$ = changes$.pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_3__["filter"])((change) => change.type === ExtensionActionTypes.START));
+        // Listen for the stop action
+        const stop$ = changes$.pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_3__["filter"])((change) => change.type === ExtensionActionTypes.STOP));
+        // Listen for lifted actions
+        const liftedActions$ = changes$.pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_3__["filter"])((change) => change.type === ExtensionActionTypes.DISPATCH), Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_3__["map"])((change) => this.unwrapAction(change.payload)), Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_3__["concatMap"])((action) => {
+            if (action.type === IMPORT_STATE) {
+                // State imports may happen in two situations:
+                // 1. Explicitly by user
+                // 2. User activated the "persist state accross reloads" option
+                //    and now the state is imported during reload.
+                // Because of option 2, we need to give possible
+                // lazy loaded reducers time to instantiate.
+                // As soon as there is no UPDATE action within 1 second,
+                // it is assumed that all reducers are loaded.
+                return this.dispatcher.pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_3__["filter"])((action) => action.type === _ngrx_store__WEBPACK_IMPORTED_MODULE_1__["UPDATE"]), Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_3__["timeout"])(1000), Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_3__["debounceTime"])(1000), Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_3__["map"])(() => action), Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_3__["catchError"])(() => Object(rxjs__WEBPACK_IMPORTED_MODULE_2__["of"])(action)), Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_3__["take"])(1));
+            }
+            else {
+                return Object(rxjs__WEBPACK_IMPORTED_MODULE_2__["of"])(action);
+            }
+        }));
+        // Listen for unlifted actions
+        const actions$ = changes$.pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_3__["filter"])((change) => change.type === ExtensionActionTypes.ACTION), Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_3__["map"])((change) => this.unwrapAction(change.payload)));
+        const actionsUntilStop$ = actions$.pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_3__["takeUntil"])(stop$));
+        const liftedUntilStop$ = liftedActions$.pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_3__["takeUntil"])(stop$));
+        this.start$ = start$.pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_3__["takeUntil"])(stop$));
+        // Only take the action sources between the start/stop events
+        this.actions$ = this.start$.pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_3__["switchMap"])(() => actionsUntilStop$));
+        this.liftedActions$ = this.start$.pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_3__["switchMap"])(() => liftedUntilStop$));
+    }
+    unwrapAction(action) {
+        return typeof action === 'string' ? eval(`(${action})`) : action;
+    }
+    getExtensionConfig(config) {
+        var _a;
+        const extensionOptions = {
+            name: config.name,
+            features: config.features,
+            serialize: config.serialize,
+            autoPause: (_a = config.autoPause) !== null && _a !== void 0 ? _a : false,
+            // The action/state sanitizers are not added to the config
+            // because sanitation is done in this class already.
+            // It is done before sending it to the devtools extension for consistency:
+            // - If we call extensionConnection.send(...),
+            //   the extension would call the sanitizers.
+            // - If we call devtoolsExtension.send(...) (aka full state update),
+            //   the extension would NOT call the sanitizers, so we have to do it ourselves.
+        };
+        if (config.maxAge !== false /* support === 0 */) {
+            extensionOptions.maxAge = config.maxAge;
+        }
+        return extensionOptions;
+    }
+    sendToReduxDevtools(send) {
+        try {
+            send();
+        }
+        catch (err) {
+            console.warn('@ngrx/store-devtools: something went wrong inside the redux devtools', err);
+        }
+    }
+}
+DevtoolsExtension.ɵfac = function DevtoolsExtension_Factory(t) { return new (t || DevtoolsExtension)(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵinject"](REDUX_DEVTOOLS_EXTENSION), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵinject"](STORE_DEVTOOLS_CONFIG), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵinject"](DevtoolsDispatcher)); };
+DevtoolsExtension.ɵprov = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineInjectable"]({ token: DevtoolsExtension, factory: DevtoolsExtension.ɵfac });
+/** @nocollapse */
+DevtoolsExtension.ctorParameters = () => [
+    { type: undefined, decorators: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Inject"], args: [REDUX_DEVTOOLS_EXTENSION,] }] },
+    { type: StoreDevtoolsConfig, decorators: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Inject"], args: [STORE_DEVTOOLS_CONFIG,] }] },
+    { type: DevtoolsDispatcher }
+];
+(function () { (typeof ngDevMode === "undefined" || ngDevMode) && _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](DevtoolsExtension, [{
+        type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Injectable"]
+    }], function () { return [{ type: undefined, decorators: [{
+                type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Inject"],
+                args: [REDUX_DEVTOOLS_EXTENSION]
+            }] }, { type: StoreDevtoolsConfig, decorators: [{
+                type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Inject"],
+                args: [STORE_DEVTOOLS_CONFIG]
+            }] }, { type: DevtoolsDispatcher }]; }, null); })();
+
+const INIT_ACTION = { type: _ngrx_store__WEBPACK_IMPORTED_MODULE_1__["INIT"] };
+const RECOMPUTE = '@ngrx/store-devtools/recompute';
+const RECOMPUTE_ACTION = { type: RECOMPUTE };
+/**
+ * Computes the next entry in the log by applying an action.
+ */
+function computeNextEntry(reducer, action, state, error, errorHandler) {
+    if (error) {
+        return {
+            state,
+            error: 'Interrupted by an error up the chain',
+        };
+    }
+    let nextState = state;
+    let nextError;
+    try {
+        nextState = reducer(state, action);
+    }
+    catch (err) {
+        nextError = err.toString();
+        errorHandler.handleError(err);
+    }
+    return {
+        state: nextState,
+        error: nextError,
+    };
+}
+/**
+ * Runs the reducer on invalidated actions to get a fresh computation log.
+ */
+function recomputeStates(computedStates, minInvalidatedStateIndex, reducer, committedState, actionsById, stagedActionIds, skippedActionIds, errorHandler, isPaused) {
+    // Optimization: exit early and return the same reference
+    // if we know nothing could have changed.
+    if (minInvalidatedStateIndex >= computedStates.length &&
+        computedStates.length === stagedActionIds.length) {
+        return computedStates;
+    }
+    const nextComputedStates = computedStates.slice(0, minInvalidatedStateIndex);
+    // If the recording is paused, recompute all states up until the pause state,
+    // else recompute all states.
+    const lastIncludedActionId = stagedActionIds.length - (isPaused ? 1 : 0);
+    for (let i = minInvalidatedStateIndex; i < lastIncludedActionId; i++) {
+        const actionId = stagedActionIds[i];
+        const action = actionsById[actionId].action;
+        const previousEntry = nextComputedStates[i - 1];
+        const previousState = previousEntry ? previousEntry.state : committedState;
+        const previousError = previousEntry ? previousEntry.error : undefined;
+        const shouldSkip = skippedActionIds.indexOf(actionId) > -1;
+        const entry = shouldSkip
+            ? previousEntry
+            : computeNextEntry(reducer, action, previousState, previousError, errorHandler);
+        nextComputedStates.push(entry);
+    }
+    // If the recording is paused, the last state will not be recomputed,
+    // because it's essentially not part of the state history.
+    if (isPaused) {
+        nextComputedStates.push(computedStates[computedStates.length - 1]);
+    }
+    return nextComputedStates;
+}
+function liftInitialState(initialCommittedState, monitorReducer) {
+    return {
+        monitorState: monitorReducer(undefined, {}),
+        nextActionId: 1,
+        actionsById: { 0: liftAction(INIT_ACTION) },
+        stagedActionIds: [0],
+        skippedActionIds: [],
+        committedState: initialCommittedState,
+        currentStateIndex: 0,
+        computedStates: [],
+        isLocked: false,
+        isPaused: false,
+    };
+}
+/**
+ * Creates a history state reducer from an app's reducer.
+ */
+function liftReducerWith(initialCommittedState, initialLiftedState, errorHandler, monitorReducer, options = {}) {
+    /**
+     * Manages how the history actions modify the history state.
+     */
+    return (reducer) => (liftedState, liftedAction) => {
+        let { monitorState, actionsById, nextActionId, stagedActionIds, skippedActionIds, committedState, currentStateIndex, computedStates, isLocked, isPaused, } = liftedState || initialLiftedState;
+        if (!liftedState) {
+            // Prevent mutating initialLiftedState
+            actionsById = Object.create(actionsById);
+        }
+        function commitExcessActions(n) {
+            // Auto-commits n-number of excess actions.
+            let excess = n;
+            let idsToDelete = stagedActionIds.slice(1, excess + 1);
+            for (let i = 0; i < idsToDelete.length; i++) {
+                if (computedStates[i + 1].error) {
+                    // Stop if error is found. Commit actions up to error.
+                    excess = i;
+                    idsToDelete = stagedActionIds.slice(1, excess + 1);
+                    break;
+                }
+                else {
+                    delete actionsById[idsToDelete[i]];
+                }
+            }
+            skippedActionIds = skippedActionIds.filter((id) => idsToDelete.indexOf(id) === -1);
+            stagedActionIds = [0, ...stagedActionIds.slice(excess + 1)];
+            committedState = computedStates[excess].state;
+            computedStates = computedStates.slice(excess);
+            currentStateIndex =
+                currentStateIndex > excess ? currentStateIndex - excess : 0;
+        }
+        function commitChanges() {
+            // Consider the last committed state the new starting point.
+            // Squash any staged actions into a single committed state.
+            actionsById = { 0: liftAction(INIT_ACTION) };
+            nextActionId = 1;
+            stagedActionIds = [0];
+            skippedActionIds = [];
+            committedState = computedStates[currentStateIndex].state;
+            currentStateIndex = 0;
+            computedStates = [];
+        }
+        // By default, aggressively recompute every state whatever happens.
+        // This has O(n) performance, so we'll override this to a sensible
+        // value whenever we feel like we don't have to recompute the states.
+        let minInvalidatedStateIndex = 0;
+        switch (liftedAction.type) {
+            case LOCK_CHANGES: {
+                isLocked = liftedAction.status;
+                minInvalidatedStateIndex = Infinity;
+                break;
+            }
+            case PAUSE_RECORDING: {
+                isPaused = liftedAction.status;
+                if (isPaused) {
+                    // Add a pause action to signal the devtools-user the recording is paused.
+                    // The corresponding state will be overwritten on each update to always contain
+                    // the latest state (see Actions.PERFORM_ACTION).
+                    stagedActionIds = [...stagedActionIds, nextActionId];
+                    actionsById[nextActionId] = new PerformAction({
+                        type: '@ngrx/devtools/pause',
+                    }, +Date.now());
+                    nextActionId++;
+                    minInvalidatedStateIndex = stagedActionIds.length - 1;
+                    computedStates = computedStates.concat(computedStates[computedStates.length - 1]);
+                    if (currentStateIndex === stagedActionIds.length - 2) {
+                        currentStateIndex++;
+                    }
+                    minInvalidatedStateIndex = Infinity;
+                }
+                else {
+                    commitChanges();
+                }
+                break;
+            }
+            case RESET: {
+                // Get back to the state the store was created with.
+                actionsById = { 0: liftAction(INIT_ACTION) };
+                nextActionId = 1;
+                stagedActionIds = [0];
+                skippedActionIds = [];
+                committedState = initialCommittedState;
+                currentStateIndex = 0;
+                computedStates = [];
+                break;
+            }
+            case COMMIT: {
+                commitChanges();
+                break;
+            }
+            case ROLLBACK: {
+                // Forget about any staged actions.
+                // Start again from the last committed state.
+                actionsById = { 0: liftAction(INIT_ACTION) };
+                nextActionId = 1;
+                stagedActionIds = [0];
+                skippedActionIds = [];
+                currentStateIndex = 0;
+                computedStates = [];
+                break;
+            }
+            case TOGGLE_ACTION: {
+                // Toggle whether an action with given ID is skipped.
+                // Being skipped means it is a no-op during the computation.
+                const { id: actionId } = liftedAction;
+                const index = skippedActionIds.indexOf(actionId);
+                if (index === -1) {
+                    skippedActionIds = [actionId, ...skippedActionIds];
+                }
+                else {
+                    skippedActionIds = skippedActionIds.filter((id) => id !== actionId);
+                }
+                // Optimization: we know history before this action hasn't changed
+                minInvalidatedStateIndex = stagedActionIds.indexOf(actionId);
+                break;
+            }
+            case SET_ACTIONS_ACTIVE: {
+                // Toggle whether an action with given ID is skipped.
+                // Being skipped means it is a no-op during the computation.
+                const { start, end, active } = liftedAction;
+                const actionIds = [];
+                for (let i = start; i < end; i++)
+                    actionIds.push(i);
+                if (active) {
+                    skippedActionIds = difference(skippedActionIds, actionIds);
+                }
+                else {
+                    skippedActionIds = [...skippedActionIds, ...actionIds];
+                }
+                // Optimization: we know history before this action hasn't changed
+                minInvalidatedStateIndex = stagedActionIds.indexOf(start);
+                break;
+            }
+            case JUMP_TO_STATE: {
+                // Without recomputing anything, move the pointer that tell us
+                // which state is considered the current one. Useful for sliders.
+                currentStateIndex = liftedAction.index;
+                // Optimization: we know the history has not changed.
+                minInvalidatedStateIndex = Infinity;
+                break;
+            }
+            case JUMP_TO_ACTION: {
+                // Jumps to a corresponding state to a specific action.
+                // Useful when filtering actions.
+                const index = stagedActionIds.indexOf(liftedAction.actionId);
+                if (index !== -1)
+                    currentStateIndex = index;
+                minInvalidatedStateIndex = Infinity;
+                break;
+            }
+            case SWEEP: {
+                // Forget any actions that are currently being skipped.
+                stagedActionIds = difference(stagedActionIds, skippedActionIds);
+                skippedActionIds = [];
+                currentStateIndex = Math.min(currentStateIndex, stagedActionIds.length - 1);
+                break;
+            }
+            case PERFORM_ACTION: {
+                // Ignore action and return state as is if recording is locked
+                if (isLocked) {
+                    return liftedState || initialLiftedState;
+                }
+                if (isPaused ||
+                    (liftedState &&
+                        isActionFiltered(liftedState.computedStates[currentStateIndex], liftedAction, options.predicate, options.actionsSafelist, options.actionsBlocklist))) {
+                    // If recording is paused or if the action should be ignored, overwrite the last state
+                    // (corresponds to the pause action) and keep everything else as is.
+                    // This way, the app gets the new current state while the devtools
+                    // do not record another action.
+                    const lastState = computedStates[computedStates.length - 1];
+                    computedStates = [
+                        ...computedStates.slice(0, -1),
+                        computeNextEntry(reducer, liftedAction.action, lastState.state, lastState.error, errorHandler),
+                    ];
+                    minInvalidatedStateIndex = Infinity;
+                    break;
+                }
+                // Auto-commit as new actions come in.
+                if (options.maxAge && stagedActionIds.length === options.maxAge) {
+                    commitExcessActions(1);
+                }
+                if (currentStateIndex === stagedActionIds.length - 1) {
+                    currentStateIndex++;
+                }
+                const actionId = nextActionId++;
+                // Mutation! This is the hottest path, and we optimize on purpose.
+                // It is safe because we set a new key in a cache dictionary.
+                actionsById[actionId] = liftedAction;
+                stagedActionIds = [...stagedActionIds, actionId];
+                // Optimization: we know that only the new action needs computing.
+                minInvalidatedStateIndex = stagedActionIds.length - 1;
+                break;
+            }
+            case IMPORT_STATE: {
+                // Completely replace everything.
+                ({
+                    monitorState,
+                    actionsById,
+                    nextActionId,
+                    stagedActionIds,
+                    skippedActionIds,
+                    committedState,
+                    currentStateIndex,
+                    computedStates,
+                    isLocked,
+                    isPaused,
+                } = liftedAction.nextLiftedState);
+                break;
+            }
+            case _ngrx_store__WEBPACK_IMPORTED_MODULE_1__["INIT"]: {
+                // Always recompute states on hot reload and init.
+                minInvalidatedStateIndex = 0;
+                if (options.maxAge && stagedActionIds.length > options.maxAge) {
+                    // States must be recomputed before committing excess.
+                    computedStates = recomputeStates(computedStates, minInvalidatedStateIndex, reducer, committedState, actionsById, stagedActionIds, skippedActionIds, errorHandler, isPaused);
+                    commitExcessActions(stagedActionIds.length - options.maxAge);
+                    // Avoid double computation.
+                    minInvalidatedStateIndex = Infinity;
+                }
+                break;
+            }
+            case _ngrx_store__WEBPACK_IMPORTED_MODULE_1__["UPDATE"]: {
+                const stateHasErrors = computedStates.filter((state) => state.error).length > 0;
+                if (stateHasErrors) {
+                    // Recompute all states
+                    minInvalidatedStateIndex = 0;
+                    if (options.maxAge && stagedActionIds.length > options.maxAge) {
+                        // States must be recomputed before committing excess.
+                        computedStates = recomputeStates(computedStates, minInvalidatedStateIndex, reducer, committedState, actionsById, stagedActionIds, skippedActionIds, errorHandler, isPaused);
+                        commitExcessActions(stagedActionIds.length - options.maxAge);
+                        // Avoid double computation.
+                        minInvalidatedStateIndex = Infinity;
+                    }
+                }
+                else {
+                    // If not paused/locked, add a new action to signal devtools-user
+                    // that there was a reducer update.
+                    if (!isPaused && !isLocked) {
+                        if (currentStateIndex === stagedActionIds.length - 1) {
+                            currentStateIndex++;
+                        }
+                        // Add a new action to only recompute state
+                        const actionId = nextActionId++;
+                        actionsById[actionId] = new PerformAction(liftedAction, +Date.now());
+                        stagedActionIds = [...stagedActionIds, actionId];
+                        minInvalidatedStateIndex = stagedActionIds.length - 1;
+                        computedStates = recomputeStates(computedStates, minInvalidatedStateIndex, reducer, committedState, actionsById, stagedActionIds, skippedActionIds, errorHandler, isPaused);
+                    }
+                    // Recompute state history with latest reducer and update action
+                    computedStates = computedStates.map((cmp) => (Object.assign(Object.assign({}, cmp), { state: reducer(cmp.state, RECOMPUTE_ACTION) })));
+                    currentStateIndex = stagedActionIds.length - 1;
+                    if (options.maxAge && stagedActionIds.length > options.maxAge) {
+                        commitExcessActions(stagedActionIds.length - options.maxAge);
+                    }
+                    // Avoid double computation.
+                    minInvalidatedStateIndex = Infinity;
+                }
+                break;
+            }
+            default: {
+                // If the action is not recognized, it's a monitor action.
+                // Optimization: a monitor action can't change history.
+                minInvalidatedStateIndex = Infinity;
+                break;
+            }
+        }
+        computedStates = recomputeStates(computedStates, minInvalidatedStateIndex, reducer, committedState, actionsById, stagedActionIds, skippedActionIds, errorHandler, isPaused);
+        monitorState = monitorReducer(monitorState, liftedAction);
+        return {
+            monitorState,
+            actionsById,
+            nextActionId,
+            stagedActionIds,
+            skippedActionIds,
+            committedState,
+            currentStateIndex,
+            computedStates,
+            isLocked,
+            isPaused,
+        };
+    };
+}
+
+class StoreDevtools {
+    constructor(dispatcher, actions$, reducers$, extension, scannedActions, errorHandler, initialState, config) {
+        const liftedInitialState = liftInitialState(initialState, config.monitor);
+        const liftReducer = liftReducerWith(initialState, liftedInitialState, errorHandler, config.monitor, config);
+        const liftedAction$ = Object(rxjs__WEBPACK_IMPORTED_MODULE_2__["merge"])(Object(rxjs__WEBPACK_IMPORTED_MODULE_2__["merge"])(actions$.asObservable().pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_3__["skip"])(1)), extension.actions$).pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_3__["map"])(liftAction)), dispatcher, extension.liftedActions$).pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_3__["observeOn"])(rxjs__WEBPACK_IMPORTED_MODULE_2__["queueScheduler"]));
+        const liftedReducer$ = reducers$.pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_3__["map"])(liftReducer));
+        const liftedStateSubject = new rxjs__WEBPACK_IMPORTED_MODULE_2__["ReplaySubject"](1);
+        const liftedStateSubscription = liftedAction$
+            .pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_3__["withLatestFrom"])(liftedReducer$), Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_3__["scan"])(({ state: liftedState }, [action, reducer]) => {
+            let reducedLiftedState = reducer(liftedState, action);
+            // On full state update
+            // If we have actions filters, we must filter completely our lifted state to be sync with the extension
+            if (action.type !== PERFORM_ACTION && shouldFilterActions(config)) {
+                reducedLiftedState = filterLiftedState(reducedLiftedState, config.predicate, config.actionsSafelist, config.actionsBlocklist);
+            }
+            // Extension should be sent the sanitized lifted state
+            extension.notify(action, reducedLiftedState);
+            return { state: reducedLiftedState, action };
+        }, { state: liftedInitialState, action: null }))
+            .subscribe(({ state, action }) => {
+            liftedStateSubject.next(state);
+            if (action.type === PERFORM_ACTION) {
+                const unliftedAction = action.action;
+                scannedActions.next(unliftedAction);
+            }
+        });
+        const extensionStartSubscription = extension.start$.subscribe(() => {
+            this.refresh();
+        });
+        const liftedState$ = liftedStateSubject.asObservable();
+        const state$ = liftedState$.pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_3__["map"])(unliftState));
+        this.extensionStartSubscription = extensionStartSubscription;
+        this.stateSubscription = liftedStateSubscription;
+        this.dispatcher = dispatcher;
+        this.liftedState = liftedState$;
+        this.state = state$;
+    }
+    dispatch(action) {
+        this.dispatcher.next(action);
+    }
+    next(action) {
+        this.dispatcher.next(action);
+    }
+    error(error) { }
+    complete() { }
+    performAction(action) {
+        this.dispatch(new PerformAction(action, +Date.now()));
+    }
+    refresh() {
+        this.dispatch(new Refresh());
+    }
+    reset() {
+        this.dispatch(new Reset(+Date.now()));
+    }
+    rollback() {
+        this.dispatch(new Rollback(+Date.now()));
+    }
+    commit() {
+        this.dispatch(new Commit(+Date.now()));
+    }
+    sweep() {
+        this.dispatch(new Sweep());
+    }
+    toggleAction(id) {
+        this.dispatch(new ToggleAction(id));
+    }
+    jumpToAction(actionId) {
+        this.dispatch(new JumpToAction(actionId));
+    }
+    jumpToState(index) {
+        this.dispatch(new JumpToState(index));
+    }
+    importState(nextLiftedState) {
+        this.dispatch(new ImportState(nextLiftedState));
+    }
+    lockChanges(status) {
+        this.dispatch(new LockChanges(status));
+    }
+    pauseRecording(status) {
+        this.dispatch(new PauseRecording(status));
+    }
+}
+StoreDevtools.ɵfac = function StoreDevtools_Factory(t) { return new (t || StoreDevtools)(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵinject"](DevtoolsDispatcher), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵinject"](_ngrx_store__WEBPACK_IMPORTED_MODULE_1__["ActionsSubject"]), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵinject"](_ngrx_store__WEBPACK_IMPORTED_MODULE_1__["ReducerObservable"]), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵinject"](DevtoolsExtension), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵinject"](_ngrx_store__WEBPACK_IMPORTED_MODULE_1__["ScannedActionsSubject"]), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵinject"](_angular_core__WEBPACK_IMPORTED_MODULE_0__["ErrorHandler"]), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵinject"](_ngrx_store__WEBPACK_IMPORTED_MODULE_1__["INITIAL_STATE"]), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵinject"](STORE_DEVTOOLS_CONFIG)); };
+StoreDevtools.ɵprov = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineInjectable"]({ token: StoreDevtools, factory: StoreDevtools.ɵfac });
+/** @nocollapse */
+StoreDevtools.ctorParameters = () => [
+    { type: DevtoolsDispatcher },
+    { type: _ngrx_store__WEBPACK_IMPORTED_MODULE_1__["ActionsSubject"] },
+    { type: _ngrx_store__WEBPACK_IMPORTED_MODULE_1__["ReducerObservable"] },
+    { type: DevtoolsExtension },
+    { type: _ngrx_store__WEBPACK_IMPORTED_MODULE_1__["ScannedActionsSubject"] },
+    { type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["ErrorHandler"] },
+    { type: undefined, decorators: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Inject"], args: [_ngrx_store__WEBPACK_IMPORTED_MODULE_1__["INITIAL_STATE"],] }] },
+    { type: StoreDevtoolsConfig, decorators: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Inject"], args: [STORE_DEVTOOLS_CONFIG,] }] }
+];
+(function () { (typeof ngDevMode === "undefined" || ngDevMode) && _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](StoreDevtools, [{
+        type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Injectable"]
+    }], function () { return [{ type: DevtoolsDispatcher }, { type: _ngrx_store__WEBPACK_IMPORTED_MODULE_1__["ActionsSubject"] }, { type: _ngrx_store__WEBPACK_IMPORTED_MODULE_1__["ReducerObservable"] }, { type: DevtoolsExtension }, { type: _ngrx_store__WEBPACK_IMPORTED_MODULE_1__["ScannedActionsSubject"] }, { type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["ErrorHandler"] }, { type: undefined, decorators: [{
+                type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Inject"],
+                args: [_ngrx_store__WEBPACK_IMPORTED_MODULE_1__["INITIAL_STATE"]]
+            }] }, { type: StoreDevtoolsConfig, decorators: [{
+                type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Inject"],
+                args: [STORE_DEVTOOLS_CONFIG]
+            }] }]; }, null); })();
+
+const IS_EXTENSION_OR_MONITOR_PRESENT = new _angular_core__WEBPACK_IMPORTED_MODULE_0__["InjectionToken"]('@ngrx/store-devtools Is Devtools Extension or Monitor Present');
+function createIsExtensionOrMonitorPresent(extension, config) {
+    return Boolean(extension) || config.monitor !== noMonitor;
+}
+function createReduxDevtoolsExtension() {
+    const extensionKey = '__REDUX_DEVTOOLS_EXTENSION__';
+    if (typeof window === 'object' &&
+        typeof window[extensionKey] !== 'undefined') {
+        return window[extensionKey];
+    }
+    else {
+        return null;
+    }
+}
+function createStateObservable(devtools) {
+    return devtools.state;
+}
+class StoreDevtoolsModule {
+    static instrument(options = {}) {
+        return {
+            ngModule: StoreDevtoolsModule,
+            providers: [
+                DevtoolsExtension,
+                DevtoolsDispatcher,
+                StoreDevtools,
+                {
+                    provide: INITIAL_OPTIONS,
+                    useValue: options,
+                },
+                {
+                    provide: IS_EXTENSION_OR_MONITOR_PRESENT,
+                    deps: [REDUX_DEVTOOLS_EXTENSION, STORE_DEVTOOLS_CONFIG],
+                    useFactory: createIsExtensionOrMonitorPresent,
+                },
+                {
+                    provide: REDUX_DEVTOOLS_EXTENSION,
+                    useFactory: createReduxDevtoolsExtension,
+                },
+                {
+                    provide: STORE_DEVTOOLS_CONFIG,
+                    deps: [INITIAL_OPTIONS],
+                    useFactory: createConfig,
+                },
+                {
+                    provide: _ngrx_store__WEBPACK_IMPORTED_MODULE_1__["StateObservable"],
+                    deps: [StoreDevtools],
+                    useFactory: createStateObservable,
+                },
+                {
+                    provide: _ngrx_store__WEBPACK_IMPORTED_MODULE_1__["ReducerManagerDispatcher"],
+                    useExisting: DevtoolsDispatcher,
+                },
+            ],
+        };
+    }
+}
+StoreDevtoolsModule.ɵfac = function StoreDevtoolsModule_Factory(t) { return new (t || StoreDevtoolsModule)(); };
+StoreDevtoolsModule.ɵmod = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineNgModule"]({ type: StoreDevtoolsModule });
+StoreDevtoolsModule.ɵinj = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineInjector"]({});
+(function () { (typeof ngDevMode === "undefined" || ngDevMode) && _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](StoreDevtoolsModule, [{
+        type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["NgModule"],
+        args: [{}]
+    }], null, null); })();
+
+/**
+ * DO NOT EDIT
+ *
+ * This file is automatically generated at build
+ */
+
+/**
+ * Generated bundle index. Do not edit.
+ */
+
+
+
+//# sourceMappingURL=ngrx-store-devtools.js.map
 
 /***/ }),
 
@@ -60637,6 +65648,368 @@ class CombineLatestSubscriber extends _OuterSubscriber__WEBPACK_IMPORTED_MODULE_
 
 /***/ }),
 
+/***/ "jIHw":
+/*!**********************************************************************!*\
+  !*** ./node_modules/primeng/__ivy_ngcc__/fesm2015/primeng-button.js ***!
+  \**********************************************************************/
+/*! exports provided: Button, ButtonDirective, ButtonModule */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Button", function() { return Button; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ButtonDirective", function() { return ButtonDirective; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ButtonModule", function() { return ButtonModule; });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "fXoL");
+/* harmony import */ var primeng_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! primeng/dom */ "YyRF");
+/* harmony import */ var _angular_common__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/common */ "ofXK");
+/* harmony import */ var primeng_ripple__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! primeng/ripple */ "Q4Mo");
+/* harmony import */ var primeng_api__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! primeng/api */ "7zfz");
+
+
+
+
+
+
+
+
+
+
+function Button_ng_container_2_Template(rf, ctx) { if (rf & 1) {
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementContainer"](0);
+} }
+const _c0 = function (a1, a2, a3, a4) { return { "p-button-icon": true, "p-button-icon-left": a1, "p-button-icon-right": a2, "p-button-icon-top": a3, "p-button-icon-bottom": a4 }; };
+function Button_span_3_Template(rf, ctx) { if (rf & 1) {
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](0, "span", 4);
+} if (rf & 2) {
+    const ctx_r1 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵnextContext"]();
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵclassMap"](ctx_r1.loading ? "p-button-loading-icon " + ctx_r1.loadingIcon : ctx_r1.icon);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngClass", _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpureFunction4"](4, _c0, ctx_r1.iconPos === "left" && ctx_r1.label, ctx_r1.iconPos === "right" && ctx_r1.label, ctx_r1.iconPos === "top" && ctx_r1.label, ctx_r1.iconPos === "bottom" && ctx_r1.label));
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵattribute"]("aria-hidden", true);
+} }
+function Button_span_4_Template(rf, ctx) { if (rf & 1) {
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "span", 5);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](1);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+} if (rf & 2) {
+    const ctx_r2 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵnextContext"]();
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵattribute"]("aria-hidden", ctx_r2.icon && !ctx_r2.label);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate"](ctx_r2.label || "\u00A0");
+} }
+function Button_span_5_Template(rf, ctx) { if (rf & 1) {
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "span", 4);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](1);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+} if (rf & 2) {
+    const ctx_r3 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵnextContext"]();
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵclassMap"](ctx_r3.badgeClass);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngClass", ctx_r3.badgeStyleClass());
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate"](ctx_r3.badge);
+} }
+const _c1 = function (a1, a2, a3, a4, a5) { return { "p-button p-component": true, "p-button-icon-only": a1, "p-button-vertical": a2, "p-disabled": a3, "p-button-loading": a4, "p-button-loading-label-only": a5 }; };
+const _c2 = ["*"];
+class ButtonDirective {
+    constructor(el) {
+        this.el = el;
+        this.iconPos = 'left';
+        this.loadingIcon = "pi pi-spinner pi-spin";
+        this._loading = false;
+    }
+    ngAfterViewInit() {
+        this._initialStyleClass = this.el.nativeElement.className;
+        primeng_dom__WEBPACK_IMPORTED_MODULE_1__["DomHandler"].addMultipleClasses(this.el.nativeElement, this.getStyleClass());
+        if (this.icon) {
+            this.createIconEl();
+        }
+        let labelElement = document.createElement("span");
+        if (this.icon && !this.label) {
+            labelElement.setAttribute('aria-hidden', 'true');
+        }
+        labelElement.className = 'p-button-label';
+        if (this.label)
+            labelElement.appendChild(document.createTextNode(this.label));
+        else
+            labelElement.innerHTML = '&nbsp;';
+        this.el.nativeElement.appendChild(labelElement);
+        this.initialized = true;
+    }
+    getStyleClass() {
+        let styleClass = 'p-button p-component';
+        if (this.icon && !this.label) {
+            styleClass = styleClass + ' p-button-icon-only';
+        }
+        if (this.loading) {
+            styleClass = styleClass + ' p-disabled p-button-loading';
+            if (!this.icon && this.label)
+                styleClass = styleClass + ' p-button-loading-label-only';
+        }
+        return styleClass;
+    }
+    setStyleClass() {
+        let styleClass = this.getStyleClass();
+        this.el.nativeElement.className = styleClass + ' ' + this._initialStyleClass;
+    }
+    createIconEl() {
+        let iconElement = document.createElement("span");
+        iconElement.className = 'p-button-icon';
+        iconElement.setAttribute("aria-hidden", "true");
+        let iconPosClass = this.label ? 'p-button-icon-' + this.iconPos : null;
+        if (iconPosClass) {
+            primeng_dom__WEBPACK_IMPORTED_MODULE_1__["DomHandler"].addClass(iconElement, iconPosClass);
+        }
+        primeng_dom__WEBPACK_IMPORTED_MODULE_1__["DomHandler"].addMultipleClasses(iconElement, this.getIconClass());
+        let labelEl = primeng_dom__WEBPACK_IMPORTED_MODULE_1__["DomHandler"].findSingle(this.el.nativeElement, '.p-button-label');
+        if (labelEl)
+            this.el.nativeElement.insertBefore(iconElement, labelEl);
+        else
+            this.el.nativeElement.appendChild(iconElement);
+    }
+    getIconClass() {
+        return this.loading ? 'p-button-loading-icon ' + this.loadingIcon : this._icon;
+    }
+    setIconClass() {
+        let iconElement = primeng_dom__WEBPACK_IMPORTED_MODULE_1__["DomHandler"].findSingle(this.el.nativeElement, '.p-button-icon');
+        if (iconElement) {
+            if (this.iconPos)
+                iconElement.className = 'p-button-icon p-button-icon-' + this.iconPos + ' ' + this.getIconClass();
+            else
+                iconElement.className = 'p-button-icon ' + this.getIconClass();
+        }
+        else {
+            this.createIconEl();
+        }
+    }
+    removeIconElement() {
+        let iconElement = primeng_dom__WEBPACK_IMPORTED_MODULE_1__["DomHandler"].findSingle(this.el.nativeElement, '.p-button-icon');
+        this.el.nativeElement.removeChild(iconElement);
+    }
+    get label() {
+        return this._label;
+    }
+    set label(val) {
+        this._label = val;
+        if (this.initialized) {
+            primeng_dom__WEBPACK_IMPORTED_MODULE_1__["DomHandler"].findSingle(this.el.nativeElement, '.p-button-label').textContent = this._label || '&nbsp;';
+            this.setStyleClass();
+        }
+    }
+    get icon() {
+        return this._icon;
+    }
+    set icon(val) {
+        this._icon = val;
+        if (this.initialized) {
+            this.setIconClass();
+            this.setStyleClass();
+        }
+    }
+    get loading() {
+        return this._loading;
+    }
+    set loading(val) {
+        this._loading = val;
+        if (this.initialized) {
+            if (this.loading || this.icon)
+                this.setIconClass();
+            else
+                this.removeIconElement();
+            this.setStyleClass();
+        }
+    }
+    ngOnDestroy() {
+        this.initialized = false;
+    }
+}
+ButtonDirective.ɵfac = function ButtonDirective_Factory(t) { return new (t || ButtonDirective)(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_angular_core__WEBPACK_IMPORTED_MODULE_0__["ElementRef"])); };
+ButtonDirective.ɵdir = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineDirective"]({ type: ButtonDirective, selectors: [["", "pButton", ""]], inputs: { iconPos: "iconPos", loadingIcon: "loadingIcon", label: "label", icon: "icon", loading: "loading" } });
+ButtonDirective.ctorParameters = () => [
+    { type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["ElementRef"] }
+];
+ButtonDirective.propDecorators = {
+    iconPos: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Input"] }],
+    loadingIcon: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Input"] }],
+    label: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Input"] }],
+    icon: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Input"] }],
+    loading: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Input"] }]
+};
+(function () { (typeof ngDevMode === "undefined" || ngDevMode) && _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](ButtonDirective, [{
+        type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Directive"],
+        args: [{
+                selector: '[pButton]'
+            }]
+    }], function () { return [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["ElementRef"] }]; }, { iconPos: [{
+            type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Input"]
+        }], loadingIcon: [{
+            type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Input"]
+        }], label: [{
+            type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Input"]
+        }], icon: [{
+            type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Input"]
+        }], loading: [{
+            type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Input"]
+        }] }); })();
+class Button {
+    constructor() {
+        this.type = "button";
+        this.iconPos = 'left';
+        this.loading = false;
+        this.loadingIcon = "pi pi-spinner pi-spin";
+        this.onClick = new _angular_core__WEBPACK_IMPORTED_MODULE_0__["EventEmitter"]();
+        this.onFocus = new _angular_core__WEBPACK_IMPORTED_MODULE_0__["EventEmitter"]();
+        this.onBlur = new _angular_core__WEBPACK_IMPORTED_MODULE_0__["EventEmitter"]();
+    }
+    ngAfterContentInit() {
+        this.templates.forEach((item) => {
+            switch (item.getType()) {
+                case 'content':
+                    this.contentTemplate = item.template;
+                    break;
+                default:
+                    this.contentTemplate = item.template;
+                    break;
+            }
+        });
+    }
+    badgeStyleClass() {
+        return {
+            'p-badge p-component': true,
+            'p-badge-no-gutter': this.badge && String(this.badge).length === 1
+        };
+    }
+}
+Button.ɵfac = function Button_Factory(t) { return new (t || Button)(); };
+Button.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: Button, selectors: [["p-button"]], contentQueries: function Button_ContentQueries(rf, ctx, dirIndex) { if (rf & 1) {
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵcontentQuery"](dirIndex, primeng_api__WEBPACK_IMPORTED_MODULE_4__["PrimeTemplate"], 0);
+    } if (rf & 2) {
+        let _t;
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵqueryRefresh"](_t = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵloadQuery"]()) && (ctx.templates = _t);
+    } }, inputs: { type: "type", iconPos: "iconPos", loading: "loading", loadingIcon: "loadingIcon", icon: "icon", badge: "badge", label: "label", disabled: "disabled", style: "style", styleClass: "styleClass", badgeClass: "badgeClass" }, outputs: { onClick: "onClick", onFocus: "onFocus", onBlur: "onBlur" }, ngContentSelectors: _c2, decls: 6, vars: 16, consts: [["pRipple", "", 3, "ngStyle", "disabled", "ngClass", "click", "focus", "blur"], [4, "ngTemplateOutlet"], [3, "ngClass", "class", 4, "ngIf"], ["class", "p-button-label", 4, "ngIf"], [3, "ngClass"], [1, "p-button-label"]], template: function Button_Template(rf, ctx) { if (rf & 1) {
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵprojectionDef"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "button", 0);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("click", function Button_Template_button_click_0_listener($event) { return ctx.onClick.emit($event); })("focus", function Button_Template_button_focus_0_listener($event) { return ctx.onFocus.emit($event); })("blur", function Button_Template_button_blur_0_listener($event) { return ctx.onBlur.emit($event); });
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵprojection"](1);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](2, Button_ng_container_2_Template, 1, 0, "ng-container", 1);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](3, Button_span_3_Template, 1, 9, "span", 2);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](4, Button_span_4_Template, 2, 2, "span", 3);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](5, Button_span_5_Template, 2, 4, "span", 2);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+    } if (rf & 2) {
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵclassMap"](ctx.styleClass);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngStyle", ctx.style)("disabled", ctx.disabled || ctx.loading)("ngClass", _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpureFunction5"](10, _c1, ctx.icon && !ctx.label, (ctx.iconPos === "top" || ctx.iconPos === "bottom") && ctx.label, ctx.disabled || ctx.loading, ctx.loading, ctx.loading && !ctx.icon && ctx.label));
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵattribute"]("type", ctx.type);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](2);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngTemplateOutlet", ctx.contentTemplate);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngIf", !ctx.contentTemplate && (ctx.icon || ctx.loading));
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngIf", !ctx.contentTemplate);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngIf", !ctx.contentTemplate && ctx.badge);
+    } }, directives: [primeng_ripple__WEBPACK_IMPORTED_MODULE_3__["Ripple"], _angular_common__WEBPACK_IMPORTED_MODULE_2__["NgStyle"], _angular_common__WEBPACK_IMPORTED_MODULE_2__["NgClass"], _angular_common__WEBPACK_IMPORTED_MODULE_2__["NgTemplateOutlet"], _angular_common__WEBPACK_IMPORTED_MODULE_2__["NgIf"]], encapsulation: 2, changeDetection: 0 });
+Button.propDecorators = {
+    type: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Input"] }],
+    iconPos: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Input"] }],
+    icon: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Input"] }],
+    badge: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Input"] }],
+    label: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Input"] }],
+    disabled: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Input"] }],
+    loading: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Input"] }],
+    loadingIcon: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Input"] }],
+    style: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Input"] }],
+    styleClass: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Input"] }],
+    badgeClass: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Input"] }],
+    templates: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["ContentChildren"], args: [primeng_api__WEBPACK_IMPORTED_MODULE_4__["PrimeTemplate"],] }],
+    onClick: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Output"] }],
+    onFocus: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Output"] }],
+    onBlur: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Output"] }]
+};
+(function () { (typeof ngDevMode === "undefined" || ngDevMode) && _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](Button, [{
+        type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"],
+        args: [{
+                selector: 'p-button',
+                template: `
+        <button [attr.type]="type" [class]="styleClass" [ngStyle]="style" [disabled]="disabled || loading"
+            [ngClass]="{'p-button p-component':true,
+                        'p-button-icon-only': (icon && !label),
+                        'p-button-vertical': (iconPos === 'top' || iconPos === 'bottom') && label,
+                        'p-disabled': this.disabled || this.loading,
+                        'p-button-loading': this.loading,
+                        'p-button-loading-label-only': this.loading && !this.icon && this.label}"
+                        (click)="onClick.emit($event)" (focus)="onFocus.emit($event)" (blur)="onBlur.emit($event)" pRipple>
+            <ng-content></ng-content>
+            <ng-container *ngTemplateOutlet="contentTemplate"></ng-container>
+            <span [ngClass]="{'p-button-icon': true,
+                        'p-button-icon-left': iconPos === 'left' && label,
+                        'p-button-icon-right': iconPos === 'right' && label,
+                        'p-button-icon-top': iconPos === 'top' && label,
+                        'p-button-icon-bottom': iconPos === 'bottom' && label}"
+                        [class]="loading ? 'p-button-loading-icon ' + loadingIcon : icon" *ngIf="!contentTemplate && (icon||loading)" [attr.aria-hidden]="true"></span>
+            <span class="p-button-label" [attr.aria-hidden]="icon && !label" *ngIf="!contentTemplate">{{label||'&nbsp;'}}</span>
+            <span [ngClass]="badgeStyleClass()" [class]="badgeClass" *ngIf="!contentTemplate && badge">{{badge}}</span>
+        </button>
+    `,
+                changeDetection: _angular_core__WEBPACK_IMPORTED_MODULE_0__["ChangeDetectionStrategy"].OnPush,
+                encapsulation: _angular_core__WEBPACK_IMPORTED_MODULE_0__["ViewEncapsulation"].None
+            }]
+    }], function () { return []; }, { type: [{
+            type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Input"]
+        }], iconPos: [{
+            type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Input"]
+        }], loading: [{
+            type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Input"]
+        }], loadingIcon: [{
+            type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Input"]
+        }], onClick: [{
+            type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Output"]
+        }], onFocus: [{
+            type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Output"]
+        }], onBlur: [{
+            type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Output"]
+        }], icon: [{
+            type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Input"]
+        }], badge: [{
+            type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Input"]
+        }], label: [{
+            type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Input"]
+        }], disabled: [{
+            type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Input"]
+        }], style: [{
+            type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Input"]
+        }], styleClass: [{
+            type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Input"]
+        }], badgeClass: [{
+            type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Input"]
+        }], templates: [{
+            type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["ContentChildren"],
+            args: [primeng_api__WEBPACK_IMPORTED_MODULE_4__["PrimeTemplate"]]
+        }] }); })();
+class ButtonModule {
+}
+ButtonModule.ɵfac = function ButtonModule_Factory(t) { return new (t || ButtonModule)(); };
+ButtonModule.ɵmod = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineNgModule"]({ type: ButtonModule });
+ButtonModule.ɵinj = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineInjector"]({ imports: [[_angular_common__WEBPACK_IMPORTED_MODULE_2__["CommonModule"], primeng_ripple__WEBPACK_IMPORTED_MODULE_3__["RippleModule"]]] });
+(function () { (typeof ngJitMode === "undefined" || ngJitMode) && _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵsetNgModuleScope"](ButtonModule, { declarations: function () { return [ButtonDirective, Button]; }, imports: function () { return [_angular_common__WEBPACK_IMPORTED_MODULE_2__["CommonModule"], primeng_ripple__WEBPACK_IMPORTED_MODULE_3__["RippleModule"]]; }, exports: function () { return [ButtonDirective, Button]; } }); })();
+(function () { (typeof ngDevMode === "undefined" || ngDevMode) && _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](ButtonModule, [{
+        type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["NgModule"],
+        args: [{
+                imports: [_angular_common__WEBPACK_IMPORTED_MODULE_2__["CommonModule"], primeng_ripple__WEBPACK_IMPORTED_MODULE_3__["RippleModule"]],
+                exports: [ButtonDirective, Button],
+                declarations: [ButtonDirective, Button]
+            }]
+    }], null, null); })();
+
+/**
+ * Generated bundle index. Do not edit.
+ */
+
+
+
+//# sourceMappingURL=primeng-button.js.map
+
+/***/ }),
+
 /***/ "jZKg":
 /*!************************************************************************!*\
   !*** ./node_modules/rxjs/_esm2015/internal/scheduled/scheduleArray.js ***!
@@ -72167,6 +77540,181 @@ class TimeoutWithSubscriber extends _innerSubscribe__WEBPACK_IMPORTED_MODULE_2__
     }
 }
 //# sourceMappingURL=timeoutWith.js.map
+
+/***/ }),
+
+/***/ "t2ka":
+/*!*********************************************************************!*\
+  !*** ./node_modules/primeng/__ivy_ngcc__/fesm2015/primeng-utils.js ***!
+  \*********************************************************************/
+/*! exports provided: ObjectUtils, UniqueComponentId, lastId */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ObjectUtils", function() { return ObjectUtils; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "UniqueComponentId", function() { return UniqueComponentId; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "lastId", function() { return lastId; });
+class ObjectUtils {
+    static equals(obj1, obj2, field) {
+        if (field)
+            return (this.resolveFieldData(obj1, field) === this.resolveFieldData(obj2, field));
+        else
+            return this.equalsByValue(obj1, obj2);
+    }
+    static equalsByValue(obj1, obj2) {
+        if (obj1 === obj2)
+            return true;
+        if (obj1 && obj2 && typeof obj1 == 'object' && typeof obj2 == 'object') {
+            var arrA = Array.isArray(obj1), arrB = Array.isArray(obj2), i, length, key;
+            if (arrA && arrB) {
+                length = obj1.length;
+                if (length != obj2.length)
+                    return false;
+                for (i = length; i-- !== 0;)
+                    if (!this.equalsByValue(obj1[i], obj2[i]))
+                        return false;
+                return true;
+            }
+            if (arrA != arrB)
+                return false;
+            var dateA = obj1 instanceof Date, dateB = obj2 instanceof Date;
+            if (dateA != dateB)
+                return false;
+            if (dateA && dateB)
+                return obj1.getTime() == obj2.getTime();
+            var regexpA = obj1 instanceof RegExp, regexpB = obj2 instanceof RegExp;
+            if (regexpA != regexpB)
+                return false;
+            if (regexpA && regexpB)
+                return obj1.toString() == obj2.toString();
+            var keys = Object.keys(obj1);
+            length = keys.length;
+            if (length !== Object.keys(obj2).length)
+                return false;
+            for (i = length; i-- !== 0;)
+                if (!Object.prototype.hasOwnProperty.call(obj2, keys[i]))
+                    return false;
+            for (i = length; i-- !== 0;) {
+                key = keys[i];
+                if (!this.equalsByValue(obj1[key], obj2[key]))
+                    return false;
+            }
+            return true;
+        }
+        return obj1 !== obj1 && obj2 !== obj2;
+    }
+    static resolveFieldData(data, field) {
+        if (data && field) {
+            if (this.isFunction(field)) {
+                return field(data);
+            }
+            else if (field.indexOf('.') == -1) {
+                return data[field];
+            }
+            else {
+                let fields = field.split('.');
+                let value = data;
+                for (let i = 0, len = fields.length; i < len; ++i) {
+                    if (value == null) {
+                        return null;
+                    }
+                    value = value[fields[i]];
+                }
+                return value;
+            }
+        }
+        else {
+            return null;
+        }
+    }
+    static isFunction(obj) {
+        return !!(obj && obj.constructor && obj.call && obj.apply);
+    }
+    static reorderArray(value, from, to) {
+        let target;
+        if (value && from !== to) {
+            if (to >= value.length) {
+                to %= value.length;
+                from %= value.length;
+            }
+            value.splice(to, 0, value.splice(from, 1)[0]);
+        }
+    }
+    static insertIntoOrderedArray(item, index, arr, sourceArr) {
+        if (arr.length > 0) {
+            let injected = false;
+            for (let i = 0; i < arr.length; i++) {
+                let currentItemIndex = this.findIndexInList(arr[i], sourceArr);
+                if (currentItemIndex > index) {
+                    arr.splice(i, 0, item);
+                    injected = true;
+                    break;
+                }
+            }
+            if (!injected) {
+                arr.push(item);
+            }
+        }
+        else {
+            arr.push(item);
+        }
+    }
+    static findIndexInList(item, list) {
+        let index = -1;
+        if (list) {
+            for (let i = 0; i < list.length; i++) {
+                if (list[i] == item) {
+                    index = i;
+                    break;
+                }
+            }
+        }
+        return index;
+    }
+    static removeAccents(str) {
+        if (str && str.search(/[\xC0-\xFF]/g) > -1) {
+            str = str
+                .replace(/[\xC0-\xC5]/g, "A")
+                .replace(/[\xC6]/g, "AE")
+                .replace(/[\xC7]/g, "C")
+                .replace(/[\xC8-\xCB]/g, "E")
+                .replace(/[\xCC-\xCF]/g, "I")
+                .replace(/[\xD0]/g, "D")
+                .replace(/[\xD1]/g, "N")
+                .replace(/[\xD2-\xD6\xD8]/g, "O")
+                .replace(/[\xD9-\xDC]/g, "U")
+                .replace(/[\xDD]/g, "Y")
+                .replace(/[\xDE]/g, "P")
+                .replace(/[\xE0-\xE5]/g, "a")
+                .replace(/[\xE6]/g, "ae")
+                .replace(/[\xE7]/g, "c")
+                .replace(/[\xE8-\xEB]/g, "e")
+                .replace(/[\xEC-\xEF]/g, "i")
+                .replace(/[\xF1]/g, "n")
+                .replace(/[\xF2-\xF6\xF8]/g, "o")
+                .replace(/[\xF9-\xFC]/g, "u")
+                .replace(/[\xFE]/g, "p")
+                .replace(/[\xFD\xFF]/g, "y");
+        }
+        return str;
+    }
+}
+
+var lastId = 0;
+function UniqueComponentId() {
+    let prefix = 'pr_id_';
+    lastId++;
+    return `${prefix}${lastId}`;
+}
+
+/**
+ * Generated bundle index. Do not edit.
+ */
+
+
+
+//# sourceMappingURL=primeng-utils.js.map
 
 /***/ }),
 
