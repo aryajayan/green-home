@@ -1,0 +1,11 @@
+.product_list {
+  padding: 2em;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+@media screen and (max-width: 480px) {
+  .product_list {
+    padding: 1em;
+  }
+}

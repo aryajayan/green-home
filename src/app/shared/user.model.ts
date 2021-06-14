@@ -4,8 +4,6 @@ export class User {
 
     public name: string,
 
-    public dob: Date,
-
     private _token: string,
 
     private _tokenExpireTime: Date

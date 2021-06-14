@@ -1,0 +1,12 @@
+<div class="row">
+  <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+    <app-featured-products [products]="featured"></app-featured-products>
+  </div>
+</div>
+<div class="row">
+  <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 product_list">
+    <app-product-card *ngFor="let item of allProducts"
+                      class="product_card_content"
+                      [product]="item"></app-product-card>
+  </div>
+</div>

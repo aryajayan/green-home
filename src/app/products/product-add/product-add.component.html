@@ -1,0 +1,93 @@
+<div class="row ">
+  <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 container">
+    <form [formGroup]="productForm"
+          role="form"
+          (ngSubmit)="onProductSave()">
+      <div class="row">
+
+        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 ">
+          <div class="grey_background">
+            <h3>Add Product</h3>
+
+            <div class="form-group">
+              <label for="name">Product Name</label>
+              <input type="text"
+                     class="form-control input_transparent"
+                     id="name"
+                     formControlName="name"
+                     placeholder="Enter product name"
+                     autocomplete="off">
+              <small class="form-text text-muted"
+                     *ngIf="productForm.get('name').touched && productForm.get('name').invalid">
+                This field cannot be empty
+              </small>
+            </div>
+
+            <div class="form-group">
+              <label for="price">Price</label>
+              <input type="number"
+                     class="form-control input_transparent"
+                     id="price"
+                     formControlName="price"
+                     placeholder="Enter price"
+                     autocomplete="off">
+              <small class="form-text text-muted"
+                     *ngIf="productForm.get('price').touched && productForm.get('price').invalid">
+                This field cannot be empty
+              </small>
+            </div>
+
+            <div class="form-group">
+              <label for="description">Description</label>
+              <textarea type="text"
+                        class="form-control input_transparent"
+                        id="description"
+                        formControlName="description"
+                        placeholder="Enter description"
+                        autocomplete="off">
+              </textarea>
+              <small class="form-text text-muted"
+                     *ngIf="productForm.get('description').touched && productForm.get('description').invalid">
+                This field cannot be empty
+              </small>
+            </div>
+
+          </div>
+        </div>
+        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+          <div class="grey_background">
+            <div class="form-group">
+              <label for="price">Product Image</label>
+              <div class="row">
+                <div class="col-xs-12 col-sm-12 col-md-10 col-lg-8 offset-md-1 offset-lg-2">
+                  <div class="border_grey image_container">
+                    <img [src]="imageUrl"
+                         *ngIf="showImage"
+                         alt=""
+                         class="product_image">
+                  </div>
+                  <!-- <div class="d-flex justify-content-center"> -->
+                  <input type="file"
+                         (change)="selectfile($event)"
+                         class="form-control-file"
+                         id="file_upload">
+                  <!-- </div> -->
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 button_container">
+          <button type="submit"
+                  class="btn primary_button">
+            SUBMIT
+          </button>
+        </div>
+      </div>
+    </form>
+  </div>
+</div>

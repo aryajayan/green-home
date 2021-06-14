@@ -8,6 +8,10 @@ import { SharedModule } from '../shared/shared.module';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { RouterModule } from '@angular/router';
 import { ReactiveFormsModule } from '@angular/forms';
+import { StoreModule } from '@ngrx/store';
+import * as fromUser from './store/user.reducer';
+import { EffectsModule } from '@ngrx/effects';
+import { UserEffects } from './store/uesr.effect';
 
 @NgModule({
   declarations: [
@@ -21,6 +25,8 @@ import { ReactiveFormsModule } from '@angular/forms';
     SharedModule,
     NgbModule,
     ReactiveFormsModule,
+    StoreModule.forFeature(fromUser.userFeatureKey, fromUser.userReducer),
+    EffectsModule.forFeature([UserEffects]),
     RouterModule.forChild([{ path: '', component: UserComponent }]),
   ],
 })

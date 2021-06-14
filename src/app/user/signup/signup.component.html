@@ -4,141 +4,99 @@
 
     <h3>Sign Up</h3>
 
-    <form [formGroup]="signupForm">
-
+    <form [formGroup]="signupForm"
+          role="form"
+          (ngSubmit)="signupClicked()">
       <div class="form-group">
-
         <label for="name">Name</label>
-
         <input type="text"
                class="form-control input_transparent"
                id="name"
                formControlName="name"
                placeholder="Enter name"
                autocomplete="off">
-
         <small class="form-text text-muted"
                *ngIf="signupForm.get('name').touched && signupForm.get('name').invalid">
-
           This field cannot be empty
-
         </small>
-
       </div>
 
       <div class="form-group">
-
         <label for="name">Date of birth</label>
-
         <div>
-
-
-
           <div class="input-group-append ">
-
             <button class="btn btn-outline-secondary calendar"
                     (click)="d.toggle()"
                     type="button"><i class="fa fa-calendar"
                  aria-hidden="true"></i></button>
-
             <input class="input_transparent"
                    style="width: 100%;"
+                   (click)="d.toggle()"
+                   [minDate]="minDate"
+                   [maxDate]="maxDate"
                    placeholder="yyyy-mm-dd"
                    name="dp"
+                   autocomplete="off"
                    formControlName="dob"
                    ngbDatepicker
                    #d="ngbDatepicker">
-
           </div>
-
         </div>
-
-        <!-- <ngb-datepicker #dp
-
-                              formControlName="dob"
-
-                              (navigate)="navigateDateEvent($event)"></ngb-datepicker> -->
-
         <small class="form-text text-muted"
                *ngIf="signupForm.get('dob').touched && signupForm.get('dob').invalid">
-
           This field cannot be empty
-
         </small>
-
       </div>
 
       <div class="form-group">
-
         <label for="email">Email</label>
-
         <input type="email"
                class="form-control input_transparent"
                id="email"
                formControlName="email"
                placeholder="Enter email"
                autocomplete="off">
-
         <small class="form-text text-muted"
                *ngIf="signupForm.get('email').touched && signupForm.get('email').invalid">
-
           Please enter a valid email address
-
         </small>
-
       </div>
 
       <div class="form-group">
-
         <label for="password">Password</label>
-
         <input type="password"
                class="form-control input_transparent"
                id="password"
                formControlName="password"
                placeholder="Enter password"
                autocomplete="off">
-
         <small class="form-text text-muted"
                *ngIf="signupForm.get('password').touched && signupForm.get('password').invalid">
-
           This field cannot be empty
-
         </small>
-
       </div>
 
       <div class="form-group">
-
         <label for="confirm">Confirm Password</label>
-
         <input type="password"
                class="form-control input_transparent"
                id="confirm"
                formControlName="confirm"
                placeholder="Please enter your password again to confirm."
                autocomplete="off">
-
         <small class="form-text text-muted"
                *ngIf="signupForm.get('confirm').touched && signupForm.get('confirm').invalid">
-
           This field cannot be empty
-
         </small>
-
         <small class="form-text text-muted"
                *ngIf="signupForm.get('confirm').touched && signupForm.errors?.noMatch">
-
           Passwords doesn't match
-
         </small>
-
       </div>
 
-      <button type="button"
+      <button type="submit"
               class="btn primary_button"
-              [disabled]="!signupForm.valid"
-              (click)="signupClicked()">SIGN UP</button>
+              [disabled]="!signupForm.valid">SIGN UP</button>
 
     </form>
 
