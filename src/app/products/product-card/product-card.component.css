@@ -98,6 +98,9 @@
     display: inline-block;
   }
   .product-image {
-    height: 19vh;
+    height: 17vh;
+  }
+  .mb-05 {
+    margin-bottom: 0.5rem !important;
   }
 }

@@ -1,0 +1,6 @@
+@media screen and (max-width: 480px) {
+  .banner_img {
+    width: auto;
+    height: 45vh;
+  }
+}

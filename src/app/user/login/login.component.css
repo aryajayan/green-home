@@ -7,3 +7,8 @@
 
   min-height: 82vh;
 }
+@media screen and (max-width: 480px) {
+  .login_form {
+    min-height: 93vh;
+  }
+}

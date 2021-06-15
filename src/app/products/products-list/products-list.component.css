@@ -4,6 +4,13 @@
   flex-wrap: wrap;
   flex-direction: row;
 }
+
+.spinner-grow {
+  color: #637b47;
+}
+.spinner_content{
+  margin-top: 16vh;
+}
 @media screen and (max-width: 480px) {
   .product_list {
     padding: 1em;

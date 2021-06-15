@@ -11,7 +11,7 @@ export class CarouselComponent implements OnInit {
   @Input() imageList: Image[];
 
   constructor(config: NgbCarouselConfig) {
-    config.interval = 2000;
+    config.interval = 4000;
 
     config.wrap = true;
 

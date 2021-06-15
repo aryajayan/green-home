@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Store } from '@ngrx/store';
 import * as fromProduct from '../store/product.reducer';
-import { selectProducts } from '../store/product.selector';
+import { selectLoading, selectProducts } from '../store/product.selector';
 import * as ProductActions from '../store/product.action';
 import { Product } from '../product.model';
 
@@ -13,6 +13,7 @@ import { Product } from '../product.model';
 export class ProductsListComponent implements OnInit {
   allProducts: Product[] = [];
   featured: Product[] = [];
+  loading: boolean;
   constructor(private store: Store<fromProduct.State>) {}
 
   ngOnInit(): void {
@@ -23,6 +24,9 @@ export class ProductsListComponent implements OnInit {
         this.featured = data.filter((item: Product) => item.soldCount > 10);
         this.allProducts = data;
       }
+    });
+    this.store.select(selectLoading).subscribe((isloading) => {
+      this.loading = isloading;
     });
   }
 }
